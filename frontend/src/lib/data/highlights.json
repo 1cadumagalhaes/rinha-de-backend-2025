@@ -1,0 +1,138 @@
+{
+  "timestamp": "2025-08-20T05:09:10.402Z",
+  "total_participants": 510,
+  "total_submissions": 485,
+  "performance": {
+    "best_total_liquido": {
+      "name": "Gabriel Costa",
+      "participant": "ogabriel-elixir",
+      "rank": 1,
+      "value": 790860.867615
+    },
+    "best_p99": {
+      "name": "Josiney Junior",
+      "participant": "josineyjr-go-3",
+      "rank": 357,
+      "value": "0.67ms"
+    }
+  },
+  "technology": {
+    "most_used_language": "go",
+    "most_used_runtime": "go",
+    "most_used_storage": "redis",
+    "languages_distribution": {
+      "go": 119,
+      "java": 63,
+      "csharp": 57,
+      "typescript": 47,
+      "rust": 39,
+      "javascript": 36,
+      "lua": 18,
+      "python": 17,
+      "php": 16,
+      "elixir": 14,
+      "html": 8,
+      "cpp": 8,
+      "ruby": 8,
+      "kotlin": 7,
+      "pascal": 7,
+      "c": 5,
+      "assembly": 3,
+      "clojure": 2,
+      "perl": 2,
+      "dart": 2,
+      "nim": 1,
+      "scala": 1,
+      "ocaml": 1,
+      "haskell": 1,
+      "gleam": 1,
+      "f#": 1
+    },
+    "runtimes_distribution": {
+      "go": 119,
+      "dotnet": 57,
+      "node": 45,
+      "rust": 39,
+      "graalvm": 37,
+      "jvm": 26,
+      "bun": 20,
+      "cpython": 17,
+      "php": 16,
+      "beam": 14,
+      "ruby": 8
+    },
+    "storages_distribution": {
+      "redis": 269,
+      "postgresql": 136,
+      "mongodb": 18,
+      "memory": 17,
+      "sqlite": 16,
+      "": 11,
+      "inmemory": 9,
+      "in-memory": 8,
+      "go": 7,
+      "ets": 6,
+      "valkey": 6,
+      "memoria-compartilhada-proprio": 6,
+      "keydb": 4,
+      ".net": 4,
+      "( ͡° ͜ʖ ͡°)": 4,
+      "🍺 beer cache": 4,
+      "filesystem": 4,
+      "lmdb": 3,
+      "mysql": 3,
+      "in memory": 2,
+      "rocksdb": 2,
+      "elixir": 2,
+      "unix socket": 1,
+      "memcached": 1,
+      "c++": 1,
+      "ets (erlang term storage)": 1,
+      "file": 1
+    }
+  },
+  "participation": {
+    "first_submission": {
+      "name": "Luiz Cordista",
+      "participant": "luizcordista-go",
+      "date": "2025-07-09"
+    },
+    "last_submission": {
+      "name": "Matheus Paula E Juliany Savazzi",
+      "participant": "matheuspaula-php",
+      "date": "2025-08-17"
+    },
+    "most_submissions_by_user": {
+      "username": "lecosas",
+      "count": 13
+    },
+    "top_p99": {
+      "name": "Josiney Junior",
+      "participant": "josineyjr-go-3",
+      "rank": 357,
+      "value": 0.67
+    }
+  },
+  "top_performers": {
+    "top_3_total_liquido": [
+      {
+        "name": "Gabriel Costa",
+        "participant": "ogabriel-elixir",
+        "rank": 1,
+        "value": 790860.867615
+      },
+      {
+        "name": "Cristian dos Santos Pereira",
+        "participant": "cristian-s-node-1",
+        "rank": 2,
+        "value": 784532.57634
+      },
+      {
+        "name": "Ricássio Costa",
+        "participant": "ricassiocosta-node",
+        "rank": 3,
+        "value": 784210.22046
+      }
+    ]
+  }
+}
