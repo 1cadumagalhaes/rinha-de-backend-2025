@@ -22,6 +22,8 @@ jobs:
         with:
           node-version: '24'
           cache: 'npm'
+          # point cache-dependency-path to the lockfile inside the frontend folder
+          cache-dependency-path: frontend/package-lock.json
 
       - name: Install dependencies
         working-directory: frontend
