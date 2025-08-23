@@ -5691,6 +5691,7 @@
         "nodejs"
       ],
       "storages": [
+        "better-sqlite3",
         "sqlite"
       ],
       "messaging": [

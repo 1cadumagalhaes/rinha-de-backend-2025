@@ -3,9 +3,7 @@
   import SubmissionCard from "$lib/components/SubmissionCard.svelte";
   import highlights from "$lib/data/highlights.json";
   import { getAll, search } from "$lib/utils/submissions";
-  import { normalizeMerged } from "$lib/utils/normalize";
-
-  // theme is managed globally by the layout's `isNightStore`
+  import type { SubmissionRecord } from "$lib/types/submission";
 
   let q = "";
   let language = "";
@@ -13,68 +11,58 @@
   let storage = "";
   let order = "total_desc";
 
-  let results: any[] = [];
+  let results: SubmissionRecord[] = [];
 
-  const languages = Object.keys(
-    highlights.technology?.languages_distribution || {},
-  );
-  const runtimes = Object.keys(
-    highlights.technology?.runtimes_distribution || {},
-  );
-  const storages = Object.keys(
-    highlights.technology?.storages_distribution || {},
-  );
+  // Derive filter lists from highlights data
+  const languages = Object.keys(highlights.language_distribution || {}).sort();
+  const runtimes = Object.keys(highlights.runtime_distribution || {}).sort();
 
-  function normalizeNumberString(v: any) {
-    if (v == null) return null;
-    const s = String(v).replace(/\s*/g, "");
-    const n = s.replace(/[^0-9.,-]/g, "").replace(/,/g, ".");
-    const num = Number(n);
-    return Number.isFinite(num) ? num : null;
+  // Extract unique storages from all submissions
+  const allSubmissions = getAll();
+  const storages = Array.from(
+    new Set(allSubmissions.flatMap((s) => s.tech_stack?.storages || [])),
+  ).sort();
+
+  function getTotal(submission: SubmissionRecord): number {
+    return submission.results?.financeiro?.total_liquido || 0;
   }
 
-  function getTotal(sub: any) {
-    return (
-      Number(sub.resultado_final?.total_liquido ?? sub.total_liquido ?? 0) || 0
-    );
+  function getP99(submission: SubmissionRecord): number {
+    return submission.results?.performance?.p99 || Infinity;
   }
 
-  function getP99(sub: any) {
-    const raw = sub.resultado_final?.p99?.valor ?? sub.p99 ?? null;
-    const n = normalizeNumberString(raw);
-    return n == null ? Infinity : n;
+  function getParticipantName(submission: SubmissionRecord): string {
+    return submission.user?.name || submission.submission_id || "";
   }
 
-  function sortResults(arr: any[]) {
-    const copy = arr.slice();
-    copy.sort((a: any, b: any) => {
-      if (order === "total_desc") return getTotal(b) - getTotal(a);
-      if (order === "total_asc") return getTotal(a) - getTotal(b);
-      if (order === "p99_asc") return getP99(a) - getP99(b);
-      if (order === "p99_desc") return getP99(b) - getP99(a);
-      if (order === "participant_asc") {
-        const A = String(a.participant || a.participante || "").toLowerCase();
-        const B = String(b.participant || b.participante || "").toLowerCase();
-        return A < B ? -1 : A > B ? 1 : 0;
+  function sortResults(submissions: SubmissionRecord[]): SubmissionRecord[] {
+    return [...submissions].sort((a, b) => {
+      switch (order) {
+        case "total_desc":
+          return getTotal(b) - getTotal(a);
+        case "total_asc":
+          return getTotal(a) - getTotal(b);
+        case "p99_asc":
+          return getP99(a) - getP99(b);
+        case "p99_desc":
+          return getP99(b) - getP99(a);
+        case "participant_asc":
+          return getParticipantName(a).localeCompare(getParticipantName(b));
+        default:
+          return 0;
       }
-      return 0;
     });
-    return copy;
   }
 
   function updateResults() {
-    let res =
-      search({
-        language: language || undefined,
-        runtime: runtime || undefined,
-        storage: storage || undefined,
-        q: q || undefined,
-      }) || [];
+    const searchResults = search({
+      language: language || undefined,
+      runtime: runtime || undefined,
+      storage: storage || undefined,
+      q: q || undefined,
+    });
 
-    // normalize each result so SubmissionCard receives a consistent schema
-    res = res.map((r: any) => normalizeMerged(r, {}));
-
-    results = sortResults(res);
+    results = sortResults(searchResults);
   }
 
   function clearFilters() {
@@ -92,8 +80,6 @@
 </script>
 
 <main class="min-h-screen bg-base-100 text-base-content">
-  <!-- navbar moved to layout.svelte -->
-
   <section class="container mx-auto px-6 py-8">
     <div class="max-w-6xl mx-auto">
       <div
@@ -192,31 +178,31 @@
                 </datalist>
               </div>
 
-              <div class="flex gap-2">
-                <button class="btn btn-ghost" on:click={clearFilters}
-                  >Limpar</button
-                >
-                <button class="btn btn-primary" on:click={updateResults}
-                  >Aplicar</button
-                >
+              <div class="flex justify-start">
+                <button class="btn btn-ghost" on:click={clearFilters}>
+                  Limpar filtros
+                </button>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-span-1 md:col-span-3">
-          <div class="mb-3 flex items-center justify-between">
-            <div class="text-sm text-muted">{results.length} resultados</div>
+          <div class="mb-4 flex items-center justify-between">
+            <div class="text-sm text-muted">
+              {results.length}
+              {results.length === 1 ? "resultado" : "resultados"}
+            </div>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {#if results && results.length}
-              {#each results as r}
-                <SubmissionCard submission={r} />
+            {#if results.length > 0}
+              {#each results as submission}
+                <SubmissionCard {submission} />
               {/each}
             {:else}
-              <div class="col-span-full text-center py-12 text-sm text-muted">
-                Nenhuma submissão encontrada com esses filtros.
+              <div class="col-span-full text-center py-12 text-muted">
+                Nenhuma submissão encontrada com os filtros aplicados.
               </div>
             {/if}
           </div>

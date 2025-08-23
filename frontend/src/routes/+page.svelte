@@ -1,162 +1,140 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
   import SubmissionCard from "$lib/components/SubmissionCard.svelte";
-  import * as icons from "simple-icons";
+  import { getIconSvg } from "$lib/utils/icons";
   import highlights from "$lib/data/highlights.json";
-  import { getByParticipant, search } from "$lib/utils/submissions";
-  import { normalizeMerged } from "$lib/utils/normalize";
+  import { getByParticipant, search, getAll } from "$lib/utils/submissions";
+  import type { SubmissionRecord } from "$lib/types/submission";
+  import { browser } from "$app/environment";
+  import { onMount } from "svelte";
 
-  function openSubmissions() {
-    goto("/submissions");
-  }
+  let chartAction: any = null;
+
+  onMount(async () => {
+    if (browser) {
+      // @ts-ignore - No type definitions available for svelte-apexcharts
+      const { chart } = await import("svelte-apexcharts");
+      chartAction = chart;
+    }
+  });
 
   function scrollToContent() {
     const el = document.getElementById("main-content");
     if (el) el.scrollIntoView({ behavior: "smooth" });
   }
 
-  const example = {
-    language: "go",
-    participante: "rinha-team",
-    nome: "Joao Dev",
-    total_liquido: 987,
-    p99: 150,
-    runtime: "go",
-    storages: ["redis", "postgresql"],
-    messaging: ["rabbitmq"],
-    rank: 2,
-  };
+  // Get real submissions data
+  const allSubmissions = getAll();
 
-  const langCandidates = Object.keys(
-    highlights.technology.languages_distribution || {},
-  );
+  // Top 3 winners based on total_liquido
+  const top3 = (highlights.top3_total_liquido || [])
+    .map((id: string) => getByParticipant(id))
+    .filter((submission): submission is SubmissionRecord => submission !== null)
+    .slice(0, 3);
 
-  const top3Raw = highlights.top_performers?.top_3_total_liquido || [];
-
-  // using shared normalizeMerged from $lib/utils/normalize
-
-  const top3 = top3Raw.map((t: any) => {
-    const fallback = {
-      nome: t.name,
-      participante: t.participant,
-      total_liquido: t.value,
-      p99: t.p99 ?? null,
-      rank: t.rank,
-      language: "",
-      runtime: "",
-      storages: [],
-      messaging: [],
-      repo_url: null,
-    };
-    const merged = getByParticipant(t.participant);
-    return normalizeMerged(merged, fallback);
-  });
-
-  // Overalls derived from highlights.json
+  // Overall stats from highlights
   const totalParticipants = highlights.total_participants ?? 0;
   const totalSubmissions = highlights.total_submissions ?? 0;
   const languagesDist: Record<string, number> =
-    highlights.technology?.languages_distribution || {};
+    highlights.language_distribution || {};
   const totalLanguages = Object.keys(languagesDist).filter(Boolean).length;
 
+  // Top 3 languages for display
   const topLanguages = Object.entries(languagesDist)
     .map(([k, v]) => ({ language: k, count: v }))
     .sort((a, b) => b.count - a.count)
     .slice(0, 3);
 
-  function languageSlug(l: string) {
-    if (!l) return "";
-    const s = l.toLowerCase();
-    if (s === "c#" || s === "csharp" || s === "dotnet") return "csharp";
-    return s.replace(/\+/g, "plus").replace(/#/g, "sharp");
-  }
-
-  function getIconSvg(name: string) {
-    if (!name) return null;
-    function esc(s: string) {
-      return String(s)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/\"/g, "&quot;");
-    }
-    const slug = languageSlug(String(name));
-    const key =
-      "si" + slug.replace(/(^.|-.)/g, (m) => m.replace("-", "").toUpperCase());
-    const anyIcons: any = icons;
-    const ico = anyIcons[key];
-    if (!ico) {
-      // fallback to local static icons for some langs
-      if (slug === "java") {
-        return `<img src="/icons/java.svg" alt="java" class="w-8 h-8" />`;
-      }
-      if (slug === "csharp") {
-        return `<img src="/icons/csharp.svg" alt="c#" class="w-8 h-8" />`;
-      }
-      return null;
-    }
-    const label = esc(String(name));
-    return `<svg class="w-8 h-8" role="img" aria-label="${label}" viewBox="0 0 24 24" fill="currentColor" style="color:#${ico.hex}"><title>${label}</title><path d="${ico.path}"/></svg>`;
-  }
-
-  const chartLanguages = Object.entries(languagesDist)
+  // Language distribution chart data
+  const languageChartData = Object.entries(languagesDist)
     .map(([k, v]) => ({ language: k, count: v }))
     .sort((a, b) => b.count - a.count);
 
-  const maxLangCount = chartLanguages.length ? chartLanguages[0].count : 1;
+  // Submissions per day chart data
+  const submissionsPerDay = highlights.submissions_per_day || {};
+  const dailyChartData = Object.entries(submissionsPerDay)
+    .map(([date, count]) => ({ date, count: count as number }))
+    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
-  // Menções honrosas: resolve submissions for highlights
-  const participation = highlights.participation || {};
-  const topP99 = participation.top_p99 || null;
-  const firstSubmission = participation.first_submission || null;
-  const lastSubmission = participation.last_submission || null;
+  // ApexCharts configuration for language distribution
+  const languageChartOptions = {
+    chart: {
+      type: "bar",
+      height: 350,
+      toolbar: { show: false },
+    },
+    plotOptions: {
+      bar: {
+        horizontal: false,
+        columnWidth: "55%",
+        borderRadius: 4,
+      },
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    series: [
+      {
+        name: "Submissões",
+        data: languageChartData.map((item) => item.count),
+      },
+    ],
+    xaxis: {
+      categories: languageChartData.map((item) => item.language),
+      title: {
+        text: "Linguagens",
+      },
+    },
+    yaxis: {
+      title: {
+        text: "Número de submissões",
+      },
+    },
+    colors: ["#f59e0b"], // Amber color that works in both themes
+  };
 
-  function findSubmissionByParticipantOrQuery({
-    participant,
-    name,
-    username,
-  }: any) {
-    if (participant) {
-      const s = getByParticipant(participant);
-      if (s) return s;
-    }
-    if (username) {
-      const res = search({ q: username });
-      if (res && res.length) return res[0];
-    }
-    if (name) {
-      const res = search({ q: name });
-      if (res && res.length) return res[0];
-    }
-    return null;
-  }
+  // Submissions per day chart configuration
+  const dailyChartOptions = {
+    chart: {
+      type: "line",
+      height: 350,
+      toolbar: { show: false },
+    },
+    stroke: {
+      curve: "smooth",
+      width: 3,
+    },
+    series: [
+      {
+        name: "Submissões por dia",
+        data: dailyChartData.map((item) => item.count),
+      },
+    ],
+    xaxis: {
+      type: "datetime",
+      categories: dailyChartData.map((item) => item.date),
+      title: {
+        text: "Data",
+      },
+    },
+    yaxis: {
+      title: {
+        text: "Número de submissões",
+      },
+    },
+    colors: ["#8b5cf6"], // Purple color that works in both themes
+  };
 
-  // Resolve each mention into a dedicated variable for easier rendering
-  const submissionMelhor =
-    topP99 && topP99.participant
-      ? normalizeMerged(getByParticipant(topP99.participant), {})
-      : null;
-  const subtitleMelhor = topP99
-    ? `${topP99.name || ""} — ${topP99.value}`.trim()
-    : "";
-
-  const submissionPrimeira = firstSubmission
-    ? normalizeMerged(getByParticipant(firstSubmission.participant), {})
+  // Honorable mentions
+  const topP99Submission = highlights.top3_p99?.[0]
+    ? getByParticipant(highlights.top3_p99[0])
     : null;
-  const subtitlePrimeira = firstSubmission
-    ? firstSubmission.name
-      ? `${firstSubmission.name} — ${firstSubmission.date}`
-      : `${firstSubmission.date}`
-    : "";
-
-  const submissionUltima = lastSubmission
-    ? normalizeMerged(getByParticipant(lastSubmission.participant), {})
+  const firstSubmission = highlights.first_submission?.submission_id
+    ? getByParticipant(highlights.first_submission.submission_id)
     : null;
-  const subtitleUltima = lastSubmission
-    ? lastSubmission.name
-      ? `${lastSubmission.name} — ${lastSubmission.date}`
-      : `${lastSubmission.date}`
-    : "";
+  const lastSubmission = highlights.last_submission?.submission_id
+    ? getByParticipant(highlights.last_submission.submission_id)
+    : null;
 </script>
 
 <main class="bg-base-100 text-base-content">
@@ -199,18 +177,29 @@
     </div>
   </section>
 
-  <section id="main-content" class="container mx-auto px-6 py-16">
-    <h2 class="text-4xl font-semibold mb-4 text-center">Vencedores</h2>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-      {#each top3 as t}
-        <SubmissionCard submission={t} />
+  <section
+    id="main-content"
+    class="min-h-[50vh] container mx-auto px-6 py-16 flex flex-col justify-center"
+  >
+    <div class="divider mb-36">
+      <h2 class="text-4xl font-semibold text-center">Vencedores</h2>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8 flex-1 items-center">
+      {#each top3 as submission}
+        <SubmissionCard {submission} />
       {/each}
     </div>
+  </section>
 
-    <div class="mt-12 max-w-6xl mx-auto">
-      <h2 class="text-4xl font-semibold mb-4 text-center">Análise geral</h2>
+  <section
+    class="min-h-[50vh] container mx-auto px-6 py-16 flex flex-col justify-center"
+  >
+    <div class="max-w-6xl mx-auto w-full">
+      <div class="divider mb-36">
+        <h2 class="text-4xl font-semibold text-center">Análise geral</h2>
+      </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         <div class="card bg-base-200 p-4">
           <div class="text-sm text-muted">Total de submissões</div>
           <div class="text-2xl font-bold">{totalSubmissions}</div>
@@ -225,101 +214,115 @@
         </div>
       </div>
 
-      <div class="mb-4 text-center">
-        <h2 class="text-2xl text-muted">Linguagens mais usadas</h2>
-        <div class="flex items-center justify-center gap-6 mt-2">
+      <!-- Top Languages Display -->
+      <div class="text-center">
+        <h3 class="text-2xl font-semibold mb-1">Linguagens mais usadas</h3>
+        <div class="flex items-center justify-center gap-6 mt-4">
           {#each topLanguages as tl}
-            <div class="card p-3 bg-base-200 flex flex-col items-center w-36">
-              <div class="mb-2">
-                {@html getIconSvg(tl.language) ||
+            <div
+              class="card px-8 py-5 bg-base-200 flex flex-col items-center w-36"
+            >
+              <div class="mb-1">
+                {@html getIconSvg(tl.language, "w-20 h-20") ||
                   '<div class="w-8 h-8 bg-base-300 rounded"></div>'}
               </div>
               <div class="font-semibold">{tl.language}</div>
-              <div class="text-sm text-muted">{tl.count}</div>
+              <div class="text-sm text-muted">{tl.count} submissões</div>
             </div>
           {/each}
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="overflow-x-auto">
-        <div class="flex items-end gap-3 py-4" style="min-width: max-content;">
-          {#each chartLanguages as cl}
-            <div class="flex flex-col items-center w-16">
-              <div class="text-sm text-muted mb-1">{cl.count}</div>
-              <div
-                class="h-48 w-8 bg-base-200 rounded-md flex items-end overflow-hidden"
-              >
-                <div
-                  class="w-full bg-primary"
-                  style="height: {Math.round((cl.count / maxLangCount) * 100)}%"
-                ></div>
-              </div>
-              <div class="mt-2 text-xs text-center truncate w-full">
-                {cl.language}
-              </div>
+  <section
+    class="min-h-[50vh] container mx-auto px-6 py-16 flex flex-col justify-center"
+  >
+    <div class="max-w-6xl mx-auto w-full">
+      <!-- Language Distribution Chart -->
+      <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-4 text-center">
+          Distribuição por linguagem
+        </h3>
+        <div class="card bg-base-200 p-6">
+          {#if chartAction}
+            <div use:chartAction={languageChartOptions}></div>
+          {:else}
+            <div class="flex items-center justify-center h-80">
+              <span class="loading loading-spinner loading-lg"></span>
             </div>
-          {/each}
+          {/if}
         </div>
       </div>
 
-      <div class="mt-12 max-w-2xl mx-auto">
-        <h2 class="text-4xl font-semibold mb-4 text-center">
-          Menções honrosas
-        </h2>
-        <div class="space-y-6 mb-8">
-          <div>
-            <div class="text-2xl text-center">
-              Melhor performance bruta (p99)
-            </div>
-            <div class="mt-3">
-              {#if submissionMelhor}
-                <div class="text-1xl text-center">{subtitleMelhor}</div>
-
-                <SubmissionCard submission={submissionMelhor} />
-              {:else}
-                <div class="card bg-base-200 p-4">
-                  <div class="text-xs text-muted mt-2">
-                    Não foi possível localizar a submissão correspondente.
-                  </div>
-                </div>
-              {/if}
-            </div>
-          </div>
-
-          <div>
-            <div class="text-2xl text-center">Primeira submissão</div>
-            <div class="mt-3">
-              {#if submissionPrimeira}
-                <div class="text-1xl text-center">{subtitlePrimeira}</div>
-
-                <SubmissionCard submission={submissionPrimeira} />
-              {:else}
-                <div class="card bg-base-200 p-4">
-                  <div class="text-xs text-muted mt-2">
-                    Não foi possível localizar a submissão correspondente.
-                  </div>
-                </div>
-              {/if}
-            </div>
-          </div>
-
-          <div>
-            <div class="text-2xl text-center">Última submissão</div>
-            <div class="mt-3">
-              {#if submissionUltima}
-                <div class="text-1xl text-center">{subtitleUltima}</div>
-
-                <SubmissionCard submission={submissionUltima} />
-              {:else}
-                <div class="card bg-base-200 p-4">
-                  <div class="text-xs text-muted mt-2">
-                    Não foi possível localizar a submissão correspondente.
-                  </div>
-                </div>
-              {/if}
-            </div>
+      <!-- Submissions per Day Chart -->
+      {#if dailyChartData.length > 0}
+        <div class="mb-8">
+          <h3 class="text-2xl font-semibold mb-4 text-center">
+            Submissões por dia
+          </h3>
+          <div class="card bg-base-200 p-6">
+            {#if chartAction}
+              <div use:chartAction={dailyChartOptions}></div>
+            {:else}
+              <div class="flex items-center justify-center h-80">
+                <span class="loading loading-spinner loading-lg"></span>
+              </div>
+            {/if}
           </div>
         </div>
+      {/if}
+    </div>
+  </section>
+
+  <section
+    class="min-h-[50vh] container mx-auto px-6 py-16 flex flex-col justify-center"
+  >
+    <div class="max-w-2xl mx-auto w-full">
+      <div class="divider mb-12">
+        <h2 class="text-4xl font-semibold text-center">Menções honrosas</h2>
+      </div>
+
+      <div class="space-y-8 mb-8">
+        <!-- Best Performance -->
+        {#if topP99Submission}
+          <div class="card bg-base-200 p-6">
+            <div class="text-2xl font-semibold text-center mb-4">
+              🏆 Melhor performance bruta (p99)
+            </div>
+            <SubmissionCard submission={topP99Submission} />
+          </div>
+        {/if}
+
+        <!-- First Submission -->
+        {#if firstSubmission}
+          <div class="card bg-base-200 p-6">
+            <div class="text-2xl font-semibold text-center mb-4">
+              🥇 Primeira submissão
+            </div>
+            {#if highlights.first_submission?.date}
+              <div class="text-center text-sm text-muted mb-3">
+                {highlights.first_submission.date}
+              </div>
+            {/if}
+            <SubmissionCard submission={firstSubmission} />
+          </div>
+        {/if}
+
+        <!-- Last Submission -->
+        {#if lastSubmission}
+          <div class="card bg-base-200 p-6">
+            <div class="text-2xl font-semibold text-center mb-4">
+              🏁 Última submissão
+            </div>
+            {#if highlights.last_submission?.date}
+              <div class="text-center text-sm text-muted mb-3">
+                {highlights.last_submission.date}
+              </div>
+            {/if}
+            <SubmissionCard submission={lastSubmission} />
+          </div>
+        {/if}
       </div>
     </div>
   </section>
