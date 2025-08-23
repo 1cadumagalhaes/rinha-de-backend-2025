@@ -1,0 +1,473 @@
+{
+  "total_participants": 340,
+  "total_submissions": 511,
+  "most_used_language": "go",
+  "most_used_storage": "redis",
+  "language_distribution": {
+    "c#": 62,
+    "java": 78,
+    "typescript": 57,
+    "go": 130,
+    "javascript": 11,
+    "python": 22,
+    "php": 15,
+    "rust": 40,
+    "kotlin": 7,
+    "c++": 8,
+    "ruby": 11,
+    "elixir": 14,
+    "lean": 1,
+    "lua": 2,
+    "nim": 1,
+    "clojure": 2,
+    "assembly": 3,
+    "pascal": 7,
+    "perl": 1,
+    "scala": 1,
+    "swift": 1,
+    "ocaml": 1,
+    "haskell": 1,
+    "crystal": 1,
+    "gleam": 1,
+    "dart": 2,
+    "c": 4,
+    "fsharp": 1
+  },
+  "runtime_distribution": {
+    ".net": 56,
+    "jvm": 78,
+    "nodejs": 51,
+    "cpython": 22,
+    "bun": 8
+  },
+  "submissions_per_day": {
+    "2025-08-16": 9,
+    "2025-07-27": 47,
+    "2025-07-12": 6,
+    "2025-07-28": 11,
+    "2025-07-18": 8,
+    "2025-08-08": 22,
+    "2025-08-02": 9,
+    "2025-07-15": 20,
+    "2025-08-04": 9,
+    "2025-08-14": 16,
+    "2025-07-25": 8,
+    "2025-07-23": 16,
+    "2025-07-19": 17,
+    "2025-08-11": 7,
+    "2025-08-18": 10,
+    "2025-08-12": 18,
+    "2025-08-17": 24,
+    "2025-08-07": 11,
+    "2025-07-31": 9,
+    "2025-07-21": 8,
+    "2025-07-26": 4,
+    "2025-07-07": 5,
+    "2025-08-13": 7,
+    "2025-07-16": 10,
+    "2025-07-29": 14,
+    "2025-08-09": 7,
+    "2025-08-03": 5,
+    "2025-07-10": 2,
+    "2025-07-22": 6,
+    "2025-08-01": 6,
+    "2025-07-13": 6,
+    "2025-07-24": 6,
+    "2025-08-15": 2,
+    "2025-07-30": 9,
+    "2025-07-20": 4,
+    "2025-08-10": 13,
+    "2025-07-17": 5,
+    "2025-07-14": 1,
+    "2025-08-06": 5,
+    "2025-08-05": 5,
+    "2025-07-09": 3,
+    "2025-07-11": 1
+  },
+  "first_submission": {
+    "submission_id": "davidalecrim1-go-3",
+    "date": "2025-07-07 14:00:07"
+  },
+  "last_submission": {
+    "submission_id": "matheuspaula-php",
+    "date": "2025-08-18 02:59:28"
+  },
+  "top3_total_liquido": [
+    "ogabriel-elixir",
+    "cristian-s-node-1",
+    "ricassiocosta-node"
+  ],
+  "top3_total_liquido_per_language": {
+    "assembly": [
+      "tarcisiozf-asm",
+      "tarcisiozf-asm-2"
+    ],
+    "c": [
+      "rodrigoknol",
+      "thiagorigonatti3-c",
+      "thiagorigonatti-c"
+    ],
+    "c#": [
+      "RuanPabloCR-Rruim",
+      "yanpitangui-dotnet-v2",
+      "danilosantana-dotnet"
+    ],
+    "c++": [
+      "marcelo-dias",
+      "marcelo-dias-fall",
+      "asfernandes-haproxy-mongoose-lmdb"
+    ],
+    "crystal": [
+      "luucaspole-crystal"
+    ],
+    "dart": [
+      "railson-ferreira-dart",
+      "rodrigocaldeira-dart"
+    ],
+    "elixir": [
+      "ogabriel-elixir",
+      "rodrigocaldeira-elixir",
+      "leorcvargas-stable"
+    ],
+    "fsharp": [
+      "vhogemann"
+    ],
+    "gleam": [
+      "pedro-correa-gleam"
+    ],
+    "go": [
+      "lucas-laurentino-go",
+      "jairoandre",
+      "marincor"
+    ],
+    "haskell": [
+      "leandroalves-haskell"
+    ],
+    "java": [
+      "lecosas-java-spring-graalvm-3",
+      "lecosas-java-spring-graalvm-2",
+      "rafaelviefe"
+    ],
+    "javascript": [
+      "ricassiocosta-node",
+      "willianmarquess-node",
+      "leonardosegfault-nodejs"
+    ],
+    "kotlin": [
+      "jjeanjacques10",
+      "alcides-e-antonio",
+      "felipewaku"
+    ],
+    "lean": [
+      "cleissonbarbosa-lean4"
+    ],
+    "lua": [
+      "willianmarquess-lua-luvit",
+      "cleissonbarbosa-lua"
+    ],
+    "nim": [
+      "cleissonbarbosa-nim"
+    ],
+    "ocaml": [
+      "krymancer"
+    ],
+    "pascal": [
+      "diogoloff-fpc",
+      "diogoloff-fpc-new",
+      "diogoloff-delphi"
+    ],
+    "php": [
+      "joaofsilva-php-swoole",
+      "arthur-isvi-php-hyperf-nano",
+      "daniilha-php"
+    ],
+    "python": [
+      "passos-matheus-python-16reqs-timeout-aptivo",
+      "passos-matheus-python-timeout-adaptivo",
+      "ricassiocosta-python"
+    ],
+    "ruby": [
+      "pru-async-v2",
+      "pru-async",
+      "pru-async-v5"
+    ],
+    "rust": [
+      "vfabricio-uds-quick",
+      "felipefrmelo-rust",
+      "jvsandrade-rust-mini"
+    ],
+    "scala": [
+      "geazi-anc"
+    ],
+    "swift": [
+      "henriquevalcanaia-swift-vapor"
+    ],
+    "typescript": [
+      "cristian-s-node-1",
+      "igor-gregori-bun-v1",
+      "igor-gregori-bun-v2"
+    ]
+  },
+  "top3_p99": [
+    "josineyjr-go-3",
+    "josineyjr-go-5",
+    "josineyjr-go-4"
+  ],
+  "top3_p99_per_language": {
+    "assembly": [
+      "tarcisiozf-asm",
+      "tarcisiozf-asm-2"
+    ],
+    "c": [
+      "rodrigoknol",
+      "thiagorigonatti-c",
+      "thiagorigonatti3-c"
+    ],
+    "c#": [
+      "wendelmax",
+      "sylviot",
+      "daniloneto"
+    ],
+    "c++": [
+      "marcelo-dias",
+      "marcelo-dias-fall",
+      "marcelo-dias-skylake"
+    ],
+    "crystal": [
+      "luucaspole-crystal"
+    ],
+    "dart": [
+      "rodrigocaldeira-dart",
+      "railson-ferreira-dart"
+    ],
+    "elixir": [
+      "ogabriel-elixir-alt",
+      "oliveigah",
+      "ogabriel-elixir"
+    ],
+    "fsharp": [
+      "vhogemann"
+    ],
+    "gleam": [
+      "pedro-correa-gleam"
+    ],
+    "go": [
+      "josineyjr-go-3",
+      "josineyjr-go-5",
+      "josineyjr-go-4"
+    ],
+    "haskell": [
+      "leandroalves-haskell"
+    ],
+    "java": [
+      "Maxel-Uds-quarkus",
+      "lecosas-java-spring-graalvm-4",
+      "lecosas-java-spring-graalvm-3-limited-worker"
+    ],
+    "javascript": [
+      "ricassiocosta-node",
+      "willianmarquess-node",
+      "leonardosegfault-nodejs"
+    ],
+    "kotlin": [
+      "felipewaku",
+      "jjeanjacques10",
+      "alcides-e-antonio"
+    ],
+    "lean": [
+      "cleissonbarbosa-lean4"
+    ],
+    "lua": [
+      "cleissonbarbosa-lua",
+      "willianmarquess-lua-luvit"
+    ],
+    "nim": [
+      "cleissonbarbosa-nim"
+    ],
+    "ocaml": [
+      "krymancer"
+    ],
+    "pascal": [
+      "maico-smaniotto-objpas-pgsql",
+      "diogoloff-fpc",
+      "diogoloff-fpc-new"
+    ],
+    "php": [
+      "marcosmarcolin-php",
+      "arthur-isvi-php-swoole-v2",
+      "arthur-isvi-php-swoole"
+    ],
+    "python": [
+      "athayr-robyn-python",
+      "pedrohsb-python",
+      "passos-matheus-python-timeout-adaptivo"
+    ],
+    "ruby": [
+      "pru-async-v6",
+      "pru-async-v5",
+      "pru-async-v3"
+    ],
+    "rust": [
+      "alan-silva",
+      "lucas-hsm-rust-mio",
+      "jrblatt-rust-v2"
+    ],
+    "scala": [
+      "geazi-anc"
+    ],
+    "swift": [
+      "henriquevalcanaia-swift-vapor"
+    ],
+    "typescript": [
+      "mauricio-cantu-2",
+      "jrblatt-nodejs-v2",
+      "4emcos-bun"
+    ]
+  },
+  "top3_p99_liquido": [
+    "lucas-hsm-rust-mio",
+    "Maxel-Uds-quarkus",
+    "jrblatt-rust-v2"
+  ],
+  "top3_p99_per_language_liquido": {
+    "assembly": [
+      "tarcisiozf-asm",
+      "tarcisiozf-asm-2"
+    ],
+    "c": [
+      "rodrigoknol",
+      "thiagorigonatti-c",
+      "thiagorigonatti3-c"
+    ],
+    "c#": [
+      "libardi-dotnet-3",
+      "daniloneto",
+      "yanpitangui-dotnet-v3"
+    ],
+    "c++": [
+      "marcelo-dias",
+      "marcelo-dias-fall",
+      "marcelo-dias-skylake"
+    ],
+    "crystal": [
+      "luucaspole-crystal"
+    ],
+    "dart": [
+      "rodrigocaldeira-dart",
+      "railson-ferreira-dart"
+    ],
+    "elixir": [
+      "oliveigah",
+      "ogabriel-elixir",
+      "wellington-pacheco-ets"
+    ],
+    "go": [
+      "joyce-go-3",
+      "joyce-go",
+      "diofeher"
+    ],
+    "java": [
+      "Maxel-Uds-quarkus",
+      "lecosas-java-spring-graalvm-4",
+      "lecosas-java-spring-graalvm-5"
+    ],
+    "javascript": [
+      "ricassiocosta-node",
+      "willianmarquess-node",
+      "leonardosegfault-nodejs"
+    ],
+    "kotlin": [
+      "jjeanjacques10"
+    ],
+    "lean": [
+      "cleissonbarbosa-lean4"
+    ],
+    "lua": [
+      "cleissonbarbosa-lua",
+      "willianmarquess-lua-luvit"
+    ],
+    "nim": [
+      "cleissonbarbosa-nim"
+    ],
+    "pascal": [
+      "diogoloff-fpc",
+      "diogoloff-fpc-new",
+      "diogoloff-delphi-Indy"
+    ],
+    "php": [
+      "marcosmarcolin-php",
+      "arthur-isvi-php-swoole-v2",
+      "arthur-isvi-php-swoole"
+    ],
+    "python": [
+      "athayr-robyn-python",
+      "pedrohsb-python",
+      "passos-matheus-python-timeout-adaptivo"
+    ],
+    "ruby": [
+      "pru-async-v6",
+      "pru-async-v5",
+      "pru-async-v3"
+    ],
+    "rust": [
+      "lucas-hsm-rust-mio",
+      "jrblatt-rust-v2",
+      "jrblatt-rust-v1"
+    ],
+    "scala": [
+      "geazi-anc"
+    ],
+    "swift": [
+      "henriquevalcanaia-swift-vapor"
+    ],
+    "typescript": [
+      "jrblatt-nodejs-v2",
+      "4emcos-bun",
+      "jrblatt-nodejs-v1"
+    ]
+  },
+  "top3_participants_most_submissions": [
+    {
+      "name": "Leandro Cosas",
+      "submissions": [
+        "lecosas-java-spring",
+        "lecosas-java-spring-graalvm",
+        "lecosas-java-spring-graalvm-2",
+        "lecosas-java-spring-graalvm-3",
+        "lecosas-java-spring-graalvm-3-final",
+        "lecosas-java-spring-graalvm-3-limited-worker",
+        "lecosas-java-spring-graalvm-3-limited-worker-final",
+        "lecosas-java-spring-graalvm-4",
+        "lecosas-java-spring-graalvm-4-direct",
+        "lecosas-java-spring-graalvm-4-direct-final",
+        "lecosas-java-spring-graalvm-4-direct-sock",
+        "lecosas-java-spring-graalvm-5",
+        "lecosas-java-spring-graalvm-6"
+      ],
+      "github": "lecosas"
+    },
+    {
+      "name": "Renato Viço",
+      "submissions": [
+        "pru-async",
+        "pru-async-v2",
+        "pru-async-v3",
+        "pru-async-v4",
+        "pru-async-v5",
+        "pru-async-v6"
+      ],
+      "github": "renatovico"
+    },
+    {
+      "name": "Josiney Junior",
+      "submissions": [
+        "josineyjr-go-1",
+        "josineyjr-go-2",
+        "josineyjr-go-3",
+        "josineyjr-go-4",
+        "josineyjr-go-5"
+      ],
+      "github": "JosineyJr"
+    }
+  ]
+}

@@ -1,0 +1,2557 @@
+{
+  "$hell-c#": {
+    "first_commit": "2025-08-13T14:01:24-03:00",
+    "last_commit": "2025-08-15T10:07:14-03:00",
+    "commits_count": 8
+  },
+  "100f-java-1": {
+    "first_commit": "2025-08-17T16:47:02-03:00",
+    "last_commit": "2025-08-17T23:28:03-03:00",
+    "commits_count": 2
+  },
+  "4emcos-bun": {
+    "first_commit": "2025-08-08T00:42:40-03:00",
+    "last_commit": "2025-08-16T23:41:18-03:00",
+    "commits_count": 35
+  },
+  "4emcos-bun-lb": {
+    "first_commit": "2025-08-13T13:00:50-03:00",
+    "last_commit": "2025-08-16T23:41:18-03:00",
+    "commits_count": 9
+  },
+  "4emcos-bun-lb-fb": {
+    "first_commit": "2025-08-16T21:35:23-03:00",
+    "last_commit": "2025-08-16T23:41:18-03:00",
+    "commits_count": 2
+  },
+  "4emcos-golang": {
+    "first_commit": "2025-07-29T09:37:06-03:00",
+    "last_commit": "2025-08-16T21:35:23-03:00",
+    "commits_count": 28
+  },
+  "abel-golang": {
+    "first_commit": "2025-08-12T12:14:44-03:00",
+    "last_commit": "2025-08-12T15:27:42-03:00",
+    "commits_count": 3
+  },
+  "adaopedro-php-reactphp-v1": {
+    "first_commit": "2025-08-18T03:40:32+01:00",
+    "last_commit": "2025-08-18T03:40:32+01:00",
+    "commits_count": 1
+  },
+  "adriano-moreira": {
+    "first_commit": "2025-07-22T23:53:34-03:00",
+    "last_commit": "2025-08-16T16:01:29-03:00",
+    "commits_count": 11
+  },
+  "adrianosilva-go": {
+    "first_commit": "2025-07-21T14:21:33-03:00",
+    "last_commit": "2025-08-12T15:27:42-03:00",
+    "commits_count": 30
+  },
+  "adryan1928-fastapi": {
+    "first_commit": "2025-08-17T15:13:17-03:00",
+    "last_commit": "2025-08-17T23:31:57-03:00",
+    "commits_count": 2
+  },
+  "alanlviana-dotnet-v1": {
+    "first_commit": "2025-08-02T11:11:58-03:00",
+    "last_commit": "2025-08-12T15:27:42-03:00",
+    "commits_count": 6
+  },
+  "alan-silva": {
+    "first_commit": "2025-07-22T23:54:16-03:00",
+    "last_commit": "2025-08-16T17:34:38-03:00",
+    "commits_count": 65
+  },
+  "alansouls-dotnet-aot": {
+    "first_commit": "2025-08-15T13:40:45+01:00",
+    "last_commit": "2025-08-16T00:19:07+01:00",
+    "commits_count": 6
+  },
+  "alcides-e-antonio": {
+    "first_commit": "2025-08-17T17:33:37-03:00",
+    "last_commit": "2025-08-17T23:38:24-03:00",
+    "commits_count": 3
+  },
+  "alexroza-rs": {
+    "first_commit": "2025-07-14T14:20:09-03:00",
+    "last_commit": "2025-08-12T15:27:42-03:00",
+    "commits_count": 13
+  },
+  "alvesa": {
+    "first_commit": "2025-08-17T09:51:20+01:00",
+    "last_commit": "2025-08-17T09:51:20+01:00",
+    "commits_count": 1
+  },
+  "alvesluc-node": {
+    "first_commit": "2025-07-26T22:18:09-03:00",
+    "last_commit": "2025-08-12T15:27:42-03:00",
+    "commits_count": 11
+  },
+  "andersongomes001": {
+    "first_commit": "2025-07-17T22:01:54-03:00",
+    "last_commit": "2025-08-17T13:54:56-03:00",
+    "commits_count": 22
+  },
+  "andersongomes001-go": {
+    "first_commit": "2025-07-24T22:31:03-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "andersonhqds-node": {
+    "first_commit": "2025-07-31T05:45:06-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 10
+  },
+  "andre-lucas-quarkus": {
+    "first_commit": "2025-08-04T22:08:03+01:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 6
+  },
+  "andre-nicoletti": {
+    "first_commit": "2025-07-21T09:44:56-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 6
+  },
+  "anibalferreira-rust": {
+    "first_commit": "2025-07-16T19:29:53-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 12
+  },
+  "anibalferreira-rust-2": {
+    "first_commit": "2025-07-25T00:45:57-03:00",
+    "last_commit": "2025-08-12T14:12:21-03:00",
+    "commits_count": 6
+  },
+  "antooniodev-node": {
+    "first_commit": "2025-07-21T23:06:25-03:00",
+    "last_commit": "2025-08-16T00:14:46-03:00",
+    "commits_count": 11
+  },
+  "apelisser-v1.2.0": {
+    "first_commit": "2025-08-10T15:00:45-03:00",
+    "last_commit": "2025-08-16T04:18:32-03:00",
+    "commits_count": 15
+  },
+  "apelisser-v1.3.x": {
+    "first_commit": "2025-08-16T04:22:13-03:00",
+    "last_commit": "2025-08-16T18:23:29-03:00",
+    "commits_count": 6
+  },
+  "arthurandrade": {
+    "first_commit": "2025-08-17T23:52:54-03:00",
+    "last_commit": "2025-08-17T23:52:54-03:00",
+    "commits_count": 1
+  },
+  "arthurbpf-bun": {
+    "first_commit": "2025-08-17T23:39:59-03:00",
+    "last_commit": "2025-08-17T23:39:59-03:00",
+    "commits_count": 1
+  },
+  "arthur-isvi-php-hyperf-nano": {
+    "first_commit": "2025-08-12T18:32:35-03:00",
+    "last_commit": "2025-08-12T18:32:35-03:00",
+    "commits_count": 1
+  },
+  "arthur-isvi-php-swoole": {
+    "first_commit": "2025-08-12T18:22:22-03:00",
+    "last_commit": "2025-08-17T23:46:59-03:00",
+    "commits_count": 3
+  },
+  "arthur-isvi-php-swoole-v2": {
+    "first_commit": "2025-08-17T23:46:59-03:00",
+    "last_commit": "2025-08-17T23:46:59-03:00",
+    "commits_count": 1
+  },
+  "arthur-queiroz-golang": {
+    "first_commit": "2025-08-11T22:47:02-03:00",
+    "last_commit": "2025-08-17T16:12:44-03:00",
+    "commits_count": 3
+  },
+  "arthur-r-oliveira": {
+    "first_commit": "2025-08-02T02:24:31+01:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "arthur-seus-1.0.0": {
+    "first_commit": "2025-07-29T23:48:29-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 8
+  },
+  "artschur": {
+    "first_commit": "2025-07-16T12:11:53-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 21
+  },
+  "asfernandes-boost-lmdb": {
+    "first_commit": "2025-08-10T13:29:44-03:00",
+    "last_commit": "2025-08-17T23:37:31-03:00",
+    "commits_count": 9
+  },
+  "asfernandes-drogon-lmdb": {
+    "first_commit": "2025-08-17T23:37:07-03:00",
+    "last_commit": "2025-08-17T23:37:07-03:00",
+    "commits_count": 1
+  },
+  "asfernandes-haproxy-mongoose-lmdb": {
+    "first_commit": "2025-07-20T21:16:39-03:00",
+    "last_commit": "2025-08-17T23:37:31-03:00",
+    "commits_count": 8
+  },
+  "athayr-robyn-python": {
+    "first_commit": "2025-07-28T11:07:58-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 4
+  },
+  "augustoc100-ruby": {
+    "first_commit": "2025-08-17T02:54:26Z",
+    "last_commit": "2025-08-17T23:33:35-03:00",
+    "commits_count": 2
+  },
+  "ba7s-full-rs": {
+    "first_commit": "2025-08-15T17:30:12-03:00",
+    "last_commit": "2025-08-17T23:32:41-03:00",
+    "commits_count": 2
+  },
+  "ba7s-rs": {
+    "first_commit": "2025-08-14T14:54:25-03:00",
+    "last_commit": "2025-08-14T14:54:25-03:00",
+    "commits_count": 1
+  },
+  "bine-rinha-backend-golang": {
+    "first_commit": "2025-07-15T19:16:15-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 7
+  },
+  "bine-rinha-backend-react-php": {
+    "first_commit": "2025-07-14T21:19:28-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 7
+  },
+  "boaglio-player456": {
+    "first_commit": "2025-07-24T01:31:36-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 11
+  },
+  "brecabral-go": {
+    "first_commit": "2025-08-12T18:05:48-03:00",
+    "last_commit": "2025-08-12T18:05:48-03:00",
+    "commits_count": 1
+  },
+  "breno5g": {
+    "first_commit": "2025-07-29T09:33:48-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 3
+  },
+  "brinobruno-elixir": {
+    "first_commit": "2025-08-14T20:31:09-03:00",
+    "last_commit": "2025-08-15T18:38:35-03:00",
+    "commits_count": 3
+  },
+  "bruno-inacio-dotnet": {
+    "first_commit": "2025-08-17T02:06:57-03:00",
+    "last_commit": "2025-08-17T16:01:34-03:00",
+    "commits_count": 3
+  },
+  "brunokiau-jvm": {
+    "first_commit": "2025-08-13T03:38:38-03:00",
+    "last_commit": "2025-08-13T03:38:38-03:00",
+    "commits_count": 1
+  },
+  "brunosilvadev": {
+    "first_commit": "2025-08-01T16:31:16-05:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 3
+  },
+  "caio-caminha-kotlin": {
+    "first_commit": "2025-08-17T23:38:06-03:00",
+    "last_commit": "2025-08-17T23:38:06-03:00",
+    "commits_count": 1
+  },
+  "caiodgallo-go": {
+    "first_commit": "2025-08-01T11:13:09-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 9
+  },
+  "caiqueborges-quarkus": {
+    "first_commit": "2025-08-07T22:08:39-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "camilo-coelho-spring": {
+    "first_commit": "2025-08-09T11:48:06-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 3
+  },
+  "carlos-demarco": {
+    "first_commit": "2025-08-03T18:28:26-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "carlosqsilva-go": {
+    "first_commit": "2025-08-03T13:31:09-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "cavalcanteyury": {
+    "first_commit": "2025-08-12T01:43:13-03:00",
+    "last_commit": "2025-08-12T18:48:49-03:00",
+    "commits_count": 5
+  },
+  "ccs1201-04-java-puro": {
+    "first_commit": "2025-07-31T01:05:56-03:00",
+    "last_commit": "2025-08-17T12:50:27-03:00",
+    "commits_count": 18
+  },
+  "ccs1201-06-native-pgo": {
+    "first_commit": "2025-08-07T22:38:41-03:00",
+    "last_commit": "2025-08-17T12:50:27-03:00",
+    "commits_count": 8
+  },
+  "cgb-go-v1": {
+    "first_commit": "2025-07-23T22:03:46-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 6
+  },
+  "cgb-go-v2": {
+    "first_commit": "2025-07-27T00:40:31-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 4
+  },
+  "chriscorrales": {
+    "first_commit": "2025-08-13T06:32:41-03:00",
+    "last_commit": "2025-08-13T06:48:27-03:00",
+    "commits_count": 3
+  },
+  "christian-rust": {
+    "first_commit": "2025-08-17T23:17:06-03:00",
+    "last_commit": "2025-08-17T23:17:06-03:00",
+    "commits_count": 1
+  },
+  "chrisx": {
+    "first_commit": "2025-07-31T17:58:26+02:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 3
+  },
+  "cleissonbarbosa-lean4": {
+    "first_commit": "2025-08-17T11:57:49-03:00",
+    "last_commit": "2025-08-17T23:30:56-03:00",
+    "commits_count": 7
+  },
+  "cleissonbarbosa-lua": {
+    "first_commit": "2025-08-14T20:14:15-03:00",
+    "last_commit": "2025-08-17T01:41:16-03:00",
+    "commits_count": 16
+  },
+  "cleissonbarbosa-nim": {
+    "first_commit": "2025-08-17T23:30:56-03:00",
+    "last_commit": "2025-08-17T23:30:56-03:00",
+    "commits_count": 1
+  },
+  "codevsk-go-1": {
+    "first_commit": "2025-07-27T04:05:51-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 6
+  },
+  "craytee": {
+    "first_commit": "2025-08-16T21:50:38-03:00",
+    "last_commit": "2025-08-16T21:50:38-03:00",
+    "commits_count": 1
+  },
+  "cristian-s-bun-go-1": {
+    "first_commit": "2025-07-27T00:53:12-03:00",
+    "last_commit": "2025-08-15T11:02:57-03:00",
+    "commits_count": 8
+  },
+  "cristian-s-node-1": {
+    "first_commit": "2025-08-13T22:56:59-03:00",
+    "last_commit": "2025-08-17T02:41:53-03:00",
+    "commits_count": 26
+  },
+  "cristian-s-node-2-http": {
+    "first_commit": "2025-08-16T19:19:57-03:00",
+    "last_commit": "2025-08-17T10:58:28-03:00",
+    "commits_count": 6
+  },
+  "cristian-s-node-3-http-2": {
+    "first_commit": "2025-08-17T02:20:00-03:00",
+    "last_commit": "2025-08-17T10:58:28-03:00",
+    "commits_count": 3
+  },
+  "d4vz": {
+    "first_commit": "2025-07-09T16:04:25-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 12
+  },
+  "danielsuhett-golang": {
+    "first_commit": "2025-07-29T09:34:47-03:00",
+    "last_commit": "2025-08-16T13:36:28-03:00",
+    "commits_count": 44
+  },
+  "danielsuhett-golang-2": {
+    "first_commit": "2025-08-09T12:34:51-03:00",
+    "last_commit": "2025-08-16T18:57:57-03:00",
+    "commits_count": 17
+  },
+  "danielwisky": {
+    "first_commit": "2025-07-27T00:40:31-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 4
+  },
+  "daniilha-php": {
+    "first_commit": "2025-07-27T18:01:44-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 11
+  },
+  "daniloneto": {
+    "first_commit": "2025-07-29T09:41:38-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "daniloneto-0": {
+    "first_commit": "2025-08-02T07:40:25-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "daniloneto-2": {
+    "first_commit": "2025-08-02T07:40:25-03:00",
+    "last_commit": "2025-08-12T14:12:21-03:00",
+    "commits_count": 3
+  },
+  "daniloneto-3": {
+    "first_commit": "2025-08-02T07:40:25-03:00",
+    "last_commit": "2025-08-12T14:12:21-03:00",
+    "commits_count": 3
+  },
+  "danilosantana-dotnet": {
+    "first_commit": "2025-07-18T02:19:35Z",
+    "last_commit": "2025-08-16T19:19:35Z",
+    "commits_count": 15
+  },
+  "davi64lima-bun": {
+    "first_commit": "2025-08-06T07:19:41-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 6
+  },
+  "davidalecrim1-go-1": {
+    "first_commit": "2025-07-13T17:55:36-03:00",
+    "last_commit": "2025-08-17T10:34:52-03:00",
+    "commits_count": 14
+  },
+  "davidalecrim1-go-2": {
+    "first_commit": "2025-07-13T17:55:36-03:00",
+    "last_commit": "2025-08-17T23:28:39-03:00",
+    "commits_count": 15
+  },
+  "davidalecrim1-go-3": {
+    "first_commit": "2025-07-28T09:50:53-03:00",
+    "last_commit": "2025-08-17T10:58:06-03:00",
+    "commits_count": 9
+  },
+  "davidalecrim1-go-4": {
+    "first_commit": "2025-08-09T08:24:21-03:00",
+    "last_commit": "2025-08-17T10:58:06-03:00",
+    "commits_count": 11
+  },
+  "davidalecrim1-go-5": {
+    "first_commit": "2025-08-11T14:47:23-03:00",
+    "last_commit": "2025-08-17T10:58:06-03:00",
+    "commits_count": 7
+  },
+  "davidalecrim1-go-6": {
+    "first_commit": "2025-08-13T09:56:18-03:00",
+    "last_commit": "2025-08-17T10:58:06-03:00",
+    "commits_count": 2
+  },
+  "davidbeyda-go": {
+    "first_commit": "2025-08-17T23:47:58-03:00",
+    "last_commit": "2025-08-17T23:47:58-03:00",
+    "commits_count": 1
+  },
+  "david-delta-sierra-go": {
+    "first_commit": "2025-07-25T23:43:09-03:00",
+    "last_commit": "2025-08-17T18:48:53-03:00",
+    "commits_count": 93
+  },
+  "davigga-node": {
+    "first_commit": "2025-07-14T22:05:00-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 11
+  },
+  "davigga-node-2": {
+    "first_commit": "2025-07-19T23:13:03-03:00",
+    "last_commit": "2025-08-12T14:12:21-03:00",
+    "commits_count": 7
+  },
+  "dbiagi": {
+    "first_commit": "2025-07-25T00:26:42-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 8
+  },
+  "dearrudam_java_01": {
+    "first_commit": "2025-08-17T03:42:22-03:00",
+    "last_commit": "2025-08-17T13:51:55-03:00",
+    "commits_count": 3
+  },
+  "dearrudam_java_02": {
+    "first_commit": "2025-08-17T23:48:49-03:00",
+    "last_commit": "2025-08-17T23:48:49-03:00",
+    "commits_count": 1
+  },
+  "dearrudam_java_03": {
+    "first_commit": "2025-08-17T23:19:40-03:00",
+    "last_commit": "2025-08-17T23:19:40-03:00",
+    "commits_count": 1
+  },
+  "developerarthur": {
+    "first_commit": "2025-08-07T18:38:41-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "diegodario-go": {
+    "first_commit": "2025-07-23T18:30:22-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "dinossauro": {
+    "first_commit": "2025-08-16T23:16:35-03:00",
+    "last_commit": "2025-08-17T23:34:19-03:00",
+    "commits_count": 2
+  },
+  "diofeher": {
+    "first_commit": "2025-07-27T15:26:39-03:00",
+    "last_commit": "2025-08-17T01:12:55-03:00",
+    "commits_count": 24
+  },
+  "diofeher-full-custom": {
+    "first_commit": "2025-08-07T01:39:44-03:00",
+    "last_commit": "2025-08-15T21:10:39-03:00",
+    "commits_count": 5
+  },
+  "diogoloff-delphi": {
+    "first_commit": "2025-08-10T13:59:38-03:00",
+    "last_commit": "2025-08-17T13:16:21-03:00",
+    "commits_count": 15
+  },
+  "diogoloff-delphi-Indy": {
+    "first_commit": "2025-08-16T22:37:35-03:00",
+    "last_commit": "2025-08-17T13:16:21-03:00",
+    "commits_count": 4
+  },
+  "diogoloff-delphi-Indy-new": {
+    "first_commit": "2025-08-17T23:33:04-03:00",
+    "last_commit": "2025-08-17T23:33:04-03:00",
+    "commits_count": 1
+  },
+  "diogoloff-delphi-new": {
+    "first_commit": "2025-08-17T23:33:04-03:00",
+    "last_commit": "2025-08-17T23:33:04-03:00",
+    "commits_count": 1
+  },
+  "diogoloff-fpc": {
+    "first_commit": "2025-08-14T23:03:32-03:00",
+    "last_commit": "2025-08-17T12:53:47-03:00",
+    "commits_count": 3
+  },
+  "diogoloff-fpc-new": {
+    "first_commit": "2025-08-17T23:33:04-03:00",
+    "last_commit": "2025-08-17T23:33:04-03:00",
+    "commits_count": 1
+  },
+  "diogomassis-go": {
+    "first_commit": "2025-07-28T09:36:42-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 4
+  },
+  "djbrunomonteiro": {
+    "first_commit": "2025-07-30T01:05:46-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 6
+  },
+  "dnery": {
+    "first_commit": "2025-08-11T01:31:13-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 4
+  },
+  "dolphs": {
+    "first_commit": "2025-07-24T21:45:20-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 16
+  },
+  "dolphs-go": {
+    "first_commit": "2025-08-05T17:21:48-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 15
+  },
+  "dotnetRinha": {
+    "first_commit": "2025-07-11T23:47:39-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 8
+  },
+  "DouglasMorais-java": {
+    "first_commit": "2025-08-09T13:56:50-03:00",
+    "last_commit": "2025-08-16T23:43:29-03:00",
+    "commits_count": 11
+  },
+  "DouglasMorais-java-od": {
+    "first_commit": "2025-08-13T21:29:02-03:00",
+    "last_commit": "2025-08-16T23:43:29-03:00",
+    "commits_count": 7
+  },
+  "drope-dev-rinha-backend-node": {
+    "first_commit": "2025-08-03T23:34:37-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "edmar-sousa": {
+    "first_commit": "2025-08-12T01:04:53-03:00",
+    "last_commit": "2025-08-13T23:18:30-03:00",
+    "commits_count": 4
+  },
+  "eduardofp17-node": {
+    "first_commit": "2025-08-15T23:25:18-03:00",
+    "last_commit": "2025-08-16T19:50:40-03:00",
+    "commits_count": 6
+  },
+  "eduardompinto-ktor-1": {
+    "first_commit": "2025-08-17T04:01:20+02:00",
+    "last_commit": "2025-08-17T19:11:27+02:00",
+    "commits_count": 6
+  },
+  "el_yawd-crab": {
+    "first_commit": "2025-07-15T14:41:38-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 13
+  },
+  "emilemoraes-java": {
+    "first_commit": "2025-07-29T13:39:49+01:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 3
+  },
+  "emiliosheinz-go": {
+    "first_commit": "2025-07-15T10:31:29-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 24
+  },
+  "fabianoflorentino": {
+    "first_commit": "2025-08-03T20:32:31-03:00",
+    "last_commit": "2025-08-17T23:28:21-03:00",
+    "commits_count": 22
+  },
+  "fabianosl1": {
+    "first_commit": "2025-08-13T14:24:36-03:00",
+    "last_commit": "2025-08-13T14:36:05-03:00",
+    "commits_count": 2
+  },
+  "fabricio-rocha-quarkus": {
+    "first_commit": "2025-07-29T23:47:23-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 4
+  },
+  "fbafica-go-1": {
+    "first_commit": "2025-08-16T10:28:50-03:00",
+    "last_commit": "2025-08-16T10:28:50-03:00",
+    "commits_count": 1
+  },
+  "felipeamorim-rust": {
+    "first_commit": "2025-08-01T00:48:12-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "felipefrmelo-rust": {
+    "first_commit": "2025-07-25T13:43:05-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 7
+  },
+  "felipemcassiano": {
+    "first_commit": "2025-07-19T12:51:39-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 6
+  },
+  "felipeschirmann": {
+    "first_commit": "2025-07-22T18:35:19-03:00",
+    "last_commit": "2025-08-14T17:52:16-03:00",
+    "commits_count": 41
+  },
+  "felipewaku": {
+    "first_commit": "2025-08-03T21:37:31-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 4
+  },
+  "fernandooliveirapimenta-java-01": {
+    "first_commit": "2025-08-10T13:23:55-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "feykke-quarkus": {
+    "first_commit": "2025-08-17T00:55:33-03:00",
+    "last_commit": "2025-08-17T17:25:28-03:00",
+    "commits_count": 7
+  },
+  "fhgm-dani-ed": {
+    "first_commit": "2025-07-21T09:12:13-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 12
+  },
+  "flads-go": {
+    "first_commit": "2025-08-04T02:02:06-03:00",
+    "last_commit": "2025-08-17T15:56:42-03:00",
+    "commits_count": 13
+  },
+  "francoggm-go": {
+    "first_commit": "2025-07-24T00:21:52-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 10
+  },
+  "franklaercio": {
+    "first_commit": "2025-07-31T05:51:05-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 11
+  },
+  "fuerback-miguel-go": {
+    "first_commit": "2025-08-07T08:23:47-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "g4brielV-java1": {
+    "first_commit": "2025-08-08T18:33:24-03:00",
+    "last_commit": "2025-08-14T19:47:23-03:00",
+    "commits_count": 12
+  },
+  "gabriel-crispim": {
+    "first_commit": "2025-08-18T03:20:32+01:00",
+    "last_commit": "2025-08-18T03:20:32+01:00",
+    "commits_count": 1
+  },
+  "gabrieleiro": {
+    "first_commit": "2025-07-30T18:45:09-03:00",
+    "last_commit": "2025-08-15T13:48:09-03:00",
+    "commits_count": 25
+  },
+  "Gabriel-Golang": {
+    "first_commit": "2025-08-17T16:29:41-03:00",
+    "last_commit": "2025-08-17T16:29:41-03:00",
+    "commits_count": 1
+  },
+  "gabriell915-bun-hono-01": {
+    "first_commit": "2025-07-29T23:47:55-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 6
+  },
+  "gabrielluciano-quarkus": {
+    "first_commit": "2025-08-16T18:25:05-03:00",
+    "last_commit": "2025-08-16T20:04:19-03:00",
+    "commits_count": 4
+  },
+  "gabrielluizsf-go": {
+    "first_commit": "2025-08-06T15:49:39-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "gabriel-nardelli-perl-mojolicious": {
+    "first_commit": "2025-08-04T19:33:55-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "gabxdev-java-1": {
+    "first_commit": "2025-07-16T21:23:16-03:00",
+    "last_commit": "2025-08-17T14:38:42-03:00",
+    "commits_count": 58
+  },
+  "gabxdev-java-2": {
+    "first_commit": "2025-07-22T15:10:23-03:00",
+    "last_commit": "2025-08-17T15:00:48-03:00",
+    "commits_count": 41
+  },
+  "gabxdev-java-3": {
+    "first_commit": "2025-07-26T21:50:45-03:00",
+    "last_commit": "2025-08-17T14:38:42-03:00",
+    "commits_count": 21
+  },
+  "gaoliveira21": {
+    "first_commit": "2025-07-13T20:46:11-03:00",
+    "last_commit": "2025-08-17T15:52:40-03:00",
+    "commits_count": 16
+  },
+  "gdx64-rs-sqlite": {
+    "first_commit": "2025-07-27T19:15:57-03:00",
+    "last_commit": "2025-08-16T21:48:37-03:00",
+    "commits_count": 11
+  },
+  "gdx64-rs-uds": {
+    "first_commit": "2025-08-17T16:37:46-03:00",
+    "last_commit": "2025-08-17T16:37:46-03:00",
+    "commits_count": 1
+  },
+  "geazi-anc": {
+    "first_commit": "2025-07-24T16:26:19-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 12
+  },
+  "gedun": {
+    "first_commit": "2025-07-30T16:24:03-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 4
+  },
+  "geffersonFerraz-go": {
+    "first_commit": "2025-07-27T11:39:34-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "gemersondenner": {
+    "first_commit": "2025-08-17T23:56:33-03:00",
+    "last_commit": "2025-08-17T23:56:33-03:00",
+    "commits_count": 1
+  },
+  "githiago-f": {
+    "first_commit": "2025-08-03T19:04:13-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 12
+  },
+  "gldmelo-cs": {
+    "first_commit": "2025-08-11T20:16:14-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "goulart12-dotnet": {
+    "first_commit": "2025-08-16T16:24:37-03:00",
+    "last_commit": "2025-08-16T16:24:37-03:00",
+    "commits_count": 1
+  },
+  "gtiburcio-go": {
+    "first_commit": "2025-07-19T16:18:27-03:00",
+    "last_commit": "2025-08-17T10:56:48-03:00",
+    "commits_count": 21
+  },
+  "gui9394": {
+    "first_commit": "2025-08-17T23:58:41-03:00",
+    "last_commit": "2025-08-17T23:58:41-03:00",
+    "commits_count": 1
+  },
+  "gui-anacleto-python-0001": {
+    "first_commit": "2025-08-14T00:51:57-03:00",
+    "last_commit": "2025-08-16T16:59:20-03:00",
+    "commits_count": 9
+  },
+  "guidugaich-node": {
+    "first_commit": "2025-07-23T19:27:16-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 7
+  },
+  "guilhermegules-payflow-node": {
+    "first_commit": "2025-07-22T20:26:07-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 9
+  },
+  "guilhermesouza-nodejs": {
+    "first_commit": "2025-07-27T22:25:39-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 9
+  },
+  "guim-ruby": {
+    "first_commit": "2025-08-17T23:51:45-03:00",
+    "last_commit": "2025-08-17T23:51:45-03:00",
+    "commits_count": 1
+  },
+  "guisandroni-bun": {
+    "first_commit": "2025-08-17T23:17:54-03:00",
+    "last_commit": "2025-08-17T23:17:54-03:00",
+    "commits_count": 1
+  },
+  "gupers": {
+    "first_commit": "2025-08-13T19:21:30-03:00",
+    "last_commit": "2025-08-14T23:45:28-03:00",
+    "commits_count": 6
+  },
+  "gupers-v2": {
+    "first_commit": "2025-08-17T15:39:17-03:00",
+    "last_commit": "2025-08-17T23:58:03-03:00",
+    "commits_count": 3
+  },
+  "gu-silva-oliveira-01": {
+    "first_commit": "2025-08-17T14:15:23-03:00",
+    "last_commit": "2025-08-17T14:17:19-03:00",
+    "commits_count": 2
+  },
+  "gu-silva-oliveira-02": {
+    "first_commit": "2025-08-17T23:31:32-03:00",
+    "last_commit": "2025-08-17T23:31:32-03:00",
+    "commits_count": 1
+  },
+  "gustavo-bortoli": {
+    "first_commit": "2025-08-17T23:45:45-03:00",
+    "last_commit": "2025-08-17T23:45:45-03:00",
+    "commits_count": 1
+  },
+  "gustavocesario-ktor": {
+    "first_commit": "2025-08-10T19:17:56-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 3
+  },
+  "gustavo-miranda": {
+    "first_commit": "2025-07-30T21:09:23-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 9
+  },
+  "gustavo-paes-kotlin": {
+    "first_commit": "2025-08-17T02:08:18-03:00",
+    "last_commit": "2025-08-17T23:29:04-03:00",
+    "commits_count": 5
+  },
+  "gustavotbett-java": {
+    "first_commit": "2025-08-02T23:03:05-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 9
+  },
+  "hamilton-golang-erly": {
+    "first_commit": "2025-08-13T07:22:43-03:00",
+    "last_commit": "2025-08-13T21:02:34-03:00",
+    "commits_count": 6
+  },
+  "hamilton-golang-escovando-bits": {
+    "first_commit": "2025-08-13T23:43:25-03:00",
+    "last_commit": "2025-08-17T00:21:04-03:00",
+    "commits_count": 62
+  },
+  "hamilton-golang-escovando-bytes-haproxy": {
+    "first_commit": "2025-08-17T09:33:47-03:00",
+    "last_commit": "2025-08-17T14:57:30-03:00",
+    "commits_count": 10
+  },
+  "hamilton-golang-escovando-bytes-nginx": {
+    "first_commit": "2025-08-17T09:33:47-03:00",
+    "last_commit": "2025-08-17T14:57:30-03:00",
+    "commits_count": 10
+  },
+  "hamilton-golang-redis": {
+    "first_commit": "2025-08-02T12:50:26-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 18
+  },
+  "henriqueramos13-node": {
+    "first_commit": "2025-07-13T16:11:22+01:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 12
+  },
+  "henriquevalcanaia-swift-vapor": {
+    "first_commit": "2025-07-14T14:09:52+02:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 15
+  },
+  "hfurlan-java-v1": {
+    "first_commit": "2025-08-10T17:31:27-03:00",
+    "last_commit": "2025-08-17T23:38:56-03:00",
+    "commits_count": 8
+  },
+  "hoffmano": {
+    "first_commit": "2025-07-28T11:46:22-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 7
+  },
+  "IgorFVicente": {
+    "first_commit": "2025-08-14T00:45:32-03:00",
+    "last_commit": "2025-08-14T10:06:59-03:00",
+    "commits_count": 4
+  },
+  "igor-gregori-bun-v1": {
+    "first_commit": "2025-08-01T23:43:38-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 3
+  },
+  "igor-gregori-bun-v2": {
+    "first_commit": "2025-08-08T23:13:51-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 3
+  },
+  "igor-lucas-csharp": {
+    "first_commit": "2025-08-15T15:26:08-03:00",
+    "last_commit": "2025-08-17T23:26:14-03:00",
+    "commits_count": 7
+  },
+  "igor-lucas-csharp2": {
+    "first_commit": "2025-08-17T00:51:38-03:00",
+    "last_commit": "2025-08-17T23:26:14-03:00",
+    "commits_count": 4
+  },
+  "igormsoares": {
+    "first_commit": "2025-08-17T23:55:30-03:00",
+    "last_commit": "2025-08-17T23:55:30-03:00",
+    "commits_count": 1
+  },
+  "igortxra": {
+    "first_commit": "2025-08-17T13:32:42-03:00",
+    "last_commit": "2025-08-17T15:27:43-03:00",
+    "commits_count": 3
+  },
+  "jacarerj-csharp": {
+    "first_commit": "2025-08-17T23:55:53-03:00",
+    "last_commit": "2025-08-17T23:55:53-03:00",
+    "commits_count": 1
+  },
+  "jairoandre": {
+    "first_commit": "2025-07-18T21:07:39-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 9
+  },
+  "jairoandre-go-v2": {
+    "first_commit": "2025-07-20T23:36:40-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 9
+  },
+  "jairoandre-kotlin": {
+    "first_commit": "2025-08-01T12:28:53-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 3
+  },
+  "jaofreire-e-isaias-dotnet": {
+    "first_commit": "2025-08-10T15:05:31-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 4
+  },
+  "jccl": {
+    "first_commit": "2025-07-12T22:06:57-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 12
+  },
+  "jeffersonaguiar-nodejs": {
+    "first_commit": "2025-08-07T15:44:28-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "jeifersonalmeida-stage-1": {
+    "first_commit": "2025-08-10T23:47:11+02:00",
+    "last_commit": "2025-08-17T03:28:25+02:00",
+    "commits_count": 18
+  },
+  "jeifersonalmeida-stage-2": {
+    "first_commit": "2025-08-17T02:27:47+02:00",
+    "last_commit": "2025-08-17T04:22:44+02:00",
+    "commits_count": 4
+  },
+  "jessicanathany-dotnet": {
+    "first_commit": "2025-08-17T18:35:44-03:00",
+    "last_commit": "2025-08-17T19:13:44-03:00",
+    "commits_count": 2
+  },
+  "jjeanjacques10": {
+    "first_commit": "2025-07-27T20:36:58-03:00",
+    "last_commit": "2025-08-17T23:53:18-03:00",
+    "commits_count": 19
+  },
+  "joao-bittencourt-php": {
+    "first_commit": "2025-07-20T17:19:00-03:00",
+    "last_commit": "2025-08-17T23:44:46-03:00",
+    "commits_count": 13
+  },
+  "joao-bittencourt-php-redis": {
+    "first_commit": "2025-08-16T17:38:43-03:00",
+    "last_commit": "2025-08-16T17:38:43-03:00",
+    "commits_count": 1
+  },
+  "joaocrleite-go-1": {
+    "first_commit": "2025-08-17T14:15:33-03:00",
+    "last_commit": "2025-08-17T14:19:17-03:00",
+    "commits_count": 2
+  },
+  "joaocrulhas-nestjs-ts": {
+    "first_commit": "2025-07-15T10:08:34+02:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 11
+  },
+  "joaofsilva-php-swoole": {
+    "first_commit": "2025-08-17T11:28:49-03:00",
+    "last_commit": "2025-08-17T11:35:21-03:00",
+    "commits_count": 2
+  },
+  "joaoprado-java-spring": {
+    "first_commit": "2025-08-13T02:04:13-03:00",
+    "last_commit": "2025-08-13T02:05:12-03:00",
+    "commits_count": 2
+  },
+  "joaoprocopio": {
+    "first_commit": "2025-07-29T09:32:56-03:00",
+    "last_commit": "2025-08-16T12:00:37-03:00",
+    "commits_count": 9
+  },
+  "joaoreisa-go": {
+    "first_commit": "2025-07-11T14:54:05-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 11
+  },
+  "joaoulian": {
+    "first_commit": "2025-08-06T11:30:54-03:00",
+    "last_commit": "2025-08-13T14:21:52-03:00",
+    "commits_count": 25
+  },
+  "joao-vitor-node": {
+    "first_commit": "2025-08-16T13:54:58-03:00",
+    "last_commit": "2025-08-16T18:53:24-03:00",
+    "commits_count": 2
+  },
+  "joao-xavier": {
+    "first_commit": "2025-07-26T21:10:43-03:00",
+    "last_commit": "2025-08-13T12:15:18-03:00",
+    "commits_count": 45
+  },
+  "joaoxyz-typescript-bun": {
+    "first_commit": "2025-08-17T18:05:31-03:00",
+    "last_commit": "2025-08-17T18:05:31-03:00",
+    "commits_count": 1
+  },
+  "joelgarciajr84-go": {
+    "first_commit": "2025-07-13T20:15:44-03:00",
+    "last_commit": "2025-08-13T20:30:31-03:00",
+    "commits_count": 37
+  },
+  "joney-sousa-pereira": {
+    "first_commit": "2025-08-12T19:49:52-03:00",
+    "last_commit": "2025-08-13T19:25:13-03:00",
+    "commits_count": 2
+  },
+  "jonhkr": {
+    "first_commit": "2025-07-26T23:41:48-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 13
+  },
+  "joojf-rust": {
+    "first_commit": "2025-08-11T19:07:54-03:00",
+    "last_commit": "2025-08-17T14:28:27-03:00",
+    "commits_count": 9
+  },
+  "jorge-java": {
+    "first_commit": "2025-08-07T20:15:46-03:00",
+    "last_commit": "2025-08-17T02:39:50-03:00",
+    "commits_count": 53
+  },
+  "jorge-java-2": {
+    "first_commit": "2025-08-16T20:15:00-03:00",
+    "last_commit": "2025-08-17T02:39:50-03:00",
+    "commits_count": 2
+  },
+  "josafaverissimo-java-01": {
+    "first_commit": "2025-07-19T15:58:47-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 8
+  },
+  "joseeduardo-node": {
+    "first_commit": "2025-08-17T22:53:56-04:00",
+    "last_commit": "2025-08-17T22:53:56-04:00",
+    "commits_count": 1
+  },
+  "josehelioaraujo": {
+    "first_commit": "2025-08-13T21:25:03-03:00",
+    "last_commit": "2025-08-13T21:25:03-03:00",
+    "commits_count": 1
+  },
+  "josehelioaraujo-v2": {
+    "first_commit": "2025-08-17T23:58:23-03:00",
+    "last_commit": "2025-08-17T23:58:23-03:00",
+    "commits_count": 1
+  },
+  "josimar-silva": {
+    "first_commit": "2025-08-07T22:21:23+02:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "josineyjr-go-1": {
+    "first_commit": "2025-07-15T16:48:45-03:00",
+    "last_commit": "2025-08-16T17:43:53-03:00",
+    "commits_count": 48
+  },
+  "josineyjr-go-2": {
+    "first_commit": "2025-07-29T09:35:01-03:00",
+    "last_commit": "2025-08-16T17:43:53-03:00",
+    "commits_count": 37
+  },
+  "josineyjr-go-3": {
+    "first_commit": "2025-07-31T21:52:10-03:00",
+    "last_commit": "2025-08-16T17:43:53-03:00",
+    "commits_count": 20
+  },
+  "josineyjr-go-4": {
+    "first_commit": "2025-08-08T00:07:57-03:00",
+    "last_commit": "2025-08-16T17:43:53-03:00",
+    "commits_count": 11
+  },
+  "josineyjr-go-5": {
+    "first_commit": "2025-08-12T12:44:13-03:00",
+    "last_commit": "2025-08-16T17:43:53-03:00",
+    "commits_count": 4
+  },
+  "jotaviobiondo-elixir": {
+    "first_commit": "2025-08-17T23:57:17-03:00",
+    "last_commit": "2025-08-17T23:57:17-03:00",
+    "commits_count": 1
+  },
+  "joyce-go": {
+    "first_commit": "2025-08-07T16:30:55-03:00",
+    "last_commit": "2025-08-17T14:12:24-03:00",
+    "commits_count": 16
+  },
+  "joyce-go-2": {
+    "first_commit": "2025-08-17T14:12:24-03:00",
+    "last_commit": "2025-08-17T14:12:24-03:00",
+    "commits_count": 1
+  },
+  "joyce-go-3": {
+    "first_commit": "2025-08-17T14:12:24-03:00",
+    "last_commit": "2025-08-17T14:12:24-03:00",
+    "commits_count": 1
+  },
+  "joyce-go-4": {
+    "first_commit": "2025-08-17T14:12:24-03:00",
+    "last_commit": "2025-08-17T14:12:24-03:00",
+    "commits_count": 1
+  },
+  "joyce-go-5": {
+    "first_commit": "2025-08-17T14:12:24-03:00",
+    "last_commit": "2025-08-17T14:12:24-03:00",
+    "commits_count": 1
+  },
+  "jpgo": {
+    "first_commit": "2025-08-17T18:07:31-03:00",
+    "last_commit": "2025-08-17T23:49:33-03:00",
+    "commits_count": 3
+  },
+  "jrblatt-nodejs-v1": {
+    "first_commit": "2025-08-17T09:59:47-03:00",
+    "last_commit": "2025-08-17T09:59:47-03:00",
+    "commits_count": 1
+  },
+  "jrblatt-nodejs-v2": {
+    "first_commit": "2025-08-17T09:59:47-03:00",
+    "last_commit": "2025-08-17T09:59:47-03:00",
+    "commits_count": 1
+  },
+  "jrblatt-nodejs-v3": {
+    "first_commit": "2025-08-17T09:59:47-03:00",
+    "last_commit": "2025-08-17T09:59:47-03:00",
+    "commits_count": 1
+  },
+  "jrblatt-nodejs-v4": {
+    "first_commit": "2025-08-17T09:59:47-03:00",
+    "last_commit": "2025-08-17T09:59:47-03:00",
+    "commits_count": 1
+  },
+  "jrblatt-rust-v1": {
+    "first_commit": "2025-08-16T08:25:35-03:00",
+    "last_commit": "2025-08-16T12:56:12-03:00",
+    "commits_count": 2
+  },
+  "jrblatt-rust-v2": {
+    "first_commit": "2025-08-16T12:56:12-03:00",
+    "last_commit": "2025-08-16T12:56:12-03:00",
+    "commits_count": 1
+  },
+  "jrblatt-rust-v3": {
+    "first_commit": "2025-08-16T12:56:12-03:00",
+    "last_commit": "2025-08-16T12:56:12-03:00",
+    "commits_count": 1
+  },
+  "jrblatt-rust-v4": {
+    "first_commit": "2025-08-16T12:56:12-03:00",
+    "last_commit": "2025-08-16T12:56:12-03:00",
+    "commits_count": 1
+  },
+  "juanlimalf-python-fastapi": {
+    "first_commit": "2025-08-08T15:56:04-03:00",
+    "last_commit": "2025-08-16T17:31:33-03:00",
+    "commits_count": 12
+  },
+  "juanmedeiros-dotnet": {
+    "first_commit": "2025-07-27T14:50:04-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 13
+  },
+  "juanmedeiros-dotnet-redis": {
+    "first_commit": "2025-08-10T14:00:28-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "julio-fastapi": {
+    "first_commit": "2025-08-17T10:55:29-03:00",
+    "last_commit": "2025-08-17T23:55:11-03:00",
+    "commits_count": 2
+  },
+  "juliotsutsui-go": {
+    "first_commit": "2025-08-16T21:04:25-03:00",
+    "last_commit": "2025-08-17T01:08:21-03:00",
+    "commits_count": 3
+  },
+  "julipinto-elixir-vanilla": {
+    "first_commit": "2025-08-16T20:31:23-03:00",
+    "last_commit": "2025-08-16T20:31:23-03:00",
+    "commits_count": 1
+  },
+  "jvcouto-go": {
+    "first_commit": "2025-08-04T19:03:11-03:00",
+    "last_commit": "2025-08-17T13:06:14-03:00",
+    "commits_count": 4
+  },
+  "jvcouto-go-2": {
+    "first_commit": "2025-08-04T23:28:53-03:00",
+    "last_commit": "2025-08-17T13:06:14-03:00",
+    "commits_count": 6
+  },
+  "jvcouto-go-3": {
+    "first_commit": "2025-08-17T23:36:17-03:00",
+    "last_commit": "2025-08-17T23:36:17-03:00",
+    "commits_count": 1
+  },
+  "jvsandrade-rust-mini": {
+    "first_commit": "2025-07-27T00:40:31-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 6
+  },
+  "kauanborges": {
+    "first_commit": "2025-08-12T20:32:57-03:00",
+    "last_commit": "2025-08-12T20:32:57-03:00",
+    "commits_count": 1
+  },
+  "kauanborges-2": {
+    "first_commit": "2025-08-17T14:04:49-03:00",
+    "last_commit": "2025-08-17T14:04:49-03:00",
+    "commits_count": 1
+  },
+  "kauanborges-3": {
+    "first_commit": "2025-08-17T23:46:09-03:00",
+    "last_commit": "2025-08-17T23:46:09-03:00",
+    "commits_count": 1
+  },
+  "kauan-carvalho-elixir": {
+    "first_commit": "2025-07-15T22:31:43-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 11
+  },
+  "kauan-carvalho-go": {
+    "first_commit": "2025-07-15T21:15:46-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 11
+  },
+  "kauanmocelin-quarkus": {
+    "first_commit": "2025-08-07T10:28:11-03:00",
+    "last_commit": "2025-08-17T23:35:29-03:00",
+    "commits_count": 23
+  },
+  "kauefraga-bundemais": {
+    "first_commit": "2025-08-17T23:52:37-03:00",
+    "last_commit": "2025-08-17T23:52:37-03:00",
+    "commits_count": 1
+  },
+  "krymancer": {
+    "first_commit": "2025-08-05T17:08:27-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 11
+  },
+  "lauro-santana-go": {
+    "first_commit": "2025-08-03T23:50:30-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 8
+  },
+  "lbattochio-dotnet": {
+    "first_commit": "2025-07-27T23:50:01-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 21
+  },
+  "lcarbornar-node": {
+    "first_commit": "2025-08-17T23:48:31-03:00",
+    "last_commit": "2025-08-17T23:48:31-03:00",
+    "commits_count": 1
+  },
+  "lckrugel-go": {
+    "first_commit": "2025-08-16T23:11:20-03:00",
+    "last_commit": "2025-08-16T23:13:16-03:00",
+    "commits_count": 2
+  },
+  "lczago-go": {
+    "first_commit": "2025-07-27T00:45:04-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 9
+  },
+  "leandroalves-haskell": {
+    "first_commit": "2025-08-07T20:53:29-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 5
+  },
+  "lecosas-java-spring": {
+    "first_commit": "2025-08-06T11:37:58-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 10
+  },
+  "lecosas-java-spring-graalvm": {
+    "first_commit": "2025-07-27T18:53:07-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 29
+  },
+  "lecosas-java-spring-graalvm-2": {
+    "first_commit": "2025-08-10T18:27:07-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 7
+  },
+  "lecosas-java-spring-graalvm-3": {
+    "first_commit": "2025-08-11T06:34:52-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 8
+  },
+  "lecosas-java-spring-graalvm-3-final": {
+    "first_commit": "2025-08-17T23:21:36-03:00",
+    "last_commit": "2025-08-17T23:21:36-03:00",
+    "commits_count": 1
+  },
+  "lecosas-java-spring-graalvm-3-limited-worker": {
+    "first_commit": "2025-08-15T18:34:11-03:00",
+    "last_commit": "2025-08-15T18:47:26-03:00",
+    "commits_count": 2
+  },
+  "lecosas-java-spring-graalvm-3-limited-worker-final": {
+    "first_commit": "2025-08-17T23:21:36-03:00",
+    "last_commit": "2025-08-17T23:21:36-03:00",
+    "commits_count": 1
+  },
+  "lecosas-java-spring-graalvm-4": {
+    "first_commit": "2025-08-11T21:05:16-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 6
+  },
+  "lecosas-java-spring-graalvm-4-direct": {
+    "first_commit": "2025-08-15T07:54:31-03:00",
+    "last_commit": "2025-08-15T13:29:35-03:00",
+    "commits_count": 3
+  },
+  "lecosas-java-spring-graalvm-4-direct-final": {
+    "first_commit": "2025-08-17T23:21:36-03:00",
+    "last_commit": "2025-08-17T23:21:36-03:00",
+    "commits_count": 1
+  },
+  "lecosas-java-spring-graalvm-4-direct-sock": {
+    "first_commit": "2025-08-17T23:21:36-03:00",
+    "last_commit": "2025-08-17T23:21:36-03:00",
+    "commits_count": 1
+  },
+  "lecosas-java-spring-graalvm-5": {
+    "first_commit": "2025-08-14T22:37:26-03:00",
+    "last_commit": "2025-08-14T22:37:26-03:00",
+    "commits_count": 1
+  },
+  "lecosas-java-spring-graalvm-6": {
+    "first_commit": "2025-08-15T06:58:07-03:00",
+    "last_commit": "2025-08-15T06:58:07-03:00",
+    "commits_count": 1
+  },
+  "leeozaka-dotnet": {
+    "first_commit": "2025-07-30T13:45:27-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "leonardosegfault-nodejs": {
+    "first_commit": "2025-08-13T19:04:21-03:00",
+    "last_commit": "2025-08-17T18:10:13-03:00",
+    "commits_count": 10
+  },
+  "leonardotomas-cs": {
+    "first_commit": "2025-07-20T21:42:50-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 10
+  },
+  "leoralph": {
+    "first_commit": "2025-07-12T16:33:50-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 18
+  },
+  "leorcvargas": {
+    "first_commit": "2025-08-11T22:07:56-03:00",
+    "last_commit": "2025-08-15T13:00:13-03:00",
+    "commits_count": 16
+  },
+  "leorcvargas-stable": {
+    "first_commit": "2025-08-14T15:22:01-03:00",
+    "last_commit": "2025-08-15T13:00:13-03:00",
+    "commits_count": 3
+  },
+  "leorcvargas-thousand-islands": {
+    "first_commit": "2025-08-14T22:30:05-03:00",
+    "last_commit": "2025-08-15T13:00:13-03:00",
+    "commits_count": 4
+  },
+  "lhuizf-bun": {
+    "first_commit": "2025-07-19T15:32:36-03:00",
+    "last_commit": "2025-08-14T20:15:48-03:00",
+    "commits_count": 21
+  },
+  "lhuizf-dotnet": {
+    "first_commit": "2025-07-27T00:40:31-03:00",
+    "last_commit": "2025-08-16T17:19:00-03:00",
+    "commits_count": 7
+  },
+  "libardi-dotnet": {
+    "first_commit": "2025-07-21T22:02:03-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 8
+  },
+  "libardi-dotnet-2": {
+    "first_commit": "2025-07-25T08:35:56-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 9
+  },
+  "libardi-dotnet-3": {
+    "first_commit": "2025-07-26T21:36:41-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 7
+  },
+  "lipenvs": {
+    "first_commit": "2025-08-03T17:22:33-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 12
+  },
+  "lmtani": {
+    "first_commit": "2025-08-17T16:10:06-03:00",
+    "last_commit": "2025-08-17T23:34:36-03:00",
+    "commits_count": 3
+  },
+  "lpicanco-moonshine": {
+    "first_commit": "2025-08-16T02:21:05+01:00",
+    "last_commit": "2025-08-16T22:16:13+01:00",
+    "commits_count": 2
+  },
+  "lpicanco-rust": {
+    "first_commit": "2025-07-13T23:07:44+01:00",
+    "last_commit": "2025-08-18T03:26:42+01:00",
+    "commits_count": 18
+  },
+  "luanvictor-node": {
+    "first_commit": "2025-07-19T15:59:03-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 31
+  },
+  "lucas-go-01": {
+    "first_commit": "2025-08-07T15:42:03-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 12
+  },
+  "lucasgoveia": {
+    "first_commit": "2025-07-20T13:54:09-03:00",
+    "last_commit": "2025-08-14T15:16:56-03:00",
+    "commits_count": 16
+  },
+  "lucas-hsm-rust-mio": {
+    "first_commit": "2025-08-17T23:54:12-03:00",
+    "last_commit": "2025-08-17T23:54:12-03:00",
+    "commits_count": 1
+  },
+  "lucas-laurentino-go": {
+    "first_commit": "2025-07-18T04:36:51-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 14
+  },
+  "lucas-lima-chaves": {
+    "first_commit": "2025-08-02T16:39:33-05:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 9
+  },
+  "lucaslimafernandes": {
+    "first_commit": "2025-07-31T21:29:10-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "lucas-moraes": {
+    "first_commit": "2025-08-09T00:17:01-03:00",
+    "last_commit": "2025-08-15T14:19:27-03:00",
+    "commits_count": 31
+  },
+  "lucas-porto-python-01": {
+    "first_commit": "2025-08-11T21:13:14-03:00",
+    "last_commit": "2025-08-15T08:56:14-03:00",
+    "commits_count": 6
+  },
+  "lucas-santana": {
+    "first_commit": "2025-07-31T17:28:33-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 22
+  },
+  "lucasvsouza28-bun": {
+    "first_commit": "2025-07-21T16:24:37-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 9
+  },
+  "luisfadini-nodejs": {
+    "first_commit": "2025-08-17T23:56:59-03:00",
+    "last_commit": "2025-08-17T23:56:59-03:00",
+    "commits_count": 1
+  },
+  "luizcordista-go": {
+    "first_commit": "2025-07-09T17:29:11-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 13
+  },
+  "luucaspole-crystal": {
+    "first_commit": "2025-07-15T16:37:48-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 36
+  },
+  "macedot-go-echo": {
+    "first_commit": "2025-08-11T21:19:02+02:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 4
+  },
+  "macedot-go-fasthttp": {
+    "first_commit": "2025-08-11T21:36:38+02:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 3
+  },
+  "macedot-go-gear": {
+    "first_commit": "2025-08-12T01:10:05+02:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 3
+  },
+  "macedot-go-silverlining": {
+    "first_commit": "2025-08-12T01:10:05+02:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 3
+  },
+  "machadoah-python-simple": {
+    "first_commit": "2025-08-01T23:37:06-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 3
+  },
+  "maico-smaniotto-objpas-pgsql": {
+    "first_commit": "2025-08-16T03:46:08-03:00",
+    "last_commit": "2025-08-16T18:44:44-03:00",
+    "commits_count": 5
+  },
+  "marcelo-dias": {
+    "first_commit": "2025-08-07T21:51:09-04:00",
+    "last_commit": "2025-08-17T11:13:55-04:00",
+    "commits_count": 57
+  },
+  "marcelo-dias-fall": {
+    "first_commit": "2025-08-17T11:13:55-04:00",
+    "last_commit": "2025-08-17T11:13:55-04:00",
+    "commits_count": 1
+  },
+  "marcelo-dias-final": {
+    "first_commit": "2025-08-17T22:52:20-04:00",
+    "last_commit": "2025-08-17T22:52:20-04:00",
+    "commits_count": 1
+  },
+  "marcelo-dias-skylake": {
+    "first_commit": "2025-08-10T14:00:01-04:00",
+    "last_commit": "2025-08-17T11:44:28-04:00",
+    "commits_count": 39
+  },
+  "marcioendo": {
+    "first_commit": "2025-08-14T16:28:11-03:00",
+    "last_commit": "2025-08-17T23:33:55-03:00",
+    "commits_count": 12
+  },
+  "marcosmarcolin-php": {
+    "first_commit": "2025-07-29T23:47:04-03:00",
+    "last_commit": "2025-08-16T15:39:41-03:00",
+    "commits_count": 58
+  },
+  "marcospaulo-java-1": {
+    "first_commit": "2025-07-15T16:30:17-03:00",
+    "last_commit": "2025-08-15T23:07:53-03:00",
+    "commits_count": 11
+  },
+  "marcospaulo-java-2": {
+    "first_commit": "2025-07-29T23:45:51-03:00",
+    "last_commit": "2025-08-16T19:56:26-03:00",
+    "commits_count": 21
+  },
+  "marcusadriano-go": {
+    "first_commit": "2025-08-01T00:37:42-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 4
+  },
+  "marincor": {
+    "first_commit": "2025-08-11T12:43:06-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 4
+  },
+  "mateuxlucax-elysia": {
+    "first_commit": "2025-08-07T22:14:22-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 4
+  },
+  "MathausCarvalhoNode": {
+    "first_commit": "2025-07-31T10:24:43-03:00",
+    "last_commit": "2025-08-12T15:27:42-03:00",
+    "commits_count": 12
+  },
+  "matheusdojava": {
+    "first_commit": "2025-07-20T13:22:16-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 15
+  },
+  "matheusf-lucas-and-luis-java1": {
+    "first_commit": "2025-07-22T22:18:55+02:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 8
+  },
+  "matheusf-lucas-and-luizcastro-java2": {
+    "first_commit": "2025-07-29T23:45:06-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "matheusp": {
+    "first_commit": "2025-08-17T18:50:48-03:00",
+    "last_commit": "2025-08-17T23:40:49-03:00",
+    "commits_count": 3
+  },
+  "matheuspaula-php": {
+    "first_commit": "2025-08-18T00:06:48-03:00",
+    "last_commit": "2025-08-18T00:06:48-03:00",
+    "commits_count": 1
+  },
+  "mauricio-cantu": {
+    "first_commit": "2025-08-08T00:49:52-03:00",
+    "last_commit": "2025-08-15T20:27:38-03:00",
+    "commits_count": 6
+  },
+  "mauricio-cantu-2": {
+    "first_commit": "2025-08-08T20:29:42-03:00",
+    "last_commit": "2025-08-15T20:27:38-03:00",
+    "commits_count": 12
+  },
+  "mauricio-cantu-3": {
+    "first_commit": "2025-08-16T03:43:50-03:00",
+    "last_commit": "2025-08-16T03:43:50-03:00",
+    "commits_count": 1
+  },
+  "mauricio-cantu-4": {
+    "first_commit": "2025-08-17T23:27:21-03:00",
+    "last_commit": "2025-08-17T23:27:21-03:00",
+    "commits_count": 1
+  },
+  "Maxel-Uds-quarkus": {
+    "first_commit": "2025-07-23T23:49:13-03:00",
+    "last_commit": "2025-08-12T15:27:42-03:00",
+    "commits_count": 38
+  },
+  "Maxel-Uds-quarkus-java-21": {
+    "first_commit": "2025-08-08T19:16:56-03:00",
+    "last_commit": "2025-08-13T23:09:43-03:00",
+    "commits_count": 8
+  },
+  "maxsonferovante": {
+    "first_commit": "2025-07-22T03:36:42-03:00",
+    "last_commit": "2025-08-17T15:44:47-03:00",
+    "commits_count": 26
+  },
+  "maxsonferovante-spring-mongo": {
+    "first_commit": "2025-08-05T21:56:22-03:00",
+    "last_commit": "2025-08-17T14:47:55-03:00",
+    "commits_count": 10
+  },
+  "maxwelloliveira01-dotnet": {
+    "first_commit": "2025-08-17T23:57:32-03:00",
+    "last_commit": "2025-08-17T23:57:32-03:00",
+    "commits_count": 1
+  },
+  "mbenencase-python": {
+    "first_commit": "2025-07-19T14:34:23-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 7
+  },
+  "mdantas-rust": {
+    "first_commit": "2025-08-04T16:47:16-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 78
+  },
+  "medisco-go": {
+    "first_commit": "2025-08-02T22:46:22-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 5
+  },
+  "micheloliveira-com-dotnet-csharp-grpc": {
+    "first_commit": "2025-08-16T12:14:20-03:00",
+    "last_commit": "2025-08-17T12:09:08-03:00",
+    "commits_count": 3
+  },
+  "micheloliveira-com-dotnet-csharp-grpc-haproxy": {
+    "first_commit": "2025-08-16T15:02:46-03:00",
+    "last_commit": "2025-08-16T15:03:59-03:00",
+    "commits_count": 2
+  },
+  "micheloliveira-com-dotnet-csharp-postgres": {
+    "first_commit": "2025-07-27T20:02:38-03:00",
+    "last_commit": "2025-08-17T12:40:19-03:00",
+    "commits_count": 16
+  },
+  "micheloliveira-com-dotnet-csharp-postgres-haproxy": {
+    "first_commit": "2025-08-17T12:39:05-03:00",
+    "last_commit": "2025-08-17T12:40:19-03:00",
+    "commits_count": 2
+  },
+  "micheloliveira-com-dotnet-csharp-redis": {
+    "first_commit": "2025-07-28T12:08:55-03:00",
+    "last_commit": "2025-08-17T12:09:08-03:00",
+    "commits_count": 24
+  },
+  "micheloliveira-com-dotnet-csharp-redis-grpc": {
+    "first_commit": "2025-08-14T12:12:49-03:00",
+    "last_commit": "2025-08-17T11:00:55-03:00",
+    "commits_count": 14
+  },
+  "micheloliveira-com-dotnet-csharp-redis-grpc-haproxy": {
+    "first_commit": "2025-08-17T23:22:22-03:00",
+    "last_commit": "2025-08-17T23:22:22-03:00",
+    "commits_count": 1
+  },
+  "micheloliveira-com-dotnet-csharp-redis-haproxy": {
+    "first_commit": "2025-08-17T23:22:22-03:00",
+    "last_commit": "2025-08-17T23:22:22-03:00",
+    "commits_count": 1
+  },
+  "mourishitz-go": {
+    "first_commit": "2025-08-04T17:20:05-03:00",
+    "last_commit": "2025-08-17T23:34:52-03:00",
+    "commits_count": 11
+  },
+  "mpedroni-go": {
+    "first_commit": "2025-07-30T00:01:13-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 3
+  },
+  "murilo-guedes-toloni": {
+    "first_commit": "2025-07-26T20:21:10-03:00",
+    "last_commit": "2025-08-17T20:47:51-03:00",
+    "commits_count": 94
+  },
+  "murilo-kendjy-node": {
+    "first_commit": "2025-08-14T18:35:55-03:00",
+    "last_commit": "2025-08-17T23:47:18-03:00",
+    "commits_count": 6
+  },
+  "mxlange-cpp": {
+    "first_commit": "2025-08-03T18:53:24-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "mxlange-fasthttp": {
+    "first_commit": "2025-07-19T17:54:46-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 11
+  },
+  "mxlange-only-go": {
+    "first_commit": "2025-07-29T09:40:16-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 8
+  },
+  "mxlange-ws": {
+    "first_commit": "2025-08-04T18:57:22-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 5
+  },
+  "nathanfabio-go": {
+    "first_commit": "2025-08-05T19:37:25-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 5
+  },
+  "ndulo-node": {
+    "first_commit": "2025-08-14T11:06:56+01:00",
+    "last_commit": "2025-08-14T20:18:56+01:00",
+    "commits_count": 3
+  },
+  "nicolasmmb": {
+    "first_commit": "2025-08-14T20:04:45+09:00",
+    "last_commit": "2025-08-15T16:43:21+09:00",
+    "commits_count": 4
+  },
+  "niltonkummer": {
+    "first_commit": "2025-07-23T11:06:08+01:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 11
+  },
+  "niltonkummer-haproxy": {
+    "first_commit": "2025-08-05T14:32:08+01:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 5
+  },
+  "not4rt-coroutines_rs": {
+    "first_commit": "2025-08-15T03:44:00Z",
+    "last_commit": "2025-08-15T03:44:00Z",
+    "commits_count": 1
+  },
+  "not4rt-uring_rs": {
+    "first_commit": "2025-08-15T03:44:00Z",
+    "last_commit": "2025-08-16T00:56:59Z",
+    "commits_count": 4
+  },
+  "ogabriel-elixir": {
+    "first_commit": "2025-08-16T19:40:00-03:00",
+    "last_commit": "2025-08-17T23:29:59-03:00",
+    "commits_count": 5
+  },
+  "ogabriel-elixir-alt": {
+    "first_commit": "2025-08-16T19:40:00-03:00",
+    "last_commit": "2025-08-17T23:29:59-03:00",
+    "commits_count": 6
+  },
+  "ogabriel-ruby-rage": {
+    "first_commit": "2025-08-17T14:18:29-03:00",
+    "last_commit": "2025-08-17T16:25:20-03:00",
+    "commits_count": 3
+  },
+  "oliveigah": {
+    "first_commit": "2025-07-18T00:42:02-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 9
+  },
+  "oornnery": {
+    "first_commit": "2025-08-18T00:05:36-03:00",
+    "last_commit": "2025-08-18T00:05:36-03:00",
+    "commits_count": 1
+  },
+  "ortisan-rust": {
+    "first_commit": "2025-08-18T00:01:18-03:00",
+    "last_commit": "2025-08-18T00:01:18-03:00",
+    "commits_count": 1
+  },
+  "ovelha": {
+    "first_commit": "2025-08-10T19:16:42-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "pablopavan": {
+    "first_commit": "2025-08-17T23:42:30-03:00",
+    "last_commit": "2025-08-17T23:42:30-03:00",
+    "commits_count": 1
+  },
+  "pancine-dotnet": {
+    "first_commit": "2025-07-29T09:32:19-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 3
+  },
+  "pancine-dotnet-aot": {
+    "first_commit": "2025-07-29T09:32:19-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 3
+  },
+  "panissetrafael-go": {
+    "first_commit": "2025-07-12T11:36:32-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 10
+  },
+  "passos-matheus-only-default": {
+    "first_commit": "2025-08-11T21:45:50-03:00",
+    "last_commit": "2025-08-16T20:45:27-03:00",
+    "commits_count": 17
+  },
+  "passos-matheus-python-16reqs-timeout-aptivo": {
+    "first_commit": "2025-08-08T19:35:54-03:00",
+    "last_commit": "2025-08-16T20:45:27-03:00",
+    "commits_count": 7
+  },
+  "passos-matheus-python-timeout-adaptivo": {
+    "first_commit": "2025-08-08T19:19:23-03:00",
+    "last_commit": "2025-08-16T21:23:41-03:00",
+    "commits_count": 16
+  },
+  "passos-matheus-python-v1": {
+    "first_commit": "2025-08-08T15:08:13-03:00",
+    "last_commit": "2025-08-16T21:23:41-03:00",
+    "commits_count": 9
+  },
+  "patrignani-go": {
+    "first_commit": "2025-08-01T21:22:04-03:00",
+    "last_commit": "2025-08-13T16:31:53-03:00",
+    "commits_count": 8
+  },
+  "pauloSergio-dotnet-01": {
+    "first_commit": "2025-08-12T16:55:55-03:00",
+    "last_commit": "2025-08-12T16:55:55-03:00",
+    "commits_count": 1
+  },
+  "pedro-correa-gleam": {
+    "first_commit": "2025-08-12T12:54:04-03:00",
+    "last_commit": "2025-08-13T23:46:30-03:00",
+    "commits_count": 6
+  },
+  "pedrohsb-golang": {
+    "first_commit": "2025-08-02T19:46:30-03:00",
+    "last_commit": "2025-08-16T17:25:10-03:00",
+    "commits_count": 162
+  },
+  "pedrohsb-golang-fallback": {
+    "first_commit": "2025-08-16T17:23:22-03:00",
+    "last_commit": "2025-08-16T17:23:22-03:00",
+    "commits_count": 1
+  },
+  "pedrohsb-python": {
+    "first_commit": "2025-07-27T14:50:25-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 15
+  },
+  "pedropereiradev-bun": {
+    "first_commit": "2025-07-19T11:35:56-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 9
+  },
+  "phaalonso-java-1": {
+    "first_commit": "2025-07-30T22:42:38-03:00",
+    "last_commit": "2025-08-14T01:05:25-03:00",
+    "commits_count": 19
+  },
+  "phaalonso-java-2": {
+    "first_commit": "2025-08-14T01:01:36-03:00",
+    "last_commit": "2025-08-14T01:05:25-03:00",
+    "commits_count": 2
+  },
+  "phaalonso-java-3": {
+    "first_commit": "2025-08-14T01:01:36-03:00",
+    "last_commit": "2025-08-14T01:05:25-03:00",
+    "commits_count": 2
+  },
+  "phalabadessa-rust-redis-v1": {
+    "first_commit": "2025-08-17T18:59:31-03:00",
+    "last_commit": "2025-08-17T23:39:33-03:00",
+    "commits_count": 2
+  },
+  "pru": {
+    "first_commit": "2025-08-10T13:30:47-03:00",
+    "last_commit": "2025-08-12T22:47:19-03:00",
+    "commits_count": 4
+  },
+  "pru-async": {
+    "first_commit": "2025-08-12T11:01:10+02:00",
+    "last_commit": "2025-08-16T00:52:21+02:00",
+    "commits_count": 16
+  },
+  "pru-async-v2": {
+    "first_commit": "2025-08-17T02:49:57+02:00",
+    "last_commit": "2025-08-17T02:49:57+02:00",
+    "commits_count": 1
+  },
+  "pru-async-v3": {
+    "first_commit": "2025-08-17T03:33:50+02:00",
+    "last_commit": "2025-08-17T03:33:50+02:00",
+    "commits_count": 1
+  },
+  "pru-async-v4": {
+    "first_commit": "2025-08-17T03:33:50+02:00",
+    "last_commit": "2025-08-17T03:33:50+02:00",
+    "commits_count": 1
+  },
+  "pru-async-v5": {
+    "first_commit": "2025-08-17T04:17:03+02:00",
+    "last_commit": "2025-08-17T04:17:03+02:00",
+    "commits_count": 1
+  },
+  "pru-async-v6": {
+    "first_commit": "2025-08-17T21:22:56+02:00",
+    "last_commit": "2025-08-17T21:22:56+02:00",
+    "commits_count": 1
+  },
+  "ptronico-python": {
+    "first_commit": "2025-08-17T23:47:37-03:00",
+    "last_commit": "2025-08-17T23:47:37-03:00",
+    "commits_count": 1
+  },
+  "rafaelberrocalj-dotnet": {
+    "first_commit": "2025-08-14T20:31:58-03:00",
+    "last_commit": "2025-08-15T14:23:03-03:00",
+    "commits_count": 10
+  },
+  "rafaelgiori-dotnet": {
+    "first_commit": "2025-07-26T22:43:06-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "rafael-mendes": {
+    "first_commit": "2025-08-17T00:43:16-03:00",
+    "last_commit": "2025-08-17T23:27:41-03:00",
+    "commits_count": 3
+  },
+  "rafaelpadovezi-dotnet": {
+    "first_commit": "2025-07-27T17:49:43+01:00",
+    "last_commit": "2025-08-16T13:21:49+01:00",
+    "commits_count": 10
+  },
+  "rafaelviefe": {
+    "first_commit": "2025-08-07T23:02:50-03:00",
+    "last_commit": "2025-08-13T21:14:42-03:00",
+    "commits_count": 21
+  },
+  "rafaelvieira": {
+    "first_commit": "2025-08-07T23:03:03-03:00",
+    "last_commit": "2025-08-13T19:14:16-03:00",
+    "commits_count": 17
+  },
+  "rafaspimenta-dotnet": {
+    "first_commit": "2025-07-21T15:09:31-03:00",
+    "last_commit": "2025-08-17T23:24:45-03:00",
+    "commits_count": 24
+  },
+  "rafaspimenta-dotnet-fire-forget": {
+    "first_commit": "2025-08-17T23:24:45-03:00",
+    "last_commit": "2025-08-17T23:24:45-03:00",
+    "commits_count": 1
+  },
+  "rafaspimenta-dotnet-multi": {
+    "first_commit": "2025-08-17T14:13:15-03:00",
+    "last_commit": "2025-08-17T23:24:45-03:00",
+    "commits_count": 2
+  },
+  "railson-ferreira-dart": {
+    "first_commit": "2025-07-31T08:44:36-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 3
+  },
+  "raphaeldiasc21-nodejs": {
+    "first_commit": "2025-08-17T23:57:48-03:00",
+    "last_commit": "2025-08-17T23:57:48-03:00",
+    "commits_count": 1
+  },
+  "rbenatti8": {
+    "first_commit": "2025-07-28T10:11:05-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "ricardo-dotnet": {
+    "first_commit": "2025-08-15T10:59:53-03:00",
+    "last_commit": "2025-08-16T18:10:06-03:00",
+    "commits_count": 4
+  },
+  "ricardo-santos": {
+    "first_commit": "2025-07-19T01:39:55-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 16
+  },
+  "ricardovhz": {
+    "first_commit": "2025-07-14T22:48:21-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 7
+  },
+  "ricassiocosta-node": {
+    "first_commit": "2025-07-27T20:23:22-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 14
+  },
+  "ricassiocosta-python": {
+    "first_commit": "2025-07-12T14:58:32-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 21
+  },
+  "rjsantana": {
+    "first_commit": "2025-08-16T21:43:32-03:00",
+    "last_commit": "2025-08-17T23:25:17-03:00",
+    "commits_count": 7
+  },
+  "robertAlmeida": {
+    "first_commit": "2025-07-10T11:51:55-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 11
+  },
+  "rodrigocaldeira-dart": {
+    "first_commit": "2025-07-29T09:36:51-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "rodrigocaldeira-elixir": {
+    "first_commit": "2025-07-12T20:34:46-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 18
+  },
+  "rodrigodotdev-bun": {
+    "first_commit": "2025-08-07T21:41:34-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "rodrigoknol": {
+    "first_commit": "2025-08-10T22:43:31-03:00",
+    "last_commit": "2025-08-17T23:45:12-03:00",
+    "commits_count": 11
+  },
+  "rodrigo-militao": {
+    "first_commit": "2025-07-27T00:02:27-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 35
+  },
+  "rodrigo-militao-in-memory": {
+    "first_commit": "2025-08-14T00:58:44-03:00",
+    "last_commit": "2025-08-17T10:06:49-03:00",
+    "commits_count": 5
+  },
+  "rodrigo-militao-in-memory-v2": {
+    "first_commit": "2025-08-17T23:29:35-03:00",
+    "last_commit": "2025-08-17T23:29:35-03:00",
+    "commits_count": 1
+  },
+  "rodrigo-militao-v2": {
+    "first_commit": "2025-08-05T23:41:14-03:00",
+    "last_commit": "2025-08-17T23:29:35-03:00",
+    "commits_count": 11
+  },
+  "rodrigo-schonardt-go": {
+    "first_commit": "2025-07-15T20:29:38-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 7
+  },
+  "rodrixl": {
+    "first_commit": "2025-07-16T15:42:09-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "rolesosi": {
+    "first_commit": "2025-08-16T17:08:33-03:00",
+    "last_commit": "2025-08-16T17:08:33-03:00",
+    "commits_count": 1
+  },
+  "ronaldo-silva-java": {
+    "first_commit": "2025-08-11T00:27:00-03:00",
+    "last_commit": "2025-08-17T23:42:57-03:00",
+    "commits_count": 22
+  },
+  "ronssm-CopiRinhaGo": {
+    "first_commit": "2025-07-25T18:30:00-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 12
+  },
+  "rst77": {
+    "first_commit": "2025-08-12T15:08:07-03:00",
+    "last_commit": "2025-08-16T22:03:15-03:00",
+    "commits_count": 10
+  },
+  "rst77-final": {
+    "first_commit": "2025-08-17T23:52:06-03:00",
+    "last_commit": "2025-08-17T23:52:06-03:00",
+    "commits_count": 1
+  },
+  "RuanPabloCR-Rruim": {
+    "first_commit": "2025-07-28T14:13:58-03:00",
+    "last_commit": "2025-08-16T16:15:13-03:00",
+    "commits_count": 10
+  },
+  "ryangst-bun": {
+    "first_commit": "2025-07-09T21:55:29-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 9
+  },
+  "ryrden-clojure": {
+    "first_commit": "2025-07-28T10:01:07-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "samuelpanzera-rs-coroutines": {
+    "first_commit": "2025-08-09T17:22:17-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "samuka7abr-golang": {
+    "first_commit": "2025-08-13T16:24:23-03:00",
+    "last_commit": "2025-08-17T23:25:51-03:00",
+    "commits_count": 7
+  },
+  "samypng-go": {
+    "first_commit": "2025-07-19T13:57:53-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 21
+  },
+  "samypng-go-2": {
+    "first_commit": "2025-08-08T14:31:12-03:00",
+    "last_commit": "2025-08-14T15:11:46+01:00",
+    "commits_count": 9
+  },
+  "santannaf": {
+    "first_commit": "2025-07-15T13:45:24-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 11
+  },
+  "santannaf-java": {
+    "first_commit": "2025-08-11T20:10:59-03:00",
+    "last_commit": "2025-08-13T09:06:16-03:00",
+    "commits_count": 4
+  },
+  "santannaf-java-revolts": {
+    "first_commit": "2025-08-15T22:07:04-03:00",
+    "last_commit": "2025-08-15T22:07:04-03:00",
+    "commits_count": 1
+  },
+  "santannaf-java-revolts2": {
+    "first_commit": "2025-08-16T14:07:44-03:00",
+    "last_commit": "2025-08-16T14:07:44-03:00",
+    "commits_count": 1
+  },
+  "silvaangelo": {
+    "first_commit": "2025-07-23T01:36:51-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 16
+  },
+  "suricat89-solucao1": {
+    "first_commit": "2025-07-20T22:06:36-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "svaan1-go": {
+    "first_commit": "2025-07-23T21:08:57-03:00",
+    "last_commit": "2025-08-16T23:44:04-03:00",
+    "commits_count": 14
+  },
+  "sylviot": {
+    "first_commit": "2025-08-02T16:28:01-04:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 11
+  },
+  "tarcisiozf-asm": {
+    "first_commit": "2025-08-05T11:29:39-03:00",
+    "last_commit": "2025-08-16T23:16:17-03:00",
+    "commits_count": 29
+  },
+  "tarcisiozf-asm-2": {
+    "first_commit": "2025-08-08T20:57:24-03:00",
+    "last_commit": "2025-08-16T20:56:34-03:00",
+    "commits_count": 10
+  },
+  "teuso99": {
+    "first_commit": "2025-08-17T16:13:11-03:00",
+    "last_commit": "2025-08-17T16:22:15-03:00",
+    "commits_count": 2
+  },
+  "thiagorigonatti2-c": {
+    "first_commit": "2025-08-12T12:22:27-03:00",
+    "last_commit": "2025-08-17T11:04:12-03:00",
+    "commits_count": 9
+  },
+  "thiagorigonatti3-c": {
+    "first_commit": "2025-08-17T15:37:02-03:00",
+    "last_commit": "2025-08-17T15:37:02-03:00",
+    "commits_count": 1
+  },
+  "thiagorigonatti-c": {
+    "first_commit": "2025-08-05T11:23:24-03:00",
+    "last_commit": "2025-08-17T23:41:09-03:00",
+    "commits_count": 122
+  },
+  "thilourenco2-node": {
+    "first_commit": "2025-08-17T23:24:12-03:00",
+    "last_commit": "2025-08-17T23:24:12-03:00",
+    "commits_count": 1
+  },
+  "thilourenco-node": {
+    "first_commit": "2025-08-16T16:32:47-03:00",
+    "last_commit": "2025-08-17T23:24:12-03:00",
+    "commits_count": 7
+  },
+  "thilourenco-node-2": {
+    "first_commit": "2025-08-17T23:44:25-03:00",
+    "last_commit": "2025-08-17T23:44:25-03:00",
+    "commits_count": 1
+  },
+  "thomaz-golang-2": {
+    "first_commit": "2025-08-13T21:01:43-03:00",
+    "last_commit": "2025-08-17T17:00:40-03:00",
+    "commits_count": 15
+  },
+  "thomaz-maldonado-go-1": {
+    "first_commit": "2025-07-31T14:26:51-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 11
+  },
+  "tvillani-java": {
+    "first_commit": "2025-08-18T04:53:36+02:00",
+    "last_commit": "2025-08-18T04:53:36+02:00",
+    "commits_count": 1
+  },
+  "uchoamp-zig": {
+    "first_commit": "2025-08-10T22:50:00-03:00",
+    "last_commit": "2025-08-17T23:18:47-03:00",
+    "commits_count": 38
+  },
+  "uchoamp-zig+nginx": {
+    "first_commit": "2025-08-07T22:29:43-03:00",
+    "last_commit": "2025-08-17T23:18:47-03:00",
+    "commits_count": 42
+  },
+  "vctrhugo-fastapi": {
+    "first_commit": "2025-07-22T17:57:13-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "ventopreto": {
+    "first_commit": "2025-08-17T23:46:36-03:00",
+    "last_commit": "2025-08-17T23:46:36-03:00",
+    "commits_count": 1
+  },
+  "vfabricio-custom-queue": {
+    "first_commit": "2025-08-16T17:24:20-03:00",
+    "last_commit": "2025-08-17T23:23:02-03:00",
+    "commits_count": 6
+  },
+  "vfabricio-greedy": {
+    "first_commit": "2025-08-14T16:18:15-03:00",
+    "last_commit": "2025-08-17T23:23:02-03:00",
+    "commits_count": 9
+  },
+  "vfabricio-uds-greedy": {
+    "first_commit": "2025-08-17T02:56:18-03:00",
+    "last_commit": "2025-08-17T23:23:02-03:00",
+    "commits_count": 2
+  },
+  "vfabricio-uds-quick": {
+    "first_commit": "2025-08-17T23:23:02-03:00",
+    "last_commit": "2025-08-17T23:23:02-03:00",
+    "commits_count": 1
+  },
+  "vhogemann": {
+    "first_commit": "2025-08-04T14:39:08+01:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 6
+  },
+  "victorcoelh-python-fastapi": {
+    "first_commit": "2025-08-08T20:50:01-03:00",
+    "last_commit": "2025-08-17T23:51:28-03:00",
+    "commits_count": 12
+  },
+  "victorsantos-node": {
+    "first_commit": "2025-08-17T23:56:14-03:00",
+    "last_commit": "2025-08-17T23:56:14-03:00",
+    "commits_count": 1
+  },
+  "victorverdoodt-cs": {
+    "first_commit": "2025-07-11T19:36:48-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 33
+  },
+  "victorverdoodt-cs-redis": {
+    "first_commit": "2025-07-18T11:46:13-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 9
+  },
+  "vimsos-rust": {
+    "first_commit": "2025-08-12T22:19:29-03:00",
+    "last_commit": "2025-08-17T23:23:25-03:00",
+    "commits_count": 5
+  },
+  "ViniciusAlexsander-python": {
+    "first_commit": "2025-07-31T16:41:30-03:00",
+    "last_commit": "2025-08-13T14:29:10-03:00",
+    "commits_count": 14
+  },
+  "viniciusfonseca": {
+    "first_commit": "2025-08-11T15:19:51-03:00",
+    "last_commit": "2025-08-13T20:18:08-03:00",
+    "commits_count": 9
+  },
+  "vitor-vale": {
+    "first_commit": "2025-08-06T15:47:44-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "vitorvezani-golang": {
+    "first_commit": "2025-07-29T23:48:44-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 4
+  },
+  "vrtineu": {
+    "first_commit": "2025-08-15T14:45:00-03:00",
+    "last_commit": "2025-08-15T14:45:00-03:00",
+    "commits_count": 1
+  },
+  "vyctor-nestjs": {
+    "first_commit": "2025-08-14T12:21:08-03:00",
+    "last_commit": "2025-08-14T12:21:08-03:00",
+    "commits_count": 1
+  },
+  "wallacemendes-node": {
+    "first_commit": "2025-08-02T00:34:13-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "wanderdotnet": {
+    "first_commit": "2025-07-18T19:22:07-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "wellington-pacheco-ets": {
+    "first_commit": "2025-08-08T10:19:35-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "wellington-pacheco-pg": {
+    "first_commit": "2025-08-08T10:19:35-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 2
+  },
+  "wendelllsc": {
+    "first_commit": "2025-08-01T19:45:53-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 10
+  },
+  "wendelmax": {
+    "first_commit": "2025-07-29T23:45:27-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 6
+  },
+  "wesley-frias": {
+    "first_commit": "2025-08-02T19:03:25-03:00",
+    "last_commit": "2025-08-15T10:56:42-03:00",
+    "commits_count": 6
+  },
+  "wesleymatosdev-rust": {
+    "first_commit": "2025-08-17T13:48:27-03:00",
+    "last_commit": "2025-08-17T23:49:07-03:00",
+    "commits_count": 4
+  },
+  "White1Lopes": {
+    "first_commit": "2025-08-13T16:55:43-03:00",
+    "last_commit": "2025-08-13T22:02:18-03:00",
+    "commits_count": 6
+  },
+  "wildemberg-sales-dotnet": {
+    "first_commit": "2025-08-17T23:43:30-03:00",
+    "last_commit": "2025-08-17T23:43:30-03:00",
+    "commits_count": 1
+  },
+  "wiliansimoes-dotnet": {
+    "first_commit": "2025-07-21T20:00:17-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 4
+  },
+  "willianmarquess-lua-luvit": {
+    "first_commit": "2025-07-22T14:20:01-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 8
+  },
+  "willianmarquess-node": {
+    "first_commit": "2025-07-19T13:21:13-03:00",
+    "last_commit": "2025-08-16T15:01:55-03:00",
+    "commits_count": 21
+  },
+  "willzada-aGOrinha": {
+    "first_commit": "2025-07-09T19:09:55-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 9
+  },
+  "willzada-BUNrinha": {
+    "first_commit": "2025-07-10T18:07:55-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 9
+  },
+  "wlagent": {
+    "first_commit": "2025-07-17T23:38:01-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 10
+  },
+  "xandao-php": {
+    "first_commit": "2025-07-23T19:33:54-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 5
+  },
+  "yanpitangui-dotnet": {
+    "first_commit": "2025-07-14T23:09:14-03:00",
+    "last_commit": "2025-08-12T15:42:24Z",
+    "commits_count": 10
+  },
+  "yanpitangui-dotnet-v2": {
+    "first_commit": "2025-08-03T00:00:49-03:00",
+    "last_commit": "2025-08-16T21:34:06-03:00",
+    "commits_count": 17
+  },
+  "yanpitangui-dotnet-v3": {
+    "first_commit": "2025-08-14T17:39:42-03:00",
+    "last_commit": "2025-08-16T12:02:01-03:00",
+    "commits_count": 2
+  }
+}
