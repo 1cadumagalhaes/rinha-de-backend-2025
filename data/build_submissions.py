@@ -138,6 +138,8 @@ def main():
     SELECT
         r.submission_id,
         t.provided_repo,
+    -- first PR date where PR matches repo or looks like a submission by the same github user
+    p.first_pr_date,
         COALESCE(c.commits_count, t.detected_commits_count) AS commits_count,
         COALESCE(c.first_commit, t.detected_first_commit_date) AS first_commit,
         COALESCE(c.last_commit, t.detected_last_commit_date) AS last_commit,
@@ -178,6 +180,26 @@ def main():
     FROM ranked r
     LEFT JOIN tech_submissions t ON r.submission_id = t.submission_id
     LEFT JOIN commits c ON r.submission_id = c.submission_id
+        LEFT JOIN (
+            -- For each submission, find the earliest PR that likely represents the submission.
+            -- Only consider PRs created after the first valid submission (PR #21 on July 9, 2025)
+            SELECT r.submission_id, MIN(m.created_at) AS first_pr_date
+            FROM tech_submissions r
+            JOIN main_repo_prs m ON (
+                -- 1) PR references the repo in its body or html_url
+                LOWER(COALESCE(regexp_extract(m.body, 'github.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)', 1), regexp_extract(m.html_url, 'github.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)', 1))) = LOWER(COALESCE(regexp_extract(r.provided_repo, 'github.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)', 1), regexp_extract(r.detected_repo, '([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)', 1)))
+                -- OR 2) PR title/body contains 'submiss' and PR author matches the repo owner (username)
+                OR (
+                    (LOWER(COALESCE(m.title, '')) LIKE '%submiss%' OR LOWER(COALESCE(m.body, '')) LIKE '%submiss%')
+                    AND LOWER(m.author_login) = LOWER(regexp_extract(COALESCE(r.provided_repo, r.detected_repo, ''), 'github.com/([A-Za-z0-9_.-]+)/', 1))
+                )
+            )
+            WHERE m.created_at IS NOT NULL
+            -- Filter to only valid submission PRs (after July 9, 2025, 20:30:44 and PR >= 21)
+            AND m.created_at >= '2025-07-09T20:30:44Z'
+            AND m.number >= 21
+            GROUP BY r.submission_id
+        ) p ON p.submission_id = t.submission_id
     """
     df = con.execute(query).fetchdf()
     # Normalize NA to None to simplify JSON serialization
@@ -195,6 +217,7 @@ def main():
             "commits_count": py(row["commits_count"]),
             "first_commit": py(row["first_commit"]),
             "last_commit": py(row["last_commit"]),
+            "first_pr": py(row["first_pr_date"]),
             "rank": int(row["rank"]) if pd.notnull(row["rank"]) else None,
             "performance_rank": int(row["performance_rank"])
             if pd.notnull(row["performance_rank"])

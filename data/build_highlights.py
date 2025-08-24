@@ -49,14 +49,30 @@ runtime_distribution = dict(runtime_counter)
 
 # --- Submissions over time (only those that have results) ---
 # Compute merged PR dates per submission by matching repo link in PR body to submission repo
+# Only consider PRs created after the first valid submission (PR #21 on July 9, 2025)
 pr_dates_df = con.execute(
     """
     WITH pr_extracted AS (
-        SELECT
-            LOWER(regexp_extract(body, 'github.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)', 1)) AS pr_repo_path,
-            created_at
-        FROM main_repo_prs
-        WHERE merged_at IS NOT NULL
+                SELECT
+                        LOWER(regexp_extract(body, 'github.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)', 1)) AS pr_repo_path,
+                        LOWER(COALESCE(regexp_extract(body, 'github.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)', 1), regexp_extract(html_url, 'github.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)', 1))) AS pr_repo_path_fallback,
+                        created_at,
+                        LOWER(author_login) AS author_login,
+                        LOWER(COALESCE(title, '')) AS title,
+                        LOWER(COALESCE(body, '')) AS body,
+                        number
+                FROM main_repo_prs
+                -- Only consider PRs that explicitly reference a repo (body or html_url) or look like submission PRs
+                -- AND were created after the first valid submission (PR #21 on July 9, 2025, 20:30:44)
+                WHERE (
+                    LOWER(COALESCE(regexp_extract(body, 'github.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)', 1), '')) <> ''
+                    OR LOWER(COALESCE(regexp_extract(html_url, 'github.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)', 1), '')) <> ''
+                    OR LOWER(COALESCE(title, '')) LIKE '%submiss%'
+                    OR LOWER(COALESCE(body, '')) LIKE '%submiss%'
+                )
+                -- Filter to only valid submission PRs (after July 9, 2025, 20:30:44 and PR >= 21)
+                AND created_at >= '2025-07-09T20:30:44Z'
+                AND number >= 21
     ), ts_repos AS (
         SELECT
             submission_id,
@@ -69,13 +85,20 @@ pr_dates_df = con.execute(
             LOWER(NULLIF(detected_repo, '')) AS detected_repo_path
         FROM tech_submissions
     )
-    SELECT t.submission_id, MIN(p.created_at) AS pr_date
-    FROM ts_repos t
-    JOIN results_final r ON r.submission_id = t.submission_id
-    JOIN pr_extracted p
-      ON p.pr_repo_path IS NOT NULL
-     AND (p.pr_repo_path = t.ts_repo_path OR p.pr_repo_path = t.detected_repo_path)
-    GROUP BY t.submission_id
+        SELECT t.submission_id, MIN(p.created_at) AS pr_date
+        FROM ts_repos t
+        JOIN results_final r ON r.submission_id = t.submission_id
+        JOIN pr_extracted p
+            ON (
+                     (p.pr_repo_path IS NOT NULL AND (p.pr_repo_path = t.ts_repo_path OR p.pr_repo_path = t.detected_repo_path))
+                OR (
+                     -- fallback: match by PR author login to provided repo username when title/body looks like a submission
+                     (p.author_login IS NOT NULL AND (
+                             p.title LIKE '%submiss%' OR p.body LIKE '%submiss%'
+                     ) AND p.author_login = LOWER(regexp_extract(COALESCE(t.ts_repo_path, t.detected_repo_path, ''), '([A-Za-z0-9_.-]+)/', 1)))
+                )
+            )
+        GROUP BY t.submission_id
     """
 ).fetchdf()
 dates = pd.to_datetime(pr_dates_df["pr_date"], errors="coerce").dt.date.dropna()
