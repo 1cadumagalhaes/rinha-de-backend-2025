@@ -778,12 +778,14 @@
                   <div class="text-xs text-center mt-2 space-y-1">
                     <div class="flex items-center gap-1">
                       <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
-                      <span>Default ({Math.round(defaultNumPercentage)}%)</span>
+                      <span
+                        >Default ({Math.round(defaultTaxasPercentage)}%)</span
+                      >
                     </div>
                     <div class="flex items-center gap-1">
                       <div class="w-2 h-2 bg-pink-500 rounded-full"></div>
                       <span
-                        >Fallback ({Math.round(fallbackNumPercentage)}%)</span
+                        >Fallback ({Math.round(fallbackTaxasPercentage)}%)</span
                       >
                     </div>
                   </div>
