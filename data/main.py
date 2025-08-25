@@ -321,7 +321,7 @@ def build_tables() -> None:
     con.execute("CREATE OR REPLACE TABLE commits AS SELECT * FROM commits_df")
     con.execute("CREATE OR REPLACE TABLE tech_submissions AS SELECT * FROM tech_df")
     con.execute(
-        "CREATE OR REPLACE TABLE results_final AS SELECT * FROM results_final_df"
+        "CREATE OR REPLACE TABLE results_final AS SELECT * FROM results_final_df WHERE NOT erro_na_execucao"
     )
     con.execute(
         "CREATE OR REPLACE TABLE main_repo_prs AS SELECT * FROM main_repo_prs_df"

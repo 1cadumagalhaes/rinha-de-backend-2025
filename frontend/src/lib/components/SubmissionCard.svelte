@@ -58,6 +58,7 @@
         lag: 0,
         num_pagamentos_falha: 0,
         num_inconsistencias: 0,
+        total_bruto_projetado: 1000000,
       },
       pagamentos: {
         default_total_bruto: 600000,
@@ -66,6 +67,8 @@
         fallback_total_bruto: 400000,
         fallback_total_taxas: 150000,
         fallback_num_pagamentos: 40000,
+        default_pct_num_requests: 60,
+        default_pct_total_bruto: 60,
       },
     },
   };
@@ -119,6 +122,10 @@
   );
   $: multaPercentage = data?.results?.financeiro?.multa_porcentagem || 0;
   $: multaTotal = formatCurrency(data?.results?.financeiro?.multa_total || 0);
+  $: bonusPercentage = data?.results?.financeiro?.bonus || 0;
+  $: bonusTotal = formatCurrency(
+    (data?.results?.financeiro?.total_bruto || 0) * (bonusPercentage / 100),
+  );
   $: caixaDois = data?.results?.financeiro?.caixa_dois;
 
   // Payment metrics
@@ -127,11 +134,55 @@
   );
   $: defaultNumPagamentos =
     data?.results?.pagamentos?.default_num_pagamentos ?? "-";
+  $: defaultTotalTaxas = formatCurrency(
+    data?.results?.pagamentos?.default_total_taxas || 0,
+  );
   $: fallbackTotalBruto = formatCurrency(
     data?.results?.pagamentos?.fallback_total_bruto || 0,
   );
   $: fallbackNumPagamentos =
     data?.results?.pagamentos?.fallback_num_pagamentos ?? 0;
+  $: fallbackTotalTaxas = formatCurrency(
+    data?.results?.pagamentos?.fallback_total_taxas || 0,
+  );
+
+  // Pizza chart data for payments
+  $: defaultTotalBrutoValue =
+    data?.results?.pagamentos?.default_total_bruto || 0;
+  $: fallbackTotalBrutoValue =
+    data?.results?.pagamentos?.fallback_total_bruto || 0;
+  $: defaultNumPagamentosValue =
+    data?.results?.pagamentos?.default_num_pagamentos || 0;
+  $: fallbackNumPagamentosValue =
+    data?.results?.pagamentos?.fallback_num_pagamentos || 0;
+  $: defaultTotalTaxasValue =
+    data?.results?.pagamentos?.default_total_taxas || 0;
+  $: fallbackTotalTaxasValue =
+    data?.results?.pagamentos?.fallback_total_taxas || 0;
+
+  $: totalBrutoSum = defaultTotalBrutoValue + fallbackTotalBrutoValue;
+  $: totalNumPagamentosSum =
+    defaultNumPagamentosValue + fallbackNumPagamentosValue;
+  $: totalTaxasSum = defaultTotalTaxasValue + fallbackTotalTaxasValue;
+
+  $: defaultBrutoPercentage =
+    totalBrutoSum > 0 ? (defaultTotalBrutoValue / totalBrutoSum) * 100 : 0;
+  $: fallbackBrutoPercentage =
+    totalBrutoSum > 0 ? (fallbackTotalBrutoValue / totalBrutoSum) * 100 : 0;
+
+  $: defaultNumPercentage =
+    totalNumPagamentosSum > 0
+      ? (defaultNumPagamentosValue / totalNumPagamentosSum) * 100
+      : 0;
+  $: fallbackNumPercentage =
+    totalNumPagamentosSum > 0
+      ? (fallbackNumPagamentosValue / totalNumPagamentosSum) * 100
+      : 0;
+
+  $: defaultTaxasPercentage =
+    totalTaxasSum > 0 ? (defaultTotalTaxasValue / totalTaxasSum) * 100 : 0;
+  $: fallbackTaxasPercentage =
+    totalTaxasSum > 0 ? (fallbackTotalTaxasValue / totalTaxasSum) * 100 : 0;
 
   // Tech stack icons - collect all items except tags and deduplicate
   $: allTechItems = [
@@ -155,9 +206,11 @@
   $: languageIcon =
     primaryLanguage !== "-" ? getIconSvg(primaryLanguage, "w-12 h-12") : null;
 
-  let bonus: boolean = data.results && data?.results?.financeiro.bonus > 0;
-  let multa: boolean =
-    data.results && data?.results?.financeiro.multa_total > 0;
+  $: bonus =
+    data.results &&
+    data?.results?.financeiro.bonus &&
+    data?.results?.financeiro.bonus > 0;
+  $: multa = data.results && data?.results?.financeiro.multa_total > 0;
   let open = false;
 </script>
 
@@ -463,9 +516,14 @@
                   valueClass="text-warning"
                 />
                 <div class="col-span-2">
-                  <div class="flex gap-2 items-center">
+                  <div class="flex gap-2 items-center flex-wrap">
                     <div class="badge {multa ? 'badge-error' : 'badge-ghost'}">
                       Multa {multaPercentage}% ({multaTotal})
+                    </div>
+                    <div
+                      class="badge {bonus ? 'badge-success' : 'badge-ghost'}"
+                    >
+                      Bônus {bonusPercentage}% ({bonusTotal})
                     </div>
                   </div>
                 </div>
@@ -484,7 +542,9 @@
               </div>
 
               <h4 class="font-semibold mt-4">Pagamentos</h4>
-              <div class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-3">
+
+              <!-- Original Data Metrics -->
+              <div class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
                 <Metric
                   label="Default - total bruto"
                   value={defaultTotalBruto}
@@ -497,6 +557,13 @@
                   value={defaultNumPagamentos}
                   description={metricsDescriptions[
                     "results.pagamentos.default_num_pagamentos"
+                  ]}
+                />
+                <Metric
+                  label="Default - total taxas"
+                  value={defaultTotalTaxas}
+                  description={metricsDescriptions[
+                    "results.pagamentos.default_total_taxas"
                   ]}
                 />
                 <Metric
@@ -513,6 +580,214 @@
                     "results.pagamentos.fallback_num_pagamentos"
                   ]}
                 />
+                <Metric
+                  label="Fallback - total taxas"
+                  value={fallbackTotalTaxas}
+                  description={metricsDescriptions[
+                    "results.pagamentos.fallback_total_taxas"
+                  ]}
+                />
+              </div>
+
+              <!-- Visual Distribution Charts -->
+              <h5 class="text-sm font-medium mb-4">Distribuição Visual</h5>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Total Bruto Distribution -->
+                <div class="flex flex-col items-center">
+                  <h6 class="text-xs font-medium mb-2">
+                    Distribuição Total Bruto
+                  </h6>
+                  <div class="relative w-24 h-24">
+                    <svg
+                      class="w-24 h-24 transform -rotate-90"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        fill="none"
+                        stroke="#e5e7eb"
+                        stroke-width="2"
+                      />
+                      {#if defaultBrutoPercentage > 0}
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          fill="none"
+                          stroke="#10b981"
+                          stroke-width="2"
+                          stroke-dasharray={`${(defaultBrutoPercentage / 100) * 62.83} 62.83`}
+                          stroke-dashoffset="0"
+                        />
+                      {/if}
+                      {#if fallbackBrutoPercentage > 0}
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          fill="none"
+                          stroke="#f59e0b"
+                          stroke-width="2"
+                          stroke-dasharray={`${(fallbackBrutoPercentage / 100) * 62.83} 62.83`}
+                          stroke-dashoffset={`-${(defaultBrutoPercentage / 100) * 62.83}`}
+                        />
+                      {/if}
+                    </svg>
+                    <div
+                      class="absolute inset-0 flex items-center justify-center"
+                    >
+                      <span class="text-xs font-bold"
+                        >{Math.round(defaultBrutoPercentage)}%</span
+                      >
+                    </div>
+                  </div>
+                  <div class="text-xs text-center mt-2 space-y-1">
+                    <div class="flex items-center gap-1">
+                      <div class="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                      <span
+                        >Default ({Math.round(defaultBrutoPercentage)}%)</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <div class="w-2 h-2 bg-amber-500 rounded-full"></div>
+                      <span
+                        >Fallback ({Math.round(fallbackBrutoPercentage)}%)</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Número de Pagamentos Distribution -->
+                <div class="flex flex-col items-center">
+                  <h6 class="text-xs font-medium mb-2">
+                    Distribuição Num. Pagamentos
+                  </h6>
+                  <div class="relative w-24 h-24">
+                    <svg
+                      class="w-24 h-24 transform -rotate-90"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        fill="none"
+                        stroke="#e5e7eb"
+                        stroke-width="2"
+                      />
+                      {#if defaultNumPercentage > 0}
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          fill="none"
+                          stroke="#3b82f6"
+                          stroke-width="2"
+                          stroke-dasharray={`${(defaultNumPercentage / 100) * 62.83} 62.83`}
+                          stroke-dashoffset="0"
+                        />
+                      {/if}
+                      {#if fallbackNumPercentage > 0}
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          fill="none"
+                          stroke="#ef4444"
+                          stroke-width="2"
+                          stroke-dasharray={`${(fallbackNumPercentage / 100) * 62.83} 62.83`}
+                          stroke-dashoffset={`-${(defaultNumPercentage / 100) * 62.83}`}
+                        />
+                      {/if}
+                    </svg>
+                    <div
+                      class="absolute inset-0 flex items-center justify-center"
+                    >
+                      <span class="text-xs font-bold"
+                        >{Math.round(defaultNumPercentage)}%</span
+                      >
+                    </div>
+                  </div>
+                  <div class="text-xs text-center mt-2 space-y-1">
+                    <div class="flex items-center gap-1">
+                      <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                      <span>Default ({Math.round(defaultNumPercentage)}%)</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <div class="w-2 h-2 bg-red-500 rounded-full"></div>
+                      <span
+                        >Fallback ({Math.round(fallbackNumPercentage)}%)</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Total Taxas Distribution -->
+                <div class="flex flex-col items-center">
+                  <h6 class="text-xs font-medium mb-2">
+                    Distribuição Total Taxas
+                  </h6>
+                  <div class="relative w-24 h-24">
+                    <svg
+                      class="w-24 h-24 transform -rotate-90"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        fill="none"
+                        stroke="#e5e7eb"
+                        stroke-width="2"
+                      />
+                      {#if defaultTaxasPercentage > 0}
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          fill="none"
+                          stroke="#8b5cf6"
+                          stroke-width="2"
+                          stroke-dasharray={`${(defaultTaxasPercentage / 100) * 62.83} 62.83`}
+                          stroke-dashoffset="0"
+                        />
+                      {/if}
+                      {#if fallbackTaxasPercentage > 0}
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          fill="none"
+                          stroke="#ec4899"
+                          stroke-width="2"
+                          stroke-dasharray={`${(fallbackTaxasPercentage / 100) * 62.83} 62.83`}
+                          stroke-dashoffset={`-${(defaultTaxasPercentage / 100) * 62.83}`}
+                        />
+                      {/if}
+                    </svg>
+                    <div
+                      class="absolute inset-0 flex items-center justify-center"
+                    >
+                      <span class="text-xs font-bold"
+                        >{Math.round(defaultTaxasPercentage)}%</span
+                      >
+                    </div>
+                  </div>
+                  <div class="text-xs text-center mt-2 space-y-1">
+                    <div class="flex items-center gap-1">
+                      <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                      <span>Default ({Math.round(defaultNumPercentage)}%)</span>
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <div class="w-2 h-2 bg-pink-500 rounded-full"></div>
+                      <span
+                        >Fallback ({Math.round(fallbackNumPercentage)}%)</span
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
 

@@ -166,6 +166,7 @@ def main():
         r.multa_porcentagem,
         r.p99_ms,
         r.p99_max_requests,
+        r.p99_bonus_pct,
         r.lag_num_pagamentos_solicitados,
         r.lag,
         r.pagamentos_solicitados_qtd_falha,
@@ -283,7 +284,7 @@ def main():
                     "total_taxas": py(row["total_taxas"]),
                     "multa_total": py(row["multa_total"]),
                     "multa_porcentagem": py(row["multa_porcentagem"]),
-                    "bonus": None,  # Can be filled if needed
+                    "bonus": py(row["p99_bonus_pct"]),
                     "caixa_dois": py(row["caixa_dois_detectado"]),
                 },
                 "performance": {

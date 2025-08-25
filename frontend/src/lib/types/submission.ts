@@ -4,7 +4,8 @@ export type SubmissionRecord = {
   source_code_repo: string;
   commits_count?: number | null;
   first_commit?: string | null;
-  last_commit?: string | null
+  last_commit?: string | null;
+  first_pr?: string | null;
   rank: number;
   performance_rank: number;
   user: {
@@ -30,7 +31,7 @@ export type SubmissionRecord = {
       total_taxas: number;
       multa_total: number;
       multa_porcentagem: number;
-      bonus: number;
+      bonus: number | null;
       caixa_dois: boolean;
     };
     performance: {
@@ -40,11 +41,14 @@ export type SubmissionRecord = {
       lag: number;
       num_pagamentos_falha: number;
       num_inconsistencias: number;
+      total_bruto_projetado: number;
     };
     pagamentos: {
       default_total_bruto: number;
       default_num_pagamentos: number;
       default_total_taxas: number;
+      default_pct_num_requests: number;
+      default_pct_total_bruto: number;
       fallback_total_bruto: number;
       fallback_total_taxas: number;
       fallback_num_pagamentos: number;
