@@ -210,6 +210,43 @@ def main():
     for _, row in df.iterrows():
         repo = row["provided_repo"]
         github = get_github_username(repo)
+        # Prepare numeric values (normalize NA -> None / 0 for arithmetic)
+        prd_num = py(row.get("prd_num_pagamentos"))
+        prf_num = py(row.get("prf_num_pagamentos"))
+        prd_total_bruto = py(row.get("prd_total_bruto"))
+        prf_total_bruto = py(row.get("prf_total_bruto"))
+        # treat None as 0 for aggregation calculations
+        prd_num_n = prd_num or 0
+        prf_num_n = prf_num or 0
+        prd_total_bruto_n = prd_total_bruto or 0
+        prf_total_bruto_n = prf_total_bruto or 0
+
+        # percentages (as percent values, rounded to 2 decimals)
+        total_num = prd_num_n + prf_num_n
+        default_num_pct = (
+            round((prd_num_n / total_num) * 100, 2) if total_num > 0 else None
+        )
+
+        total_bruto_sum = prd_total_bruto_n + prf_total_bruto_n
+        default_total_bruto_pct = (
+            round((prd_total_bruto_n / total_bruto_sum) * 100, 2)
+            if total_bruto_sum > 0
+            else None
+        )
+
+        # projected total bruto based on requested payments and observed default avg bruto per payment
+        num_requested = py(row.get("lag_num_pagamentos_solicitados")) or 0
+        avg_default_bruto_per_payment = None
+        if prd_num_n > 0:
+            try:
+                avg_default_bruto_per_payment = prd_total_bruto_n / prd_num_n
+            except Exception:
+                avg_default_bruto_per_payment = None
+        total_bruto_projetado = (
+            round(avg_default_bruto_per_payment * num_requested, 2)
+            if (avg_default_bruto_per_payment is not None and num_requested)
+            else None
+        )
 
         submission = {
             "submission_id": row["submission_id"],
@@ -258,11 +295,14 @@ def main():
                     "lag": py(row["lag"]),
                     "num_pagamentos_falha": py(row["pagamentos_solicitados_qtd_falha"]),
                     "num_inconsistencias": py(row["multa_num_inconsistencias"]),
+                    "total_bruto_projetado": total_bruto_projetado,
                 },
                 "pagamentos": {
                     "default_total_bruto": py(row["prd_total_bruto"]),
                     "default_num_pagamentos": py(row["prd_num_pagamentos"]),
                     "default_total_taxas": py(row["prd_total_taxas"]),
+                    "default_pct_num_requests": default_num_pct,
+                    "default_pct_total_bruto": default_total_bruto_pct,
                     "fallback_total_bruto": py(row["prf_total_bruto"]),
                     "fallback_total_taxas": py(row["prf_total_taxas"]),
                     "fallback_num_pagamentos": py(row["prf_num_pagamentos"]),

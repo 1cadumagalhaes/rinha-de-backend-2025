@@ -161,7 +161,9 @@
           "languages": [
             "typescript"
           ],
-          "runtimes": [],
+          "runtimes": [
+            "bun"
+          ],
           "storages": [
             "memory"
           ],
@@ -215,7 +217,9 @@
           "languages": [
             "typescript"
           ],
-          "runtimes": [],
+          "runtimes": [
+            "bun"
+          ],
           "storages": [
             "memory"
           ],
@@ -269,7 +273,9 @@
           "languages": [
             "typescript"
           ],
-          "runtimes": [],
+          "runtimes": [
+            "bun"
+          ],
           "storages": [
             "memory"
           ],
@@ -5372,7 +5378,9 @@
           "languages": [
             "typescript"
           ],
-          "runtimes": [],
+          "runtimes": [
+            "bun"
+          ],
           "storages": [
             "lmdb",
             "mongodb",
@@ -6317,7 +6325,9 @@
           "languages": [
             "typescript"
           ],
-          "runtimes": [],
+          "runtimes": [
+            "bun"
+          ],
           "storages": [
             "redis"
           ],
@@ -9161,7 +9171,9 @@
           "languages": [
             "go"
           ],
-          "runtimes": [],
+          "runtimes": [
+            "bun"
+          ],
           "storages": [
             "redis"
           ],
@@ -10438,7 +10450,9 @@
           "languages": [
             "typescript"
           ],
-          "runtimes": [],
+          "runtimes": [
+            "bun"
+          ],
           "storages": [
             "redis"
           ],
@@ -11978,7 +11992,9 @@
           "languages": [
             "typescript"
           ],
-          "runtimes": [],
+          "runtimes": [
+            "bun"
+          ],
           "storages": [
             "redis"
           ],
@@ -14715,7 +14731,8 @@
             "typescript"
           ],
           "runtimes": [
-            "nodejs"
+            "nodejs",
+            "bun"
           ],
           "storages": [
             "redis"
@@ -22294,7 +22311,8 @@
             "typescript"
           ],
           "runtimes": [
-            "nodejs"
+            "nodejs",
+            "bun"
           ],
           "storages": [
             "valkey"
@@ -26197,7 +26215,9 @@
           "languages": [
             "typescript"
           ],
-          "runtimes": [],
+          "runtimes": [
+            "bun"
+          ],
           "storages": [
             "redis"
           ],
@@ -28723,7 +28743,9 @@
           "languages": [
             "typescript"
           ],
-          "runtimes": [],
+          "runtimes": [
+            "bun"
+          ],
           "storages": [
             "redis"
           ],
@@ -32779,7 +32801,7 @@
             "javascript"
           ],
           "runtimes": [
-            "nodejs"
+            "bun"
           ],
           "storages": [
             "redis"
