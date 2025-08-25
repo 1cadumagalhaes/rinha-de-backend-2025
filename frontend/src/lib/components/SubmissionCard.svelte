@@ -215,13 +215,19 @@
 </script>
 
 <article
-  class="card bg-base-200 shadow-md hover:shadow-lg transition-shadow duration-150 relative px-6 py-5 min-w-[18rem]"
+  class="card bg-base-200 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-200 relative px-6 py-5 min-w-[18rem] group"
   style={data.rank && data.rank <= 3
     ? `border: 2px solid ${rankBorderColor(data.rank)};`
     : ""}
 >
+  <button
+    class="absolute inset-0 w-full h-full cursor-pointer bg-transparent border-none p-0 m-0 z-10"
+    on:click={() => (open = true)}
+    on:keydown={(e) => e.key === "Enter" && (open = true)}
+    aria-label={`Ver detalhes de ${data.user?.name} - ${data.submission_id}`}
+  ></button>
   {#if data.rank && data.rank <= 3}
-    <div class="absolute -top-3 left-3">
+    <div class="absolute -top-3 left-3 z-20">
       <span
         class="badge badge-lg"
         style="background: {data.rank === 1
@@ -234,21 +240,33 @@
   {/if}
 
   <!-- Header: name (big) and participant, then icon+amount row, tags, and fixed detalhes button -->
-  <div class="card-body p-0 flex flex-col h-full">
+  <div
+    class="card-body p-0 flex flex-col h-full relative z-10 pointer-events-none"
+  >
     <!-- person name full row -->
-    <div class="text-xl font-bold">{data.user?.name}</div>
+    <div
+      class="text-xl font-bold group-hover:text-primary transition-colors duration-200"
+    >
+      {data.user?.name}
+    </div>
     <!-- subtitle as submission id / participant -->
-    <div class="text-sm text-muted mb-4">{data.submission_id}</div>
+    <div
+      class="text-sm text-muted mb-4 group-hover:text-base-content transition-colors duration-200"
+    >
+      {data.submission_id}
+    </div>
 
     <!-- icon left, amount + p99 right -->
     <div class="flex items-center justify-between gap-4">
       <div class="flex items-center gap-4">
-        <div class="w-20 flex items-center justify-center">
+        <div
+          class="w-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-200"
+        >
           {#if languageIcon}
             {@html languageIcon}
           {:else}
             <div
-              class="w-12 h-12 bg-base-300 rounded flex items-center justify-center text-xl font-bold"
+              class="w-12 h-12 bg-base-300 rounded flex items-center justify-center text-xl font-bold group-hover:bg-primary group-hover:text-primary-content transition-colors duration-200"
             >
               {primaryLanguage.charAt(0).toUpperCase()}
             </div>
@@ -257,10 +275,14 @@
       </div>
 
       <div class="text-right">
-        <div class="text-2xl font-bold">
+        <div
+          class="text-2xl font-bold group-hover:text-success transition-colors duration-200"
+        >
           R$ {formattedTotalLiquido}
         </div>
-        <div class="text-sm text-muted">
+        <div
+          class="text-sm text-muted group-hover:text-base-content transition-colors duration-200"
+        >
           p99: {p99} ms
         </div>
       </div>
@@ -268,23 +290,48 @@
 
     <!-- compact tag badges (no labels) -->
     <div class="mt-4 flex items-center gap-2">
-      <span class="badge badge-primary">{primaryLanguage.toLowerCase()}</span>
-      <span class="badge badge-secondary">{primaryRuntime.toLowerCase()}</span>
-      <span class="badge badge-accent">{primaryStorage.toLowerCase()}</span>
+      <span
+        class="badge badge-primary group-hover:badge-outline transition-all duration-200"
+        >{primaryLanguage.toLowerCase()}</span
+      >
+      <span
+        class="badge badge-secondary group-hover:badge-outline transition-all duration-200"
+        >{primaryRuntime.toLowerCase()}</span
+      >
+      <span
+        class="badge badge-accent group-hover:badge-outline transition-all duration-200"
+        >{primaryStorage.toLowerCase()}</span
+      >
     </div>
 
     <!-- fixed action at bottom -->
-    <div class="mt-auto flex justify-end">
-      <button class="btn btn-sm btn-outline" on:click={() => (open = true)}
-        >detalhes</button
+    <div class="mt-auto flex justify-end relative z-20 pointer-events-auto">
+      <button
+        class="btn btn-sm btn-outline group-hover:btn-primary group-hover:shadow-lg transition-all duration-200"
+        on:click={() => (open = true)}>detalhes</button
       >
     </div>
   </div>
+</article>
 
-  <!-- Modal with full details -->
-  {#if open}
-    <div class="modal modal-open">
-      <div class="modal-box max-w-4xl">
+<!-- Modal with full details - moved outside the card -->
+{#if open}
+  <div
+    class="modal modal-open"
+    on:click={() => (open = false)}
+    on:keydown={(e) => e.key === "Escape" && (open = false)}
+    role="button"
+    tabindex="-1"
+    aria-label="Close modal"
+  >
+      <div
+        class="modal-box max-w-4xl"
+        on:click|stopPropagation
+        on:keydown|stopPropagation
+        role="dialog"
+        aria-modal="true"
+        tabindex="0"
+      >
         <div class="flex gap-6">
           <div class="w-1/3">
             <UserCard
@@ -802,4 +849,3 @@
       </div>
     </div>
   {/if}
-</article>
