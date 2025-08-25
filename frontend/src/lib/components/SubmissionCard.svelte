@@ -324,528 +324,519 @@
     tabindex="-1"
     aria-label="Close modal"
   >
-      <div
-        class="modal-box max-w-4xl"
-        on:click|stopPropagation
-        on:keydown|stopPropagation
-        role="dialog"
-        aria-modal="true"
-        tabindex="0"
-      >
-        <div class="flex gap-6">
-          <div class="w-1/3">
-            <UserCard
-              repoUrl={data.source_code_repo ?? "-"}
-              name={data.user?.name}
-              avatarUrl={data.user?.github_profile_pic}
-              socials={data.user?.socials}
-            />
+    <div
+      class="modal-box max-w-4xl"
+      on:click|stopPropagation
+      on:keydown|stopPropagation
+      role="dialog"
+      aria-modal="true"
+      tabindex="0"
+    >
+      <div class="flex gap-6">
+        <div class="w-1/3">
+          <UserCard
+            repoUrl={data.source_code_repo ?? "-"}
+            name={data.user?.name}
+            avatarUrl={data.user?.github_profile_pic}
+            socials={data.user?.socials}
+          />
 
-            <div class="mt-4">
-              <div class="flex flex-wrap gap-2">
-                {#each techIcons as icon}
-                  <div class="tooltip" data-tip={icon.name}>
-                    {@html icon.svg}
-                  </div>
-                {/each}
+          <div class="mt-4">
+            <div class="flex flex-wrap gap-2">
+              {#each techIcons as icon}
+                <div class="tooltip" data-tip={icon.name}>
+                  {@html icon.svg}
+                </div>
+              {/each}
+            </div>
+          </div>
+
+          <div class="mt-4">
+            {#if data.tech_stack?.languages}
+              <div class="mb-2">
+                <div class="text-xs text-muted">Language</div>
+                <div class="mt-1 flex flex-wrap gap-2">
+                  {#each data.tech_stack.languages.filter(shouldIncludeItem) as v}
+                    <span class="badge badge-primary badge-sm"
+                      >{v.toLowerCase()}</span
+                    >
+                  {/each}
+                </div>
               </div>
-            </div>
+            {/if}
 
-            <div class="mt-4">
-              {#if data.tech_stack?.languages}
-                <div class="mb-2">
-                  <div class="text-xs text-muted">Language</div>
-                  <div class="mt-1 flex flex-wrap gap-2">
-                    {#each data.tech_stack.languages.filter(shouldIncludeItem) as v}
-                      <span class="badge badge-primary badge-sm"
-                        >{v.toLowerCase()}</span
-                      >
-                    {/each}
-                  </div>
+            {#if data.tech_stack?.runtimes}
+              <div class="mb-2">
+                <div class="text-xs text-muted">Runtime</div>
+                <div class="mt-1 flex flex-wrap gap-2">
+                  {#each data.tech_stack.runtimes.filter(shouldIncludeItem) as v}
+                    <span class="badge badge-secondary badge-sm"
+                      >{v.toLowerCase()}</span
+                    >
+                  {/each}
                 </div>
-              {/if}
+              </div>
+            {/if}
 
-              {#if data.tech_stack?.runtimes}
-                <div class="mb-2">
-                  <div class="text-xs text-muted">Runtime</div>
-                  <div class="mt-1 flex flex-wrap gap-2">
-                    {#each data.tech_stack.runtimes.filter(shouldIncludeItem) as v}
-                      <span class="badge badge-secondary badge-sm"
-                        >{v.toLowerCase()}</span
-                      >
-                    {/each}
-                  </div>
+            {#if data.tech_stack?.storages}
+              <div class="mb-2">
+                <div class="text-xs text-muted">Storage</div>
+                <div class="mt-1 flex flex-wrap gap-2">
+                  {#each data.tech_stack.storages.filter(shouldIncludeItem) as v}
+                    <span class="badge badge-accent badge-sm"
+                      >{v.toLowerCase()}</span
+                    >
+                  {/each}
                 </div>
-              {/if}
+              </div>
+            {/if}
 
-              {#if data.tech_stack?.storages}
-                <div class="mb-2">
-                  <div class="text-xs text-muted">Storage</div>
-                  <div class="mt-1 flex flex-wrap gap-2">
-                    {#each data.tech_stack.storages.filter(shouldIncludeItem) as v}
-                      <span class="badge badge-accent badge-sm"
-                        >{v.toLowerCase()}</span
-                      >
-                    {/each}
-                  </div>
+            {#if data.tech_stack?.messaging}
+              <div class="mb-2">
+                <div class="text-xs text-muted">Messaging</div>
+                <div class="mt-1 flex flex-wrap gap-2">
+                  {#each data.tech_stack.messaging.filter(shouldIncludeItem) as v}
+                    <span class="badge badge-info badge-sm"
+                      >{v.toLowerCase()}</span
+                    >
+                  {/each}
                 </div>
-              {/if}
+              </div>
+            {/if}
 
-              {#if data.tech_stack?.messaging}
-                <div class="mb-2">
-                  <div class="text-xs text-muted">Messaging</div>
-                  <div class="mt-1 flex flex-wrap gap-2">
-                    {#each data.tech_stack.messaging.filter(shouldIncludeItem) as v}
-                      <span class="badge badge-info badge-sm"
-                        >{v.toLowerCase()}</span
-                      >
-                    {/each}
-                  </div>
+            {#if data.tech_stack?.load_balancers}
+              <div class="mb-2">
+                <div class="text-xs text-muted">Load balancers</div>
+                <div class="mt-1 flex flex-wrap gap-2">
+                  {#each data.tech_stack.load_balancers.filter(shouldIncludeItem) as v}
+                    <span class="badge badge-ghost badge-sm"
+                      >{v.toLowerCase()}</span
+                    >
+                  {/each}
                 </div>
-              {/if}
+              </div>
+            {/if}
 
-              {#if data.tech_stack?.load_balancers}
-                <div class="mb-2">
-                  <div class="text-xs text-muted">Load balancers</div>
-                  <div class="mt-1 flex flex-wrap gap-2">
-                    {#each data.tech_stack.load_balancers.filter(shouldIncludeItem) as v}
-                      <span class="badge badge-ghost badge-sm"
-                        >{v.toLowerCase()}</span
-                      >
-                    {/each}
-                  </div>
+            {#if data.tech_stack?.others}
+              <div class="mb-2">
+                <div class="text-xs text-muted">Frameworks / other</div>
+                <div class="mt-1 flex flex-wrap gap-2">
+                  {#each data.tech_stack.others
+                    .filter(shouldIncludeItem)
+                    .slice(0, 10) as v}
+                    <span class="badge badge-ghost badge-sm"
+                      >{v.toLowerCase()}</span
+                    >
+                  {/each}
+                  {#if data.tech_stack.others.filter(shouldIncludeItem).length > 10}
+                    <span class="badge badge-ghost badge-sm opacity-60">
+                      +{data.tech_stack.others.filter(shouldIncludeItem)
+                        .length - 10} more
+                    </span>
+                  {/if}
                 </div>
-              {/if}
+              </div>
+            {/if}
 
-              {#if data.tech_stack?.others}
-                <div class="mb-2">
-                  <div class="text-xs text-muted">Frameworks / other</div>
-                  <div class="mt-1 flex flex-wrap gap-2">
-                    {#each data.tech_stack.others
-                      .filter(shouldIncludeItem)
-                      .slice(0, 10) as v}
-                      <span class="badge badge-ghost badge-sm"
-                        >{v.toLowerCase()}</span
-                      >
-                    {/each}
-                    {#if data.tech_stack.others.filter(shouldIncludeItem).length > 10}
-                      <span class="badge badge-ghost badge-sm opacity-60">
-                        +{data.tech_stack.others.filter(shouldIncludeItem)
-                          .length - 10} more
-                      </span>
-                    {/if}
-                  </div>
+            {#if data.tech_stack?.tags}
+              <div class="mb-2">
+                <div class="text-xs text-muted">Tags</div>
+                <div class="mt-1 flex flex-wrap gap-2">
+                  {#each data.tech_stack.tags.filter(shouldIncludeItem) as v}
+                    <span class="badge badge-outline badge-sm"
+                      >{v.toLowerCase()}</span
+                    >
+                  {/each}
                 </div>
-              {/if}
+              </div>
+            {/if}
+          </div>
 
-              {#if data.tech_stack?.tags}
-                <div class="mb-2">
-                  <div class="text-xs text-muted">Tags</div>
-                  <div class="mt-1 flex flex-wrap gap-2">
-                    {#each data.tech_stack.tags.filter(shouldIncludeItem) as v}
-                      <span class="badge badge-outline badge-sm"
-                        >{v.toLowerCase()}</span
-                      >
-                    {/each}
-                  </div>
-                </div>
-              {/if}
-            </div>
+          <!-- repo button bottom-left inside details modal -->
+          <div class="mt-6">
+            {#if data.source_code_repo}
+              <a
+                class="btn btn-sm btn-outline"
+                href={data.source_code_repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Abrir repositório de ${data.submission_id || data.user?.name}`}
+              >
+                repo
+              </a>
+            {/if}
+            {#if data.commits_count || data.first_commit || data.last_commit}
+              <div class="text-xs text-muted mt-2">
+                {#if data.commits_count}<div>
+                    Commits: {data.commits_count}
+                  </div>{/if}
+                {#if data.first_commit}<div>
+                    first: {data.first_commit}
+                  </div>{/if}
+                {#if data.last_commit}<div>
+                    last: {data.last_commit}
+                  </div>{/if}
+              </div>
+            {/if}
+          </div>
+        </div>
 
-            <!-- repo button bottom-left inside details modal -->
-            <div class="mt-6">
-              {#if data.source_code_repo}
-                <a
-                  class="btn btn-sm btn-outline"
-                  href={data.source_code_repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Abrir repositório de ${data.submission_id || data.user?.name}`}
-                >
-                  repo
-                </a>
-              {/if}
-              {#if data.commits_count || data.first_commit || data.last_commit}
-                <div class="text-xs text-muted mt-2">
-                  {#if data.commits_count}<div>
-                      Commits: {data.commits_count}
-                    </div>{/if}
-                  {#if data.first_commit}<div>
-                      first: {data.first_commit}
-                    </div>{/if}
-                  {#if data.last_commit}<div>
-                      last: {data.last_commit}
-                    </div>{/if}
+        <div class="w-2/3">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg">
+              {data.user?.name} — {data.submission_id}
+            </h3>
+            <div class="ml-4">
+              <div
+                class="w-20 h-20 rounded-full flex items-center justify-center font-black text-5xl"
+                style="border: 4px solid {rankBorderColor(
+                  data.rank,
+                )}; color: {data.rank && data.rank > 3
+                  ? '#000'
+                  : rankBorderColor(data.rank)};"
+                aria-hidden="true"
+                title={`Rank ${data.rank}`}
+              >
+                #{data.rank || "-"}
+              </div>
+              {#if data.performance_rank}
+                <div class="text-sm text-center mt-1">
+                  perf #{data.performance_rank}
                 </div>
               {/if}
             </div>
           </div>
 
-          <div class="w-2/3">
-            <div class="flex justify-between items-start mb-2">
-              <h3 class="font-bold text-lg">
-                {data.user?.name} — {data.submission_id}
-              </h3>
-              <div class="ml-4">
-                <div
-                  class="w-20 h-20 rounded-full flex items-center justify-center font-black text-5xl"
-                  style="border: 4px solid {rankBorderColor(
-                    data.rank,
-                  )}; color: {data.rank && data.rank > 3
-                    ? '#000'
-                    : rankBorderColor(data.rank)};"
-                  aria-hidden="true"
-                  title={`Rank ${data.rank}`}
-                >
-                  #{data.rank || "-"}
-                </div>
-                {#if data.performance_rank}
-                  <div class="text-sm text-center mt-1">
-                    perf #{data.performance_rank}
+          <section class="mb-4">
+            <h4 class="font-semibold">Performance</h4>
+            <div class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-3">
+              <Metric
+                label="p99 (ms)"
+                value={performanceP99}
+                description={metricsDescriptions["results.performance.p99"]}
+              />
+              <Metric
+                label="Max requests"
+                value={performanceMaxRequests}
+                description={metricsDescriptions[
+                  "results.performance.max_requests"
+                ]}
+              />
+              <Metric
+                label="Num pagamentos solicitados"
+                value={performanceNumPagamentos}
+                description={metricsDescriptions[
+                  "results.performance.num_pagamentos_solicitados"
+                ]}
+              />
+
+              <Metric
+                label="Lag"
+                value={performanceLag}
+                description={metricsDescriptions["results.performance.lag"]}
+              />
+            </div>
+
+            <h4 class="font-semibold mt-4">Financeiro</h4>
+            <div class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-3">
+              <Metric
+                label="Total líquido"
+                value={financialTotalLiquido}
+                description={metricsDescriptions[
+                  "results.financeiro.total_liquido"
+                ]}
+                valueClass="text-success"
+              />
+              <Metric
+                label="Total bruto"
+                value={financialTotalBruto}
+                description={metricsDescriptions[
+                  "results.financeiro.total_bruto"
+                ]}
+              />
+              <Metric
+                label="Total taxas"
+                value={financialTotalTaxas}
+                description={metricsDescriptions[
+                  "results.financeiro.total_taxas"
+                ]}
+                valueClass="text-warning"
+              />
+              <div class="col-span-2">
+                <div class="flex gap-2 items-center flex-wrap">
+                  <div class="badge {multa ? 'badge-error' : 'badge-ghost'}">
+                    Multa {multaPercentage}% ({multaTotal})
                   </div>
-                {/if}
+                  <div class="badge {bonus ? 'badge-success' : 'badge-ghost'}">
+                    Bônus {bonusPercentage}% ({bonusTotal})
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-span-2 mt-2">
+                <div class="flex items-center gap-2">
+                  <div class="text-sm text-muted">Caixa dois</div>
+                  <div
+                    class={"badge ml-2 " +
+                      (caixaDois ? "badge-error" : "badge-success")}
+                  >
+                    {caixaDois ? "sim" : "não"}
+                  </div>
+                </div>
               </div>
             </div>
 
-            <section class="mb-4">
-              <h4 class="font-semibold">Performance</h4>
-              <div class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-3">
-                <Metric
-                  label="p99 (ms)"
-                  value={performanceP99}
-                  description={metricsDescriptions["results.performance.p99"]}
-                />
-                <Metric
-                  label="Max requests"
-                  value={performanceMaxRequests}
-                  description={metricsDescriptions[
-                    "results.performance.max_requests"
-                  ]}
-                />
-                <Metric
-                  label="Num pagamentos solicitados"
-                  value={performanceNumPagamentos}
-                  description={metricsDescriptions[
-                    "results.performance.num_pagamentos_solicitados"
-                  ]}
-                />
+            <h4 class="font-semibold mt-4">Pagamentos</h4>
 
-                <Metric
-                  label="Lag"
-                  value={performanceLag}
-                  description={metricsDescriptions["results.performance.lag"]}
-                />
-              </div>
-
-              <h4 class="font-semibold mt-4">Financeiro</h4>
-              <div class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-3">
-                <Metric
-                  label="Total líquido"
-                  value={financialTotalLiquido}
-                  description={metricsDescriptions[
-                    "results.financeiro.total_liquido"
-                  ]}
-                  valueClass="text-success"
-                />
-                <Metric
-                  label="Total bruto"
-                  value={financialTotalBruto}
-                  description={metricsDescriptions[
-                    "results.financeiro.total_bruto"
-                  ]}
-                />
-                <Metric
-                  label="Total taxas"
-                  value={financialTotalTaxas}
-                  description={metricsDescriptions[
-                    "results.financeiro.total_taxas"
-                  ]}
-                  valueClass="text-warning"
-                />
-                <div class="col-span-2">
-                  <div class="flex gap-2 items-center flex-wrap">
-                    <div class="badge {multa ? 'badge-error' : 'badge-ghost'}">
-                      Multa {multaPercentage}% ({multaTotal})
-                    </div>
-                    <div
-                      class="badge {bonus ? 'badge-success' : 'badge-ghost'}"
-                    >
-                      Bônus {bonusPercentage}% ({bonusTotal})
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-span-2 mt-2">
-                  <div class="flex items-center gap-2">
-                    <div class="text-sm text-muted">Caixa dois</div>
-                    <div
-                      class={"badge ml-2 " +
-                        (caixaDois ? "badge-error" : "badge-success")}
-                    >
-                      {caixaDois ? "sim" : "não"}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <h4 class="font-semibold mt-4">Pagamentos</h4>
-
-              <!-- Original Data Metrics -->
-              <div class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
-                <Metric
-                  label="Default - total bruto"
-                  value={defaultTotalBruto}
-                  description={metricsDescriptions[
-                    "results.pagamentos.default_total_bruto"
-                  ]}
-                />
-                <Metric
-                  label="Default - num pagamentos"
-                  value={defaultNumPagamentos}
-                  description={metricsDescriptions[
-                    "results.pagamentos.default_num_pagamentos"
-                  ]}
-                />
-                <Metric
-                  label="Default - total taxas"
-                  value={defaultTotalTaxas}
-                  description={metricsDescriptions[
-                    "results.pagamentos.default_total_taxas"
-                  ]}
-                />
-                <Metric
-                  label="Fallback - total bruto"
-                  value={fallbackTotalBruto}
-                  description={metricsDescriptions[
-                    "results.pagamentos.fallback_total_bruto"
-                  ]}
-                />
-                <Metric
-                  label="Fallback - num pagamentos"
-                  value={fallbackNumPagamentos}
-                  description={metricsDescriptions[
-                    "results.pagamentos.fallback_num_pagamentos"
-                  ]}
-                />
-                <Metric
-                  label="Fallback - total taxas"
-                  value={fallbackTotalTaxas}
-                  description={metricsDescriptions[
-                    "results.pagamentos.fallback_total_taxas"
-                  ]}
-                />
-              </div>
-
-              <!-- Visual Distribution Charts -->
-              <h5 class="text-sm font-medium mb-4">Distribuição Visual</h5>
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Total Bruto Distribution -->
-                <div class="flex flex-col items-center">
-                  <h6 class="text-xs font-medium mb-2">
-                    Distribuição Total Bruto
-                  </h6>
-                  <div class="relative w-24 h-24">
-                    <svg
-                      class="w-24 h-24 transform -rotate-90"
-                      viewBox="0 0 24 24"
-                    >
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="10"
-                        fill="none"
-                        stroke="#e5e7eb"
-                        stroke-width="2"
-                      />
-                      {#if defaultBrutoPercentage > 0}
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                          fill="none"
-                          stroke="#10b981"
-                          stroke-width="2"
-                          stroke-dasharray={`${(defaultBrutoPercentage / 100) * 62.83} 62.83`}
-                          stroke-dashoffset="0"
-                        />
-                      {/if}
-                      {#if fallbackBrutoPercentage > 0}
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                          fill="none"
-                          stroke="#f59e0b"
-                          stroke-width="2"
-                          stroke-dasharray={`${(fallbackBrutoPercentage / 100) * 62.83} 62.83`}
-                          stroke-dashoffset={`-${(defaultBrutoPercentage / 100) * 62.83}`}
-                        />
-                      {/if}
-                    </svg>
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    >
-                      <span class="text-xs font-bold"
-                        >{Math.round(defaultBrutoPercentage)}%</span
-                      >
-                    </div>
-                  </div>
-                  <div class="text-xs text-center mt-2 space-y-1">
-                    <div class="flex items-center gap-1">
-                      <div class="w-2 h-2 bg-emerald-500 rounded-full"></div>
-                      <span
-                        >Default ({Math.round(defaultBrutoPercentage)}%)</span
-                      >
-                    </div>
-                    <div class="flex items-center gap-1">
-                      <div class="w-2 h-2 bg-amber-500 rounded-full"></div>
-                      <span
-                        >Fallback ({Math.round(fallbackBrutoPercentage)}%)</span
-                      >
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Número de Pagamentos Distribution -->
-                <div class="flex flex-col items-center">
-                  <h6 class="text-xs font-medium mb-2">
-                    Distribuição Num. Pagamentos
-                  </h6>
-                  <div class="relative w-24 h-24">
-                    <svg
-                      class="w-24 h-24 transform -rotate-90"
-                      viewBox="0 0 24 24"
-                    >
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="10"
-                        fill="none"
-                        stroke="#e5e7eb"
-                        stroke-width="2"
-                      />
-                      {#if defaultNumPercentage > 0}
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                          fill="none"
-                          stroke="#3b82f6"
-                          stroke-width="2"
-                          stroke-dasharray={`${(defaultNumPercentage / 100) * 62.83} 62.83`}
-                          stroke-dashoffset="0"
-                        />
-                      {/if}
-                      {#if fallbackNumPercentage > 0}
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                          fill="none"
-                          stroke="#ef4444"
-                          stroke-width="2"
-                          stroke-dasharray={`${(fallbackNumPercentage / 100) * 62.83} 62.83`}
-                          stroke-dashoffset={`-${(defaultNumPercentage / 100) * 62.83}`}
-                        />
-                      {/if}
-                    </svg>
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    >
-                      <span class="text-xs font-bold"
-                        >{Math.round(defaultNumPercentage)}%</span
-                      >
-                    </div>
-                  </div>
-                  <div class="text-xs text-center mt-2 space-y-1">
-                    <div class="flex items-center gap-1">
-                      <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
-                      <span>Default ({Math.round(defaultNumPercentage)}%)</span>
-                    </div>
-                    <div class="flex items-center gap-1">
-                      <div class="w-2 h-2 bg-red-500 rounded-full"></div>
-                      <span
-                        >Fallback ({Math.round(fallbackNumPercentage)}%)</span
-                      >
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Total Taxas Distribution -->
-                <div class="flex flex-col items-center">
-                  <h6 class="text-xs font-medium mb-2">
-                    Distribuição Total Taxas
-                  </h6>
-                  <div class="relative w-24 h-24">
-                    <svg
-                      class="w-24 h-24 transform -rotate-90"
-                      viewBox="0 0 24 24"
-                    >
-                      <circle
-                        cx="12"
-                        cy="12"
-                        r="10"
-                        fill="none"
-                        stroke="#e5e7eb"
-                        stroke-width="2"
-                      />
-                      {#if defaultTaxasPercentage > 0}
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                          fill="none"
-                          stroke="#8b5cf6"
-                          stroke-width="2"
-                          stroke-dasharray={`${(defaultTaxasPercentage / 100) * 62.83} 62.83`}
-                          stroke-dashoffset="0"
-                        />
-                      {/if}
-                      {#if fallbackTaxasPercentage > 0}
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="10"
-                          fill="none"
-                          stroke="#ec4899"
-                          stroke-width="2"
-                          stroke-dasharray={`${(fallbackTaxasPercentage / 100) * 62.83} 62.83`}
-                          stroke-dashoffset={`-${(defaultTaxasPercentage / 100) * 62.83}`}
-                        />
-                      {/if}
-                    </svg>
-                    <div
-                      class="absolute inset-0 flex items-center justify-center"
-                    >
-                      <span class="text-xs font-bold"
-                        >{Math.round(defaultTaxasPercentage)}%</span
-                      >
-                    </div>
-                  </div>
-                  <div class="text-xs text-center mt-2 space-y-1">
-                    <div class="flex items-center gap-1">
-                      <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
-                      <span
-                        >Default ({Math.round(defaultTaxasPercentage)}%)</span
-                      >
-                    </div>
-                    <div class="flex items-center gap-1">
-                      <div class="w-2 h-2 bg-pink-500 rounded-full"></div>
-                      <span
-                        >Fallback ({Math.round(fallbackTaxasPercentage)}%)</span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <div class="modal-action">
-              <button class="btn" on:click={() => (open = false)}>fechar</button
-              >
+            <!-- Original Data Metrics -->
+            <div class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+              <Metric
+                label="Default - total bruto"
+                value={defaultTotalBruto}
+                description={metricsDescriptions[
+                  "results.pagamentos.default_total_bruto"
+                ]}
+              />
+              <Metric
+                label="Default - num pagamentos"
+                value={defaultNumPagamentos}
+                description={metricsDescriptions[
+                  "results.pagamentos.default_num_pagamentos"
+                ]}
+              />
+              <Metric
+                label="Default - total taxas"
+                value={defaultTotalTaxas}
+                description={metricsDescriptions[
+                  "results.pagamentos.default_total_taxas"
+                ]}
+              />
+              <Metric
+                label="Fallback - total bruto"
+                value={fallbackTotalBruto}
+                description={metricsDescriptions[
+                  "results.pagamentos.fallback_total_bruto"
+                ]}
+              />
+              <Metric
+                label="Fallback - num pagamentos"
+                value={fallbackNumPagamentos}
+                description={metricsDescriptions[
+                  "results.pagamentos.fallback_num_pagamentos"
+                ]}
+              />
+              <Metric
+                label="Fallback - total taxas"
+                value={fallbackTotalTaxas}
+                description={metricsDescriptions[
+                  "results.pagamentos.fallback_total_taxas"
+                ]}
+              />
             </div>
+
+            <!-- Visual Distribution Charts -->
+            <h5 class="text-sm font-medium mb-4">Distribuição Visual</h5>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Total Bruto Distribution -->
+              <div class="flex flex-col items-center">
+                <h6 class="text-xs font-medium mb-2">
+                  Distribuição Total Bruto
+                </h6>
+                <div class="relative w-24 h-24">
+                  <svg
+                    class="w-24 h-24 transform -rotate-90"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      fill="none"
+                      stroke="#e5e7eb"
+                      stroke-width="2"
+                    />
+                    {#if defaultBrutoPercentage > 0}
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        fill="none"
+                        stroke="#10b981"
+                        stroke-width="2"
+                        stroke-dasharray={`${(defaultBrutoPercentage / 100) * 62.83} 62.83`}
+                        stroke-dashoffset="0"
+                      />
+                    {/if}
+                    {#if fallbackBrutoPercentage > 0}
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        fill="none"
+                        stroke="#f59e0b"
+                        stroke-width="2"
+                        stroke-dasharray={`${(fallbackBrutoPercentage / 100) * 62.83} 62.83`}
+                        stroke-dashoffset={`-${(defaultBrutoPercentage / 100) * 62.83}`}
+                      />
+                    {/if}
+                  </svg>
+                  <div
+                    class="absolute inset-0 flex items-center justify-center"
+                  >
+                    <span class="text-xs font-bold"
+                      >{Math.round(defaultBrutoPercentage)}%</span
+                    >
+                  </div>
+                </div>
+                <div class="text-xs text-center mt-2 space-y-1">
+                  <div class="flex items-center gap-1">
+                    <div class="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                    <span>Default ({Math.round(defaultBrutoPercentage)}%)</span>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <div class="w-2 h-2 bg-amber-500 rounded-full"></div>
+                    <span
+                      >Fallback ({Math.round(fallbackBrutoPercentage)}%)</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Número de Pagamentos Distribution -->
+              <div class="flex flex-col items-center">
+                <h6 class="text-xs font-medium mb-2">
+                  Distribuição Num. Pagamentos
+                </h6>
+                <div class="relative w-24 h-24">
+                  <svg
+                    class="w-24 h-24 transform -rotate-90"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      fill="none"
+                      stroke="#e5e7eb"
+                      stroke-width="2"
+                    />
+                    {#if defaultNumPercentage > 0}
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        fill="none"
+                        stroke="#3b82f6"
+                        stroke-width="2"
+                        stroke-dasharray={`${(defaultNumPercentage / 100) * 62.83} 62.83`}
+                        stroke-dashoffset="0"
+                      />
+                    {/if}
+                    {#if fallbackNumPercentage > 0}
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        fill="none"
+                        stroke="#ef4444"
+                        stroke-width="2"
+                        stroke-dasharray={`${(fallbackNumPercentage / 100) * 62.83} 62.83`}
+                        stroke-dashoffset={`-${(defaultNumPercentage / 100) * 62.83}`}
+                      />
+                    {/if}
+                  </svg>
+                  <div
+                    class="absolute inset-0 flex items-center justify-center"
+                  >
+                    <span class="text-xs font-bold"
+                      >{Math.round(defaultNumPercentage)}%</span
+                    >
+                  </div>
+                </div>
+                <div class="text-xs text-center mt-2 space-y-1">
+                  <div class="flex items-center gap-1">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    <span>Default ({Math.round(defaultNumPercentage)}%)</span>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <div class="w-2 h-2 bg-red-500 rounded-full"></div>
+                    <span>Fallback ({Math.round(fallbackNumPercentage)}%)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Total Taxas Distribution -->
+              <div class="flex flex-col items-center">
+                <h6 class="text-xs font-medium mb-2">
+                  Distribuição Total Taxas
+                </h6>
+                <div class="relative w-24 h-24">
+                  <svg
+                    class="w-24 h-24 transform -rotate-90"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      fill="none"
+                      stroke="#e5e7eb"
+                      stroke-width="2"
+                    />
+                    {#if defaultTaxasPercentage > 0}
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        fill="none"
+                        stroke="#8b5cf6"
+                        stroke-width="2"
+                        stroke-dasharray={`${(defaultTaxasPercentage / 100) * 62.83} 62.83`}
+                        stroke-dashoffset="0"
+                      />
+                    {/if}
+                    {#if fallbackTaxasPercentage > 0}
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        fill="none"
+                        stroke="#ec4899"
+                        stroke-width="2"
+                        stroke-dasharray={`${(fallbackTaxasPercentage / 100) * 62.83} 62.83`}
+                        stroke-dashoffset={`-${(defaultTaxasPercentage / 100) * 62.83}`}
+                      />
+                    {/if}
+                  </svg>
+                  <div
+                    class="absolute inset-0 flex items-center justify-center"
+                  >
+                    <span class="text-xs font-bold"
+                      >{Math.round(defaultTaxasPercentage)}%</span
+                    >
+                  </div>
+                </div>
+                <div class="text-xs text-center mt-2 space-y-1">
+                  <div class="flex items-center gap-1">
+                    <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                    <span>Default ({Math.round(defaultTaxasPercentage)}%)</span>
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <div class="w-2 h-2 bg-pink-500 rounded-full"></div>
+                    <span
+                      >Fallback ({Math.round(fallbackTaxasPercentage)}%)</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="modal-action">
+            <button class="btn" on:click={() => (open = false)}>fechar</button>
           </div>
         </div>
       </div>
     </div>
-  {/if}
+  </div>
+{/if}
