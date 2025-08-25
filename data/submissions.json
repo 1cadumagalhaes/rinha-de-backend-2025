@@ -310,7 +310,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [],
@@ -552,7 +551,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [],
@@ -623,7 +621,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [],
@@ -707,7 +704,6 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [],
@@ -861,7 +857,7 @@
         "jvm"
       ],
       "storages": [
-        "PostgreSQL"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -885,7 +881,7 @@
       ],
       "tags": [
         "Java",
-        "PostgreSQL",
+        "postgresql",
         "nginx",
         "Quarkus",
         "Maven"
@@ -946,8 +942,7 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
-        "Redis"
+        "redis"
       ],
       "messaging": [
         "Redis"
@@ -961,7 +956,7 @@
       ],
       "tags": [
         "C#",
-        "Redis",
+        "redis",
         "Redis",
         "Nginx",
         "Dotnet"
@@ -1094,7 +1089,6 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
         "redis"
       ],
       "messaging": [],
@@ -1162,7 +1156,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
         "redis"
       ],
       "messaging": [
@@ -1237,8 +1230,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "hyperf/redis",
-        "ext-redis",
         "redis"
       ],
       "messaging": [],
@@ -1311,7 +1302,7 @@
         "jvm"
       ],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -1336,7 +1327,7 @@
       ],
       "tags": [
         "java",
-        "postgres",
+        "postgresql",
         "nginx",
         "quarkus",
         "graalvm",
@@ -1395,10 +1386,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "github.com/jackc/pgpassfile",
-        "github.com/jackc/pgservicefile",
-        "postgres"
+        "postgresql",
+        "redis"
       ],
       "messaging": [
         "redis"
@@ -1422,7 +1411,7 @@
       ],
       "tags": [
         "go",
-        "postgres",
+        "postgresql",
         "redis",
         "nginx"
       ]
@@ -1734,8 +1723,8 @@
         ".net"
       ],
       "storages": [
-        "Npgsql.EntityFrameworkCore.PostgreSQL",
-        "memory"
+        "memory",
+        "postgresql"
       ],
       "messaging": [
         "RabbitMQ.Client",
@@ -1817,8 +1806,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "postgresql",
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -1850,7 +1838,7 @@
       "tags": [
         "kotlin",
         "java21",
-        "postgres",
+        "postgresql",
         "haproxy",
         "vert.x"
       ]
@@ -2139,7 +2127,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [
@@ -2216,7 +2203,6 @@
         "jvm"
       ],
       "storages": [
-        "quarkus-redis-client",
         "redis"
       ],
       "messaging": [
@@ -2300,10 +2286,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "redis",
-        "tokio-postgres",
-        "deadpool-postgres",
-        "postgresql"
+        "postgresql",
+        "redis"
       ],
       "messaging": [
         "redis"
@@ -2386,10 +2370,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "redis",
-        "tokio-postgres",
-        "deadpool-postgres",
-        "postgresql"
+        "postgresql",
+        "redis"
       ],
       "messaging": [
         "redis"
@@ -2473,7 +2455,6 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [
@@ -2654,8 +2635,7 @@
         "jvm"
       ],
       "storages": [
-        "postgresql",
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -2683,7 +2663,7 @@
       ],
       "tags": [
         "java",
-        "postgres",
+        "postgresql",
         "haproxy",
         "spring boot",
         "graalvm",
@@ -2744,8 +2724,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "hyperf/redis",
-        "ext-redis",
         "redis"
       ],
       "messaging": [],
@@ -2816,8 +2794,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "hyperf/redis",
-        "ext-redis",
         "redis"
       ],
       "messaging": [],
@@ -2888,8 +2864,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "hyperf/redis",
-        "ext-redis",
         "redis"
       ],
       "messaging": [],
@@ -2960,9 +2934,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/jackc/pgpassfile",
-        "github.com/jackc/pgservicefile",
-        "github.com/redis/go-redis/v9",
         "postgresql"
       ],
       "messaging": [
@@ -3830,7 +3801,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [
@@ -3917,7 +3887,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "predis/predis",
         "redis"
       ],
       "messaging": [
@@ -4059,8 +4028,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "postgresql"
+        "postgresql",
+        "redis"
       ],
       "messaging": [
         "redis"
@@ -4134,7 +4103,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [],
@@ -4223,8 +4191,6 @@
         ".net"
       ],
       "storages": [
-        "Npgsql.EntityFrameworkCore.PostgreSQL",
-        "StackExchange.Redis",
         "postgresql",
         "redis"
       ],
@@ -4373,7 +4339,6 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
         "redis"
       ],
       "messaging": [],
@@ -4446,8 +4411,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -4491,7 +4455,7 @@
       ],
       "tags": [
         "go",
-        "postgres",
+        "postgresql",
         "haproxy"
       ]
     },
@@ -4551,7 +4515,6 @@
         "jvm"
       ],
       "storages": [
-        "quarkus-redis-client",
         "redis"
       ],
       "messaging": [
@@ -4640,8 +4603,7 @@
         "jvm"
       ],
       "storages": [
-        "postgresql",
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -4664,7 +4626,7 @@
       "tags": [
         "java",
         "spring",
-        "postgres",
+        "postgresql",
         "nginx"
       ]
     },
@@ -4724,8 +4686,7 @@
         "jvm"
       ],
       "storages": [
-        "quarkus-jdbc-postgresql",
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -4755,7 +4716,7 @@
         "java",
         "quarkus",
         "graalvm",
-        "postgres",
+        "postgresql",
         "nginx"
       ]
     },
@@ -4812,7 +4773,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/mattn/go-sqlite3",
         "sqlite"
       ],
       "messaging": [
@@ -4988,8 +4948,7 @@
         "jvm"
       ],
       "storages": [
-        "postgresql",
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -5007,7 +4966,7 @@
       ],
       "tags": [
         "Java",
-        "postgres",
+        "postgresql",
         "nginx",
         "Java API's only"
       ]
@@ -5067,8 +5026,7 @@
         "jvm"
       ],
       "storages": [
-        "postgresql",
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -5089,7 +5047,7 @@
       ],
       "tags": [
         "Java",
-        "postgres",
+        "postgresql",
         "nginx",
         "Undertow",
         "native-image",
@@ -5224,7 +5182,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [],
@@ -5302,7 +5259,6 @@
         "bun"
       ],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [
@@ -5572,8 +5528,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [],
@@ -5755,12 +5709,10 @@
       ],
       "runtimes": [],
       "storages": [
-        "ioredis",
         "lmdb",
         "mongodb",
-        "github.com/mattn/go-sqlite3",
-        "sqlite",
-        "redis"
+        "redis",
+        "sqlite"
       ],
       "messaging": [
         "@nats-io/transport-node",
@@ -5788,8 +5740,8 @@
         "bun",
         "go",
         "typescript",
-        "sqlite",
         "redis",
+        "sqlite",
         "nats",
         "haproxy"
       ]
@@ -5850,7 +5802,6 @@
         "nodejs"
       ],
       "storages": [
-        "better-sqlite3",
         "sqlite"
       ],
       "messaging": [
@@ -5929,7 +5880,6 @@
         "nodejs"
       ],
       "storages": [
-        "better-sqlite3",
         "sqlite"
       ],
       "messaging": [
@@ -6008,7 +5958,6 @@
         "nodejs"
       ],
       "storages": [
-        "better-sqlite3",
         "sqlite"
       ],
       "messaging": [
@@ -6085,7 +6034,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
+        "redis",
         "valkey"
       ],
       "messaging": [],
@@ -6175,7 +6124,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
+        "redis",
         "valkey"
       ],
       "messaging": [],
@@ -6265,8 +6214,7 @@
         "jvm"
       ],
       "storages": [
-        "postgresql",
-        "postgresSQL"
+        "postgresql"
       ],
       "messaging": [
         "jnats"
@@ -6298,7 +6246,7 @@
       ],
       "tags": [
         "java",
-        "postgresSQL",
+        "postgresql",
         "nginx",
         "graalVM"
       ]
@@ -6353,7 +6301,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [
         "acpu"
@@ -6364,7 +6312,7 @@
       "others": [],
       "tags": [
         "php",
-        "postgres",
+        "postgresql",
         "acpu",
         "nginx"
       ]
@@ -6704,7 +6652,6 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
         "postgresql",
         "redis"
       ],
@@ -6851,7 +6798,7 @@
       "storages": [
         "github.com/jackc/pgpassfile",
         "github.com/jackc/pgservicefile",
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -6871,7 +6818,7 @@
       ],
       "tags": [
         "go",
-        "postgres",
+        "postgresql",
         "go"
       ]
     },
@@ -6928,8 +6875,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "go.mongodb.org/mongo-driver",
+        "mongodb",
         "redis"
       ],
       "messaging": [],
@@ -7026,8 +6972,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "go.mongodb.org/mongo-driver",
+        "mongodb",
         "redis"
       ],
       "messaging": [],
@@ -7124,8 +7069,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "go.mongodb.org/mongo-driver",
+        "mongodb",
         "redis"
       ],
       "messaging": [],
@@ -7222,8 +7166,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "go.mongodb.org/mongo-driver",
+        "mongodb",
         "redis"
       ],
       "messaging": [],
@@ -7320,8 +7263,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "go.mongodb.org/mongo-driver",
+        "mongodb",
         "redis"
       ],
       "messaging": [],
@@ -7419,7 +7361,6 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
         "mongodb",
         "redis"
       ],
@@ -7497,7 +7438,6 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [
@@ -7923,7 +7863,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [],
@@ -7993,7 +7932,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [
@@ -8094,7 +8032,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [
@@ -8695,7 +8632,6 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [],
@@ -8863,8 +8799,6 @@
         "jvm"
       ],
       "storages": [
-        "github.com/go-redis/redis/v8",
-        "quarkus-redis-client",
         "redis"
       ],
       "messaging": [],
@@ -8978,8 +8912,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
-        "quarkus-redis-client",
         "redis"
       ],
       "messaging": [],
@@ -9090,7 +9022,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "predis/predis",
         "redis"
       ],
       "messaging": [],
@@ -9218,7 +9149,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "SQLite"
+        "sqlite"
       ],
       "messaging": [
         "async-channel",
@@ -9243,7 +9174,7 @@
       ],
       "tags": [
         "rust",
-        "SQLite",
+        "sqlite",
         "nginx"
       ]
     },
@@ -9302,7 +9233,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "postgresql",
         "redis"
       ],
@@ -9395,7 +9325,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [],
@@ -9477,7 +9406,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis",
         "redis"
       ],
       "messaging": [
@@ -9557,7 +9485,6 @@
         "jvm"
       ],
       "storages": [
-        "quarkus-jdbc-postgresql",
         "postgresql"
       ],
       "messaging": [],
@@ -9636,9 +9563,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "redis",
-        "postgres"
+        "postgresql",
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -9654,8 +9580,8 @@
       ],
       "tags": [
         "go",
+        "postgresql",
         "redis",
-        "postgres",
         "nginx",
         "docker"
       ]
@@ -9713,8 +9639,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "redis",
-        "deadpool-redis"
+        "redis"
       ],
       "messaging": [
         "n/a"
@@ -9873,7 +9798,6 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [
@@ -10082,7 +10006,6 @@
         "jvm"
       ],
       "storages": [
-        "quarkus-mongodb-client",
         "mongodb"
       ],
       "messaging": [
@@ -10171,7 +10094,6 @@
         "jvm"
       ],
       "storages": [
-        "quarkus-redis-client",
         "redis"
       ],
       "messaging": [
@@ -10260,7 +10182,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "predis/predis",
         "redis"
       ],
       "messaging": [],
@@ -10331,8 +10252,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "francoggm/rinhabackend-2025-go-redis",
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [
@@ -10419,10 +10338,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "github.com/jackc/pgpassfile",
-        "github.com/jackc/pgservicefile",
-        "postgres"
+        "postgresql",
+        "redis"
       ],
       "messaging": [
         "redis"
@@ -10443,7 +10360,7 @@
       ],
       "tags": [
         "go",
-        "postgres",
+        "postgresql",
         "redis",
         "nginx"
       ]
@@ -10589,8 +10506,7 @@
         "jvm"
       ],
       "storages": [
-        "postgresql",
-        "flyway-database-postgresql"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -10826,7 +10742,6 @@
         "jvm"
       ],
       "storages": [
-        "quarkus-redis-client",
         "redis"
       ],
       "messaging": [
@@ -10916,7 +10831,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
         "redis"
       ],
       "messaging": [],
@@ -11288,7 +11202,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "rusqlite",
         "sqlite"
       ],
       "messaging": [],
@@ -11372,7 +11285,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "rusqlite",
         "sqlite"
       ],
       "messaging": [],
@@ -11531,7 +11443,6 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
         "redis"
       ],
       "messaging": [
@@ -11676,7 +11587,6 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
         "postgresql",
         "redis"
       ],
@@ -11750,7 +11660,6 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
         "redis"
       ],
       "messaging": [],
@@ -11822,7 +11731,7 @@
       "storages": [
         "github.com/jackc/pgpassfile",
         "github.com/jackc/pgservicefile",
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -11840,7 +11749,7 @@
       ],
       "tags": [
         "go",
-        "postgres",
+        "postgresql",
         "nginx"
       ]
     },
@@ -11896,7 +11805,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [
@@ -11968,7 +11876,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [
@@ -12134,7 +12041,6 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
         "postgresql",
         "redis"
       ],
@@ -12213,8 +12119,8 @@
         "nodejs"
       ],
       "storages": [
-        "redis",
-        "postgresql"
+        "postgresql",
+        "redis"
       ],
       "messaging": [
         "redis"
@@ -12370,7 +12276,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -12381,7 +12287,7 @@
       ],
       "tags": [
         "ruby",
-        "postgres",
+        "postgresql",
         "nginx",
         "guaraci"
       ]
@@ -12596,7 +12502,7 @@
         ".net"
       ],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -12610,7 +12516,7 @@
       ],
       "tags": [
         "c#",
-        "postgres",
+        "postgresql",
         "nginx"
       ]
     },
@@ -12721,7 +12627,6 @@
         "jvm"
       ],
       "storages": [
-        "spring-boot-starter-data-redis",
         "redis"
       ],
       "messaging": [
@@ -12809,9 +12714,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "go.mongodb.org/mongo-driver",
-        "github.com/redis/go-redis/v9",
-        "mongo"
+        "mongodb",
+        "redis"
       ],
       "messaging": [
         "Channel",
@@ -12844,7 +12748,7 @@
       ],
       "tags": [
         "go",
-        "mongo",
+        "mongodb",
         "Channel",
         "Go-Channel",
         "nginx"
@@ -12903,9 +12807,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "go.mongodb.org/mongo-driver",
-        "github.com/redis/go-redis/v9",
-        "mongo"
+        "mongodb",
+        "redis"
       ],
       "messaging": [
         "Channel",
@@ -12938,7 +12841,7 @@
       ],
       "tags": [
         "go",
-        "mongo",
+        "mongodb",
         "Channel",
         "Go-Channel",
         "nginx"
@@ -12997,9 +12900,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "go.mongodb.org/mongo-driver",
-        "github.com/redis/go-redis/v9",
-        "mongo"
+        "mongodb",
+        "redis"
       ],
       "messaging": [
         "Channel",
@@ -13032,7 +12934,7 @@
       ],
       "tags": [
         "go",
-        "mongo",
+        "mongodb",
         "Channel",
         "Go-Channel",
         "nginx"
@@ -13091,9 +12993,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "go.mongodb.org/mongo-driver",
-        "github.com/redis/go-redis/v9",
-        "mongo"
+        "mongodb",
+        "redis"
       ],
       "messaging": [
         "Channel",
@@ -13126,7 +13027,7 @@
       ],
       "tags": [
         "go",
-        "mongo",
+        "mongodb",
         "Channel",
         "Go-Channel",
         "nginx"
@@ -13185,8 +13086,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "go.mongodb.org/mongo-driver",
-        "github.com/redis/go-redis/v9",
+        "mongodb",
         "redis"
       ],
       "messaging": [
@@ -13675,7 +13575,6 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
         "redis"
       ],
       "messaging": [],
@@ -13957,7 +13856,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -13969,7 +13868,7 @@
       ],
       "tags": [
         ".net",
-        "postgres",
+        "postgresql",
         "nginx"
       ]
     },
@@ -14026,7 +13925,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [
         "messaging"
@@ -14040,7 +13939,7 @@
       ],
       "tags": [
         "Go",
-        "postgres",
+        "postgresql",
         "messaging",
         "traefik"
       ]
@@ -14100,8 +13999,6 @@
         "nodejs"
       ],
       "storages": [
-        "@fastify/redis",
-        "ioredis",
         "redis"
       ],
       "messaging": [
@@ -14333,7 +14230,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "spring-boot-starter-data-redis-reactive",
         "redis"
       ],
       "messaging": [],
@@ -14489,9 +14385,8 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
-        "redis",
-        "postgresSQL"
+        "postgresql",
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -14508,8 +14403,8 @@
       ],
       "tags": [
         "node",
+        "postgresql",
         "redis",
-        "postgresSQL",
         "haproxy"
       ]
     },
@@ -14655,8 +14550,6 @@
       ],
       "storages": [
         "mongodb",
-        "@keyv/redis",
-        "sqlite3",
         "redis",
         "sqlite"
       ],
@@ -14758,7 +14651,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "ext-redis",
         "redis"
       ],
       "messaging": [],
@@ -14914,9 +14806,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "github.com/jackc/pgpassfile",
-        "github.com/jackc/pgservicefile",
+        "postgresql",
         "redis"
       ],
       "messaging": [],
@@ -15014,7 +14904,6 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [
@@ -15174,8 +15063,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "Redis"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -15188,7 +15076,7 @@
       ],
       "tags": [
         "go",
-        "Redis",
+        "redis",
         "nginx",
         "Docker"
       ]
@@ -16242,7 +16130,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
         "go"
       ],
       "messaging": [],
@@ -16313,7 +16200,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
         "go"
       ],
       "messaging": [],
@@ -16384,7 +16270,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
         "go"
       ],
       "messaging": [],
@@ -16455,7 +16340,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
         "go"
       ],
       "messaging": [],
@@ -16526,7 +16410,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
         "go"
       ],
       "messaging": [],
@@ -17371,7 +17254,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "Microsoft.Extensions.Caching.StackExchangeRedis",
         "redis"
       ],
       "messaging": [],
@@ -17496,8 +17378,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "github.com/bsm/redislock",
         "redis"
       ],
       "messaging": [],
@@ -17576,8 +17456,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "github.com/bsm/redislock",
         "redis"
       ],
       "messaging": [],
@@ -17657,7 +17535,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "deadpool-redis",
         "redis"
       ],
       "messaging": [
@@ -17829,7 +17706,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [],
@@ -17910,8 +17786,7 @@
         "jvm"
       ],
       "storages": [
-        "quarkus-jdbc-postgresql",
-        "postgres"
+        "postgresql"
       ],
       "messaging": [
         "inmemory"
@@ -17936,7 +17811,7 @@
       ],
       "tags": [
         "java",
-        "postgres",
+        "postgresql",
         "inmemory",
         "nginx"
       ]
@@ -17998,7 +17873,6 @@
         "bun"
       ],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [
@@ -18140,7 +18014,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-goe/postgres",
         "github.com/jackc/pgpassfile",
         "github.com/jackc/pgservicefile",
         "postgresql"
@@ -18227,7 +18100,6 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [
@@ -18302,9 +18174,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "github.com/jackc/pgpassfile",
-        "github.com/jackc/pgservicefile",
+        "postgresql",
         "redis"
       ],
       "messaging": [],
@@ -18406,7 +18276,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [
@@ -19694,7 +19563,6 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
         "redis"
       ],
       "messaging": [],
@@ -19766,7 +19634,6 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [
@@ -19840,9 +19707,8 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
-        "redis",
-        "postgres"
+        "postgresql",
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -19857,8 +19723,8 @@
       ],
       "tags": [
         "c#",
+        "postgresql",
         "redis",
-        "postgres",
         "nginx"
       ]
     },
@@ -20209,7 +20075,6 @@
         "bun"
       ],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [
@@ -20283,9 +20148,8 @@
         ".net"
       ],
       "storages": [
-        "Microsoft.EntityFrameworkCore.Sqlite",
-        "StackExchange.Redis",
-        "redis"
+        "redis",
+        "sqlite"
       ],
       "messaging": [],
       "load_balancers": [
@@ -20666,11 +20530,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "github.com/jackc/pgpassfile",
-        "github.com/jackc/pgservicefile",
-        "redis",
-        "postgresql"
+        "postgresql",
+        "redis"
       ],
       "messaging": [
         "redis"
@@ -20718,8 +20579,8 @@
       ],
       "tags": [
         "go",
-        "redis",
         "postgresql",
+        "redis",
         "redis",
         "nginx"
       ]
@@ -20857,7 +20718,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "deadpool-redis",
         "redis"
       ],
       "messaging": [
@@ -20938,7 +20798,6 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [
@@ -21106,10 +20965,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "postgres",
-        "r2d2_postgres",
-        "redis",
-        "postgresql"
+        "postgresql",
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -21370,8 +21227,8 @@
         "nodejs"
       ],
       "storages": [
-        "mysql2",
-        "postgres"
+        "mysql",
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -21396,7 +21253,7 @@
       "tags": [
         "typescript",
         "javascript",
-        "postgres",
+        "postgresql",
         "nginx",
         "nodejs",
         "fastify",
@@ -21595,9 +21452,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "tokio-postgres",
-        "deadpool-postgres",
-        "postgres"
+        "postgresql"
       ],
       "messaging": [
         "unix-sockets"
@@ -21624,7 +21479,7 @@
       ],
       "tags": [
         "rust",
-        "postgres",
+        "postgresql",
         "unix-sockets",
         "haproxy"
       ]
@@ -21829,7 +21684,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
         "redis"
       ],
       "messaging": [],
@@ -21903,7 +21757,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "sqlite3"
+        "sqlite"
       ],
       "messaging": [
         "lavinmq"
@@ -21914,7 +21768,7 @@
       "others": [],
       "tags": [
         "crystal",
-        "sqlite3",
+        "sqlite",
         "lavinmq",
         "nginx"
       ]
@@ -22878,7 +22732,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
         "redis"
       ],
       "messaging": [],
@@ -22979,7 +22832,7 @@
         "jvm"
       ],
       "storages": [
-        "spring-boot-starter-data-mongodb",
+        "mongodb",
         "redis"
       ],
       "messaging": [],
@@ -23057,9 +22910,7 @@
         ".net"
       ],
       "storages": [
-        "Microsoft.Extensions.Caching.StackExchangeRedis",
-        "StackExchange.Redis",
-        "Redis"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -23070,7 +22921,7 @@
       ],
       "tags": [
         "C#",
-        "Redis",
+        "redis",
         "nginx",
         ".NET"
       ]
@@ -23199,7 +23050,6 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [
@@ -23281,7 +23131,6 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [
@@ -23435,7 +23284,7 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis"
+        "redis"
       ],
       "messaging": [
         "redis"
@@ -23748,9 +23597,8 @@
         ".net"
       ],
       "storages": [
-        "ReactiveLock.Distributed.Redis",
-        "StackExchange.Redis",
-        "postgres"
+        "postgresql",
+        "redis"
       ],
       "messaging": [
         "redis"
@@ -23771,7 +23619,7 @@
       "tags": [
         "c#",
         ".net",
-        "postgres",
+        "postgresql",
         "redis",
         "nginx",
         "reactive distributed lock"
@@ -23833,9 +23681,8 @@
         ".net"
       ],
       "storages": [
-        "ReactiveLock.Distributed.Redis",
-        "StackExchange.Redis",
-        "postgres"
+        "postgresql",
+        "redis"
       ],
       "messaging": [
         "redis"
@@ -23856,7 +23703,7 @@
       "tags": [
         "c#",
         ".net",
-        "postgres",
+        "postgresql",
         "redis",
         "haproxy",
         "reactive distributed lock"
@@ -23918,8 +23765,6 @@
         ".net"
       ],
       "storages": [
-        "ReactiveLock.Distributed.Redis",
-        "StackExchange.Redis",
         "redis"
       ],
       "messaging": [
@@ -24000,9 +23845,8 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
-        "ReactiveLock.Distributed.Redis",
-        "inmemory"
+        "inmemory",
+        "redis"
       ],
       "messaging": [
         "redis",
@@ -24085,9 +23929,8 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
-        "ReactiveLock.Distributed.Redis",
-        "inmemory"
+        "inmemory",
+        "redis"
       ],
       "messaging": [
         "redis",
@@ -24170,8 +24013,6 @@
         ".net"
       ],
       "storages": [
-        "ReactiveLock.Distributed.Redis",
-        "StackExchange.Redis",
         "redis"
       ],
       "messaging": [
@@ -24249,7 +24090,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "keydb"
       ],
       "messaging": [
@@ -24482,8 +24322,8 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
-        "keydb"
+        "keydb",
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -24653,8 +24493,8 @@
       "storages": [
         "github.com/jackc/pgpassfile",
         "github.com/jackc/pgservicefile",
-        "postgresql",
-        "memory"
+        "memory",
+        "postgresql"
       ],
       "messaging": [
         "channels"
@@ -24679,8 +24519,8 @@
       ],
       "tags": [
         "golang",
-        "postgresql",
         "memory",
+        "postgresql",
         "channels",
         "nginx",
         "docker",
@@ -24910,7 +24750,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [],
@@ -25071,8 +24910,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "Valkey"
+        "Valkey",
+        "redis"
       ],
       "messaging": [
         "channels"
@@ -25151,10 +24990,9 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
-        "github.com/jackc/pgpassfile",
-        "github.com/jackc/pgservicefile",
-        "go"
+        "go",
+        "postgresql",
+        "redis"
       ],
       "messaging": [
         "github.com/rabbitmq/amqp091-go"
@@ -25258,9 +25096,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
-        "github.com/jackc/pgpassfile",
-        "github.com/jackc/pgservicefile"
+        "postgresql",
+        "redis"
       ],
       "messaging": [
         "github.com/rabbitmq/amqp091-go"
@@ -25989,8 +25826,7 @@
         "cpython"
       ],
       "storages": [
-        "redis",
-        "aioredis"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -26068,8 +25904,7 @@
         "cpython"
       ],
       "storages": [
-        "redis",
-        "aioredis"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -26147,8 +25982,7 @@
         "cpython"
       ],
       "storages": [
-        "redis",
-        "aioredis"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -26612,8 +26446,7 @@
         "cpython"
       ],
       "storages": [
-        "redis",
-        "aioredis"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -26760,9 +26593,8 @@
         "jvm"
       ],
       "storages": [
-        "spring-boot-starter-data-redis",
         "postgresql",
-        "postgres"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -26780,7 +26612,7 @@
       ],
       "tags": [
         "java",
-        "postgres",
+        "postgresql",
         "nginx"
       ]
     },
@@ -26838,9 +26670,8 @@
         "jvm"
       ],
       "storages": [
-        "spring-boot-starter-data-redis",
         "postgresql",
-        "postgres"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -26858,7 +26689,7 @@
       ],
       "tags": [
         "java",
-        "postgres",
+        "postgresql",
         "nginx"
       ]
     },
@@ -26916,9 +26747,8 @@
         "jvm"
       ],
       "storages": [
-        "spring-boot-starter-data-redis",
         "postgresql",
-        "postgres"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -26936,7 +26766,7 @@
       ],
       "tags": [
         "java",
-        "postgres",
+        "postgresql",
         "nginx"
       ]
     },
@@ -27456,7 +27286,6 @@
         ".net"
       ],
       "storages": [
-        "Microsoft.EntityFrameworkCore.Sqlite",
         "sqlite"
       ],
       "messaging": [],
@@ -27528,8 +27357,7 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
-        "postgres",
+        "postgresql",
         "redis"
       ],
       "messaging": [],
@@ -27544,7 +27372,7 @@
       "tags": [
         "c#",
         "dotnet",
-        "postgres",
+        "postgresql",
         "redis",
         "nginx"
       ]
@@ -27604,7 +27432,6 @@
         ".net"
       ],
       "storages": [
-        "Microsoft.Extensions.Caching.StackExchangeRedis",
         "redis"
       ],
       "messaging": [],
@@ -27678,8 +27505,6 @@
         "jvm"
       ],
       "storages": [
-        "spring-boot-starter-data-redis-reactive",
-        "shedlock-provider-redis-spring",
         "redis"
       ],
       "messaging": [
@@ -27773,8 +27598,6 @@
         "jvm"
       ],
       "storages": [
-        "spring-boot-starter-data-redis-reactive",
-        "shedlock-provider-redis-spring",
         "redis"
       ],
       "messaging": [
@@ -27865,7 +27688,7 @@
         ".net"
       ],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -27880,7 +27703,7 @@
         "dotnet",
         ".net",
         ".NET",
-        "postgres",
+        "postgresql",
         "nginx"
       ]
     },
@@ -27938,7 +27761,7 @@
         ".net"
       ],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -27953,7 +27776,7 @@
         "dotnet",
         ".net",
         ".NET",
-        "postgres",
+        "postgresql",
         "nginx"
       ]
     },
@@ -28011,7 +27834,7 @@
         ".net"
       ],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -28026,7 +27849,7 @@
         "dotnet",
         ".net",
         ".NET",
-        "postgres",
+        "postgresql",
         "nginx"
       ]
     },
@@ -28153,7 +27976,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [],
@@ -28309,8 +28131,8 @@
       "runtimes": [],
       "storages": [
         "github.com/marcboeker/go-duckdb",
-        "github.com/mattn/go-sqlite3",
-        "memory"
+        "memory",
+        "sqlite"
       ],
       "messaging": [],
       "load_balancers": [
@@ -28585,7 +28407,6 @@
         "jvm"
       ],
       "storages": [
-        "quarkus-redis-client",
         "redis"
       ],
       "messaging": [
@@ -28673,7 +28494,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
         "redis"
       ],
       "messaging": [],
@@ -28778,7 +28598,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [
@@ -28865,7 +28684,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "memory"
       ],
       "messaging": [
@@ -28952,7 +28770,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "memory"
       ],
       "messaging": [
@@ -29039,7 +28856,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [
@@ -29125,8 +28941,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "redis, postgresql"
+        "postgresql",
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -29139,7 +28955,7 @@
       ],
       "tags": [
         "go",
-        "redis, postgresql",
+        "redis",
         "haproxy"
       ]
     },
@@ -29197,7 +29013,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [
         "redis"
@@ -29208,7 +29024,7 @@
       "others": [],
       "tags": [
         "dart",
-        "postgres",
+        "postgresql",
         "redis",
         "nginx"
       ]
@@ -29329,7 +29145,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "ioredis",
         "redis"
       ],
       "messaging": [],
@@ -29552,8 +29367,7 @@
         "jvm"
       ],
       "storages": [
-        "postgresql",
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -29578,7 +29392,7 @@
         "java",
         "Spring",
         "GraalVM",
-        "postgres",
+        "postgresql",
         "nginx"
       ]
     },
@@ -29932,7 +29746,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [],
@@ -30028,8 +29841,7 @@
         "jvm"
       ],
       "storages": [
-        "redis.clients:jedis:6.0.0",
-        "Redis"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -30042,7 +29854,7 @@
       ],
       "tags": [
         "Java",
-        "Redis",
+        "redis",
         "nginx",
         "GraalVM",
         "Spring Boot 3.5.3"
@@ -30102,8 +29914,7 @@
         "jvm"
       ],
       "storages": [
-        "redis.clients:jedis:6.1.0",
-        "Redis"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -30114,7 +29925,7 @@
       ],
       "tags": [
         "Java",
-        "Redis",
+        "redis",
         "nginx",
         "GraalVM"
       ]
@@ -30173,8 +29984,7 @@
         "jvm"
       ],
       "storages": [
-        "redis.clients:jedis:6.1.0",
-        "Redis"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -30185,7 +29995,7 @@
       ],
       "tags": [
         "Java",
-        "Redis",
+        "redis",
         "nginx",
         "GraalVM"
       ]
@@ -30244,8 +30054,7 @@
         "jvm"
       ],
       "storages": [
-        "redis.clients:jedis:6.1.0",
-        "Redis"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -30256,7 +30065,7 @@
       ],
       "tags": [
         "Java",
-        "Redis",
+        "redis",
         "nginx",
         "GraalVM"
       ]
@@ -30315,9 +30124,8 @@
         "bun"
       ],
       "storages": [
-        "ioredis",
-        "redis",
-        "memory"
+        "memory",
+        "redis"
       ],
       "messaging": [
         "redis"
@@ -30390,7 +30198,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/go-redis/redis/v8",
         "redis"
       ],
       "messaging": [],
@@ -30466,7 +30273,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [],
@@ -30558,8 +30364,8 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
-        "postgresql"
+        "postgresql",
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -30759,9 +30565,8 @@
         ".net"
       ],
       "storages": [
-        "Microsoft.Extensions.Caching.StackExchangeRedis",
-        "StackExchange.Redis",
-        "postgresql"
+        "postgresql",
+        "redis"
       ],
       "messaging": [
         "redis"
@@ -31270,8 +31075,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "Redis"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -31304,7 +31108,7 @@
       ],
       "tags": [
         "go",
-        "Redis",
+        "redis",
         "Nginx",
         "Fiber, Sonic"
       ]
@@ -31362,8 +31166,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
-        "Redis"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [
@@ -31396,7 +31199,7 @@
       ],
       "tags": [
         "go",
-        "Redis",
+        "redis",
         "Nginx",
         "Fiber, Sonic"
       ]
@@ -31715,8 +31518,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "redis",
-        "filesystem"
+        "filesystem",
+        "redis"
       ],
       "messaging": [
         "queue"
@@ -31746,8 +31549,8 @@
       ],
       "tags": [
         "rust",
-        "redis",
         "filesystem",
+        "redis",
         "custom"
       ]
     },
@@ -31805,8 +31608,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "redis",
-        "filesystem"
+        "filesystem",
+        "redis"
       ],
       "messaging": [
         "queue"
@@ -31894,8 +31697,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "redis",
-        "filesystem"
+        "filesystem",
+        "redis"
       ],
       "messaging": [
         "queue"
@@ -31982,7 +31785,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -31993,7 +31796,7 @@
       ],
       "tags": [
         "fsharp",
-        "postgres",
+        "postgresql",
         "nginx",
         "dotnet 9.0"
       ]
@@ -32103,7 +31906,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -32126,7 +31929,7 @@
       "tags": [
         "rust",
         "sql",
-        "postgres",
+        "postgresql",
         "nginx"
       ]
     },
@@ -32182,7 +31985,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "tokio-postgres",
         "postgresql"
       ],
       "messaging": [
@@ -32264,8 +32066,8 @@
         "nodejs"
       ],
       "storages": [
-        "PostgreSQL",
-        "Redis"
+        "postgresql",
+        "redis"
       ],
       "messaging": [
         "@nestjs/bull",
@@ -32304,8 +32106,8 @@
       "tags": [
         "TypeScript",
         "NestJS",
-        "PostgreSQL",
-        "Redis",
+        "postgresql",
+        "redis",
         "BullMQ",
         "nginx"
       ]
@@ -32363,7 +32165,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [
@@ -32438,10 +32239,9 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
-        "mysql2",
-        "postgres",
-        "postgresql"
+        "mysql",
+        "postgresql",
+        "redis"
       ],
       "messaging": [
         "@nestjs/bullmq",
@@ -32703,7 +32503,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "hyperf/redis",
         "redis"
       ],
       "messaging": [
@@ -32791,7 +32590,7 @@
       ],
       "runtimes": [],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [
         "async-nats",
@@ -32817,7 +32616,7 @@
       ],
       "tags": [
         "rust",
-        "postgres",
+        "postgresql",
         "nats",
         "async-nats",
         "uxlb"
@@ -32878,7 +32677,6 @@
         ".net"
       ],
       "storages": [
-        "Npgsql.EntityFrameworkCore.PostgreSQL",
         "postgresql"
       ],
       "messaging": [],
@@ -32957,7 +32755,6 @@
         ".net"
       ],
       "storages": [
-        "StackExchange.Redis",
         "redis"
       ],
       "messaging": [
@@ -33174,8 +32971,7 @@
         "nodejs"
       ],
       "storages": [
-        "ioredis",
-        "Redis"
+        "redis"
       ],
       "messaging": [],
       "load_balancers": [],
@@ -33186,7 +32982,7 @@
       "tags": [
         "Node.js",
         "Bun",
-        "Redis"
+        "redis"
       ]
     },
     "results": {
@@ -33243,8 +33039,8 @@
       ],
       "runtimes": [],
       "storages": [
-        "memory",
-        "file"
+        "file",
+        "memory"
       ],
       "messaging": [],
       "load_balancers": [
@@ -33263,8 +33059,8 @@
       ],
       "tags": [
         "go",
-        "memory",
         "file",
+        "memory",
         "nginx",
         "fasthttp",
         "flock"
@@ -33322,7 +33118,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "github.com/redis/go-redis/v9",
         "redis"
       ],
       "messaging": [
@@ -33411,7 +33206,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "predis/predis",
         "redis"
       ],
       "messaging": [
@@ -33485,7 +33279,7 @@
         ".net"
       ],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [
         "akkadotnet"
@@ -33510,7 +33304,7 @@
       ],
       "tags": [
         "c#",
-        "postgres",
+        "postgresql",
         "akkadotnet",
         "nginx",
         "clustering",
@@ -33572,7 +33366,7 @@
         ".net"
       ],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [
         "nats"
@@ -33599,7 +33393,7 @@
       "tags": [
         "c#",
         ".net",
-        "postgres",
+        "postgresql",
         "nats",
         "nginx",
         "akka",
@@ -33662,7 +33456,7 @@
         ".net"
       ],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [
         "nats"
@@ -33689,7 +33483,7 @@
       "tags": [
         "c#",
         ".net",
-        "postgres",
+        "postgresql",
         "nats",
         "nginx",
         "akka",
@@ -33752,7 +33546,7 @@
         ".net"
       ],
       "storages": [
-        "postgres"
+        "postgresql"
       ],
       "messaging": [],
       "load_balancers": [
@@ -33768,7 +33562,7 @@
       ],
       "tags": [
         "C#",
-        "postgres",
+        "postgresql",
         "nginx"
       ]
     },
@@ -33826,7 +33620,6 @@
       ],
       "runtimes": [],
       "storages": [
-        "ext-redis",
         "redis"
       ],
       "messaging": [
@@ -33904,7 +33697,6 @@
         "jvm"
       ],
       "storages": [
-        "sqlite-jdbc",
         "sqlite"
       ],
       "messaging": [],

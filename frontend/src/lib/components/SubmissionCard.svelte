@@ -141,7 +141,9 @@
     ...(data.tech_stack?.messaging || []),
     ...(data.tech_stack?.load_balancers || []),
     ...(data.tech_stack?.others || []),
-  ].filter(Boolean); // Remove any falsy values
+  ]
+    .filter(Boolean) // Remove any falsy values
+    .map((item) => item.toLowerCase()); // Ensure all items are lowercased
 
   $: techIcons = Array.from(new Set(allTechItems)) // Deduplicate using Set
     .map((item) => ({
@@ -149,7 +151,6 @@
       svg: getIconSvg(item, "w-8 h-8"),
     }))
     .filter((icon) => icon.svg); // Only include items that have icons
-
   // Language icon for collapsed view
   $: languageIcon =
     primaryLanguage !== "-" ? getIconSvg(primaryLanguage, "w-12 h-12") : null;
@@ -236,7 +237,7 @@
             <UserCard
               repoUrl={data.source_code_repo ?? "-"}
               name={data.user?.name}
-              avatarUrl={data.user?.github_profile_pic ?? "-"}
+              avatarUrl={data.user?.github_profile_pic}
               socials={data.user?.socials}
             />
 

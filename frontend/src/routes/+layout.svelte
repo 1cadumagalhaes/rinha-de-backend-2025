@@ -46,11 +46,18 @@
 						<div class="text-2xl">🐔</div>
 						<span>Rinha de Backend 2025</span>
 					</a>
-					<a
-						href="/submissions"
-						class="text-sm link link-hover ml-3"
-						aria-label="Explorar submissões">Explorar submissões</a
-					>
+					<div class="flex items-center gap-4 ml-3">
+						<a
+							href="/submissions"
+							class="text-sm link link-hover"
+							aria-label="Explorar submissões">Explorar submissões</a
+						>
+						<a
+							href="/destaques"
+							class="text-sm link link-hover"
+							aria-label="Ver destaques por linguagem">Destaques</a
+						>
+					</div>
 				</div>
 				<div class="flex items-center gap-2">
 					<!-- sun -->
